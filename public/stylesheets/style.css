@@ -1,12 +1,26 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font: 16px 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-a {
+a,
+a:visited {
   color: #00b7ff;
+  text-decoration: none;
 }
 
 h1 {
   color: 15px;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar a {
+  margin: 10px 30px;
 }

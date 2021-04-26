@@ -1,49 +1,50 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 
-const storeSchema = new Schema({
+const storeSchema = new Schema(
+  {
     name: {
-        type: String,
-        unique: true,
-        required: true,
-        minLength: 3,
+      type: String,
+      unique: true,
+      required: true,
+      minLength: 3,
     },
     address: {
-        type: String,
-        minLength: 10,
+      type: String,
+      minLength: 10,
     },
     location: {
-        lat: Number,
-        lng: Number,
+      lat: Number,
+      lng: Number,
     },
     picture: {
-        picPath: String,
+      picPath: String,
     },
     comments: [
-        {
-            user: {
-                type: Schema.Types.ObjectId,
-                ref: "User",
-            },
-            text: {
-                type: String,
-                minLength: 10,
-                maxLength: 300,
-            }
-        }
+      {
+        user: {
+          type: Schema.Types.ObjectId,
+          ref: 'User',
+        },
+        text: {
+          type: String,
+          minLength: 10,
+          maxLength: 300,
+        },
+      },
     ],
     ratings: [
-        {
-            user: {
-                type: Schema.Types.ObjectId,
-                ref: "User",
-            },
-            rating: {
-                type: Number,
-                max: 5,
-                min: 0,
-                default: 0,
-            }
-        }
+      {
+        user: {
+          type: Schema.Types.ObjectId,
+          ref: 'User',
+        },
+        rating: {
+          type: Number,
+          max: 5,
+          min: 0,
+          default: 0,
+        },
+      },
     ],
 
     // rating: {
@@ -56,9 +57,10 @@ const storeSchema = new Schema({
     // flavours: [
     //     { flavour: String }
     // ],
+  },
+  { timestamps: true },
+);
 
-}, { timestamps: true });
-
-const Store = model("Store", storeSchema);
+const Store = model('Store', storeSchema);
 
 module.exports = Store;
