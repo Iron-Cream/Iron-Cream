@@ -1,6 +1,6 @@
 
 const mongoose = require("mongoose");
-const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/icecream-project";
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/iron-cream";
 
 mongoose
   .connect(MONGO_URI, {

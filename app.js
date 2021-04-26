@@ -5,7 +5,7 @@ const app = express();
 require("./config")(app);
 
 // TITLE
-app.locals.title = `For now: iceCreamProject`;
+app.locals.title = `Iron-Cream`;
 
 // ROUTES
 const index = require("./routes/index");

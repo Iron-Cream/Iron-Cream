@@ -15,12 +15,9 @@ const storeSchema = new Schema({
         lat: Number,
         lng: Number,
     },
-    // rating: {
-    //     type: Number,
-    //     max: 5,
-    //     min: 0,
-    // default: 0,
-    // },
+    picture: {
+        picPath: String,
+    },
     comments: [
         {
             user: {
@@ -47,7 +44,19 @@ const storeSchema = new Schema({
                 default: 0,
             }
         }
-    ]
+    ],
+
+    // rating: {
+    //     type: Number,
+    //     max: 5,
+    //     min: 0,
+    // default: 0,
+    // },
+
+    // flavours: [
+    //     { flavour: String }
+    // ],
+
 }, { timestamps: true });
 
 const Store = model("Store", storeSchema);
