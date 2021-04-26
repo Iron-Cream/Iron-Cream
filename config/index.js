@@ -55,12 +55,13 @@ module.exports = (app) => {
       User.findOne({ username: username })
         .then((user) => {
           if (user === null || !bcrypt.compareSync(password, user.password)) {
-            done(null, false, { message: 'Wrong Credentials' });
+            done(null, false, { err_msg: 'Wrong Credentials' });
           } else {
+            console.log(user);
             done(null, user);
           }
         })
-        .catch((err) => console.error(err));
+        .catch((err) => done(err));
     }),
   );
 

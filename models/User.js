@@ -22,6 +22,7 @@ const userSchema = new Schema(
     avatar: {
       type: String,
     },
+    favourites: [{ type: Schema.Types.ObjectId, ref: 'Store' }],
   },
   { timestamps: true },
 );
