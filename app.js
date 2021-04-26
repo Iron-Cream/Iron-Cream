@@ -1,12 +1,13 @@
+const express = require('express');
 require('dotenv/config');
 require('./db');
-const express = require('express');
+
+// APP
 const app = express();
 require('./config')(app);
-require('./models/Store');
 
 // TITLE
-app.locals.title = `For now: iceCreamProject`;
+app.locals.title = `Iron-Cream`;
 
 // ROUTES
 const index = require('./routes/index');
@@ -14,6 +15,8 @@ app.use('/', index);
 
 const map = require('./routes/map');
 app.use('/', map);
+const authRoutes = require('./routes/auth');
+app.use('/', authRoutes);
 
 // ERROR HANDLiNG
 require('./error-handling')(app);
