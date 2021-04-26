@@ -1,7 +1,7 @@
 // const app = require('express').Router();
 // const Marker = require('../models/Marker');
 
-let map, infoWindow;
+let map, infoWindow, storeInfo;
 
 function initAutocomplete() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -73,7 +73,7 @@ function initAutocomplete() {
         size: new google.maps.Size(50, 75),
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(17, 34),
-        scaledSize: new google.maps.Size(50, 75),
+        scaledSize: new google.maps.Size(30, 45),
       };
       // Create a marker for each place.
       markers.push(
@@ -93,11 +93,27 @@ function initAutocomplete() {
       }
     });
 
-    // infoWindow.setPosition(pos);
-    // infoWindow.setContent('Test');
-    // infoWindow.open(map);
+    // popup to add store
+    const contentString = `<div id="content">
+    ${markers[0].title}
+    <form action="/map" method="POST">
+      <button type="submit">Add this store</button>
+    </form>
+    </div>`;
 
-    console.log(markers);
+    storeInfo = new google.maps.InfoWindow({
+      content: contentString,
+    });
+    const pos = {
+      lat: markers[0].getPosition().lat() + 0.00025,
+      lng: markers[0].getPosition().lng(),
+    };
+    console.log(pos);
+    storeInfo.setPosition(pos);
+    storeInfo.setContent(contentString);
+    storeInfo.open(map);
+
+    // console.log(markers);
     map.fitBounds(bounds);
   });
 }
