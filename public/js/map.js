@@ -93,7 +93,7 @@ function initAutocomplete() {
       }
     });
 
-    // popup to add store
+    // store info
     const contentString = `<div id="content">
     ${markers[0].title}
     <form action="/map" method="POST">

@@ -6,9 +6,6 @@ app.get('/map', (req, res) => {
 });
 
 app.post('/map', (req, res, next) => {
-  const { description } = req.body;
-  //   console.log(markers);
-  console.log(req.body);
   Store.create({ description })
     .then(() => {
       res.redirect('map');
