@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Woop Woop Ice Cream Store",
+    "formatted_address": "Rosenthaler Str. 3, 10119 Berlin, Germany",
+    "location": { "lat": 52.5287334, "lng": 13.4019124 },
+    "rating": 4.3
+  },
+  {
+    "name": "Cuore di Vetro",
+    "formatted_address": "Max-Beer-Straße 33, 10119 Berlin, Germany",
+    "location": { "lat": 52.5266037, "lng": 13.4085516 },
+    "rating": 4.6
+  },
+  {
+    "name": "Scoops berlin - Icecream - Cakes - Coffee",
+    "formatted_address": "Novalisstraße 17, 10115 Berlin, Germany",
+    "location": { "lat": 52.52769, "lng": 13.38875 },
+    "rating": 5
+  },
+  {
+    "name": "Waffel oder Becher",
+    "formatted_address": "Spandauer Str. 2, 10178 Berlin, Germany",
+    "location": { "lat": 52.5208729, "lng": 13.4042781 },
+    "rating": 4.5
+  },
+  {
+    "name": "Süsse Sünde",
+    "formatted_address": "Weinbergsweg 21, 10119 Berlin, Germany",
+    "location": { "lat": 52.5311287, "lng": 13.4020839 },
+    "rating": 4.4
+  },
+  {
+    "name": "OAK & ICE",
+    "formatted_address": "Schönhauser Allee 52, 10437 Berlin, Germany",
+    "location": { "lat": 52.5428824, "lng": 13.4126635 },
+    "rating": 4.6
+  },
+  {
+    "name": "Julian & Elisa",
+    "formatted_address": "Markgrafenstraße 41, 10117 Berlin, Germany",
+    "location": { "lat": 52.51488999999999, "lng": 13.39334 },
+    "rating": 4.2
+  },
+  {
+    "name": "Süßfein Brunnenstraße",
+    "formatted_address": "Mietshaus, Brunnenstraße 156, 10115 Berlin, Germany",
+    "location": { "lat": 52.5354981, "lng": 13.3975582 },
+    "rating": 4.8
+  },
+  {
+    "name": "Rosa Canina",
+    "formatted_address": "Pasteurstraße 32, 10407 Berlin, Germany",
+    "location": { "lat": 52.5323577, "lng": 13.4357685 },
+    "rating": 4.4
+  },
+  {
+    "name": "Gelateria italy",
+    "formatted_address": "Chausseestraße 16, 10115 Berlin, Germany",
+    "location": { "lat": 52.5297251, "lng": 13.3844702 },
+    "rating": 4.5
+  },
+  {
+    "name": "Early Bird",
+    "formatted_address": "Winsstraße 68, 10405 Berlin, Germany",
+    "location": { "lat": 52.5320408, "lng": 13.423408 },
+    "rating": 4.7
+  },
+  {
+    "name": "Bandy Brooks",
+    "formatted_address": "Friedrichstraße 96, 10117 Berlin, Germany",
+    "location": { "lat": 52.5197697, "lng": 13.3886949 },
+    "rating": 3.9
+  },
+  {
+    "name": "Lumia Gelato e Caffé",
+    "formatted_address": "Galeria Kaufhof Berlin Alexanderplatz. 9 dircksenstraße, Alexanderpl. laden, 3, 10178 Berlin, Germany",
+    "location": { "lat": 52.5221897, "lng": 13.4112583 },
+    "rating": 4.8
+  },
+  {
+    "name": "Ben & Jerry’s",
+    "formatted_address": "Weinbergsweg 24, 10119 Berlin, Germany",
+    "location": { "lat": 52.530752, "lng": 13.401795 },
+    "rating": 3.8
+  },
+  {
+    "name": "Café Gelateria La Luna",
+    "formatted_address": "Rathausstraße 6, 10178 Berlin, Germany",
+    "location": { "lat": 52.5204623, "lng": 13.4108652 },
+    "rating": 3.2
+  },
+  {
+    "name": "Eisspatz",
+    "formatted_address": "Schönhauser Allee 184, 10119 Berlin, Germany",
+    "location": { "lat": 52.5296122, "lng": 13.4099049 },
+    "rating": 4.5
+  },
+  {
+    "name": "Il Glaciale",
+    "formatted_address": "Kollwitzstraße 59, 10435 Berlin, Germany",
+    "location": { "lat": 52.53541999999999, "lng": 13.4165802 },
+    "rating": 4.4
+  },
+  {
+    "name": "Eisdiele-Cuffaro",
+    "formatted_address": "Kollwitzstraße 66, 10435 Berlin, Germany",
+    "location": { "lat": 52.5360753, "lng": 13.4182779 },
+    "rating": 4.2
+  },
+  {
+    "name": "Rosa Canina",
+    "formatted_address": "Hufelandstraße 7, 10407 Berlin, Germany",
+    "location": { "lat": 52.5326606, "lng": 13.4307422 },
+    "rating": 4.5
+  },
+  {
+    "name": "Giovanni L",
+    "formatted_address": "10178, Grunerstraße 20, 10179 Berlin, Germany",
+    "location": { "lat": 52.5197133, "lng": 13.4153336 },
+    "rating": 3.3
+  },
+  {
+    "name": "Zuckerschlösschen | Softeis | soft ice cream | süsse Souvenirs | Sweet Souvenirs | Alexanderplatz | Berlin Mitte",
+    "formatted_address": "Rathausstraße 5, 10178 Berlin, Germany",
+    "location": { "lat": 52.519998, "lng": 13.411164 },
+    "rating": 4.1
+  },
+  {
+    "name": "Süßfein Rykestraße",
+    "formatted_address": "Rykestraße 50, 10405 Berlin, Germany",
+    "location": { "lat": 52.5355109, "lng": 13.4194793 },
+    "rating": 4.7
+  },
+  {
+    "name": "Berliner Eismanufaktur",
+    "formatted_address": "Sredzkistraße 63-65, 10405 Berlin, Germany",
+    "location": { "lat": 52.5376157, "lng": 13.4221967 },
+    "rating": 4.1
+  },
+  {
+    "name": "Eispatisserie Hokey Pokey",
+    "formatted_address": "Stargarder Str. 72, 10437 Berlin, Germany",
+    "location": { "lat": 52.54687269999999, "lng": 13.4176744 },
+    "rating": 4.7
+  },
+  {
+    "name": "KAVLAK Eismanufaktur (Kreuzberg)",
+    "formatted_address": "Oranienstraße 99, 10969 Berlin, Germany",
+    "location": { "lat": 52.5069082, "lng": 13.3984796 },
+    "rating": 4.5
+  },
+  {
+    "name": "Black Coffee",
+    "formatted_address": "Schwartzkopffstraße 19, 10115 Berlin, Germany",
+    "location": { "lat": 52.5346205, "lng": 13.37905 },
+    "rating": 5
+  },
+  {
+    "name": "JONES ice cream",
+    "formatted_address": "Goltzstraße 3, 10781 Berlin, Germany",
+    "location": { "lat": 52.490486, "lng": 13.353453 },
+    "rating": 4.7
+  },
+  {
+    "name": "Fräulein Frost",
+    "formatted_address": "Friedelstraße 38, 12047 Berlin, Germany",
+    "location": { "lat": 52.49236939999999, "lng": 13.4276751 },
+    "rating": 4.6
+  },
+  {
+    "name": "Eispatisserie Hokey Pokey Pankow",
+    "formatted_address": "Berliner Str. 49a, 13189 Berlin, Germany",
+    "location": { "lat": 52.5594797, "lng": 13.4127411 },
+    "rating": 4.7
+  },
+  {
+    "name": "Berlin Homemade Icecream",
+    "formatted_address": "Elßholzstraße 10, 10781 Berlin, Germany",
+    "location": { "lat": 52.49263800000001, "lng": 13.356392 },
+    "rating": 4.4
+  },
+  {
+    "name": "ROYAL EISLADEN",
+    "formatted_address": "Lenbachstraße 9, 10245 Berlin, Germany",
+    "location": { "lat": 52.50521, "lng": 13.46603 },
+    "rating": 4.8
+  },
+  {
+    "name": "Vanille & Marille",
+    "formatted_address": "Hagelberger Str. 1, 10965 Berlin, Germany",
+    "location": { "lat": 52.4915099, "lng": 13.3863539 },
+    "rating": 4.6
+  },
+  {
+    "name": "Gelateria Mos Eisley",
+    "formatted_address": "Herrfurthpl. 6, 12049 Berlin, Germany",
+    "location": { "lat": 52.4772438, "lng": 13.4211357 },
+    "rating": 4.4
+  },
+  {
+    "name": "Eis Henri",
+    "formatted_address": "Brunnenstraße 97, 13355 Berlin, Germany",
+    "location": { "lat": 52.54596919999999, "lng": 13.3903944 },
+    "rating": 4.5
+  },
+  {
+    "name": "Bio-Eiscafé Caramello",
+    "formatted_address": "Wühlischstraße 31, 10245 Berlin, Germany",
+    "location": { "lat": 52.5098102, "lng": 13.4569953 },
+    "rating": 4.4
+  },
+  {
+    "name": "Aldemir Eis",
+    "formatted_address": "Falckensteinstraße 7, 10997 Berlin, Germany",
+    "location": { "lat": 52.499229, "lng": 13.4428648 },
+    "rating": 4.4
+  },
+  {
+    "name": "Ice cream parlor at Gleisdreieck",
+    "formatted_address": "Flottwellstraße 14, 10785 Berlin, Germany",
+    "location": { "lat": 52.5008123, "lng": 13.3707331 },
+    "rating": 4.4
+  },
+  {
+    "name": "Eismanufaktur Berlin",
+    "formatted_address": "Maxstraße 11, 13347 Berlin, Germany",
+    "location": { "lat": 52.55007999999999, "lng": 13.36402 },
+    "rating": 4.7
+  },
+  {
+    "name": "Eis Toto",
+    "formatted_address": "Schönwalder Str. 30, 13347 Berlin, Germany",
+    "location": { "lat": 52.54227119999999, "lng": 13.3750472 },
+    "rating": 4.6
+  },
+  {
+    "name": "Süße Sünde",
+    "formatted_address": "Niederbarnimstraße 21, 10247 Berlin, Germany",
+    "location": { "lat": 52.5139149, "lng": 13.459341 },
+    "rating": 4.6
+  },
+  {
+    "name": "Italian ice cream",
+    "formatted_address": "Brunnenstraße 197-198, 10119 Berlin, Germany",
+    "location": { "lat": 52.52980720000001, "lng": 13.4007973 },
+    "rating": 4.5
+  },
+  {
+    "name": "CANAL Artisanal Ice cream & pastry",
+    "formatted_address": "Rosenthaler Str. 40, 10178 Berlin, Germany",
+    "location": { "lat": 52.52401589999999, "lng": 13.4023943 },
+    "rating": 4.7
+  },
+  {
+    "name": "Eis*Bar",
+    "formatted_address": "Kastanienallee 10, 10435 Berlin, Germany",
+    "location": { "lat": 52.5394575, "lng": 13.4102674 },
+    "rating": 4
+  },
+  {
+    "name": "Duo - Sicilian Ice Cream",
+    "formatted_address": "Skalitzer Str. 82, 10997 Berlin, Germany",
+    "location": { "lat": 52.5006767, "lng": 13.4388173 },
+    "rating": 4.8
+  },
+  {
+    "name": "Al Teatro Eiscafé",
+    "formatted_address": "Bahnhof Friedrichstraße, Friedrichstraße 142, 10117 Berlin, Germany",
+    "location": { "lat": 52.5203071, "lng": 13.3866229 },
+    "rating": 2.6
+  },
+  {
+    "name": "YES EIS",
+    "formatted_address": "Fehrbelliner Str. 83, 10119 Berlin, Germany",
+    "location": { "lat": 52.5322847, "lng": 13.4057729 },
+    "rating": 4.7
+  },
+  {
+    "name": "Eismanufaktur Berlin",
+    "formatted_address": "Auguststraße 63, 10117 Berlin, Germany",
+    "location": { "lat": 52.52726999999999, "lng": 13.396824 },
+    "rating": 4.6
+  },
+  {
+    "name": "Nice - Eiszeit",
+    "formatted_address": "Leipziger Pl. 12, 10117 Berlin, Germany",
+    "location": { "lat": 52.51063809999999, "lng": 13.3817068 },
+    "rating": 4
+  },
+  {
+    "name": "Rosa Canina",
+    "formatted_address": "Ackerstraße 174, 10115 Berlin, Germany",
+    "location": { "lat": 52.52892929999999, "lng": 13.397458 },
+    "rating": 4.7
+  },
+  {
+    "name": "Berliner Eismanufaktur",
+    "formatted_address": "Sredzkistraße 63-65, 10405 Berlin, Germany",
+    "location": { "lat": 52.5376157, "lng": 13.4221967 },
+    "rating": 4.1
+  },
+  {
+    "name": "Zuckerschlösschen | Softeis | soft ice cream | süsse Souvenirs | Sweet Souvenirs | Alexanderplatz | Berlin Mitte",
+    "formatted_address": "Rathausstraße 5, 10178 Berlin, Germany",
+    "location": { "lat": 52.519998, "lng": 13.411164 },
+    "rating": 4.1
+  },
+  {
+    "name": "Il Gelataio",
+    "formatted_address": "Am Friedrichshain 5, 10407 Berlin, Germany",
+    "location": { "lat": 52.5294527, "lng": 13.434796 },
+    "rating": 4.5
+  },
+  {
+    "name": "Eis Plansche",
+    "formatted_address": "Eichendorffstraße 13, 10115 Berlin, Germany",
+    "location": { "lat": 52.53110969999999, "lng": 13.3868418 },
+    "rating": 4.5
+  },
+  {
+    "name": "Eismieze Berlin",
+    "formatted_address": "Schlegelstraße 21, 10115 Berlin, Germany",
+    "location": { "lat": 52.5304326, "lng": 13.3871112 },
+    "rating": 4.7
+  },
+  {
+    "name": "Gianni Eis",
+    "formatted_address": "Rykestraße 26, 10405 Berlin, Germany",
+    "location": { "lat": 52.538617, "lng": 13.4226255 },
+    "rating": 4.7
+  },
+  {
+    "name": "cookies and cream",
+    "formatted_address": "Kremmener Str. 8, 10435 Berlin, Germany",
+    "location": { "lat": 52.5393733, "lng": 13.4024359 },
+    "rating": 4.7
+  },
+  {
+    "name": "Eiscafe am Park",
+    "formatted_address": "ehem. \"Zur alten Gaslaterne, Lilli-Henoch-Straße 19, 10405 Berlin, Germany",
+    "location": { "lat": 52.5401444, "lng": 13.4333554 },
+    "rating": 4.7
+  },
+  {
+    "name": "Hokey Pokey Boutique",
+    "formatted_address": "Stargarder Str. 73, 10437 Berlin, Germany",
+    "location": { "lat": 52.5469818, "lng": 13.4174335 },
+    "rating": 4.7
+  },
+  {
+    "name": "Delabuu Ice Cream",
+    "formatted_address": "Krossener Str. 15, 10245 Berlin, Germany",
+    "location": { "lat": 52.5106054, "lng": 13.4571422 },
+    "rating": 4.7
+  },
+  {
+    "name": "Al Teatro",
+    "formatted_address": "Am Ostbahnhof 9, 10243 Berlin, Germany",
+    "location": { "lat": 52.50991029999999, "lng": 13.4342941 },
+    "rating": 3.8
+  }
+]
