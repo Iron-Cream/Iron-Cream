@@ -1,5 +1,5 @@
-const app = require('express').Router();
-const Marker = require('../models/Marker');
+// const app = require('express').Router();
+// const Marker = require('../models/Marker');
 
 let map, infoWindow;
 
@@ -13,7 +13,7 @@ function initAutocomplete() {
   const locationButton = document.createElement('button');
   locationButton.textContent = 'Go to Current Location';
   locationButton.classList.add('custom-map-control-button');
-  map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+  map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(locationButton);
   locationButton.addEventListener('click', () => {
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
@@ -41,7 +41,7 @@ function initAutocomplete() {
   // Create the search box and link it to the UI element.
   const input = document.getElementById('pac-input');
   const searchBox = new google.maps.places.SearchBox(input);
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+  map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
   // Bias the SearchBox results towards current map's viewport.
   map.addListener('bounds_changed', () => {
     searchBox.setBounds(map.getBounds());
@@ -68,17 +68,18 @@ function initAutocomplete() {
         return;
       }
       const icon = {
-        url: place.icon,
-        size: new google.maps.Size(71, 71),
+        // url: place.icon,
+        url: './images/ice-cream-iconx50.png',
+        size: new google.maps.Size(50, 75),
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(17, 34),
-        scaledSize: new google.maps.Size(25, 25),
+        scaledSize: new google.maps.Size(50, 75),
       };
       // Create a marker for each place.
       markers.push(
         new google.maps.Marker({
           map,
-          icon: './images/ice-cream-icon.png',
+          icon,
           title: place.name,
           position: place.geometry.location,
         }),
@@ -91,6 +92,11 @@ function initAutocomplete() {
         bounds.extend(place.geometry.location);
       }
     });
+
+    // infoWindow.setPosition(pos);
+    // infoWindow.setContent('Test');
+    // infoWindow.open(map);
+
     console.log(markers);
     map.fitBounds(bounds);
   });
