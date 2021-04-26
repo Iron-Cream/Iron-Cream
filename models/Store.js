@@ -4,7 +4,16 @@ const storeSchema = new Schema({
   name: String,
   description: String,
   picture: String,
-  location: { type: { type: String }, coordinates: [Number] },
+  address: String,
+  location: {
+    type: {
+      type: String,
+      default: 'Point',
+    },
+    coordinates: [Number],
+  },
+  address: String,
+  id: String,
 });
 
 storeSchema.index({ location: '2dsphere' });

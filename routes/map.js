@@ -6,7 +6,12 @@ app.get('/map', (req, res) => {
 });
 
 app.post('/map', (req, res, next) => {
-  Store.create({ description })
+  console.log('this is the log:', req.body);
+  const { name, lat, lng } = req.body;
+  Store.create({
+    name,
+    location: { type: 'Point', coordinates: [lat, lng] },
+  })
     .then(() => {
       res.redirect('map');
     })
