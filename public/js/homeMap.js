@@ -1,4 +1,4 @@
-let map, infoWindow, storeInfo;
+let map, locateWindow;
 let markers = [];
 
 function homeMap() {
@@ -7,9 +7,10 @@ function homeMap() {
     zoom: 10,
   });
   getMapData();
+  centerToCurrentLocation();
 }
 
-function getMapData() {
+const getMapData = () => {
   axios
     // get JSON data
     .get('/mapdata')
@@ -63,4 +64,36 @@ function getMapData() {
     .catch((error) => {
       console.log(error);
     });
-}
+};
+
+const centerToCurrentLocation = () => {
+  locateWindow = new google.maps.InfoWindow();
+  const locationButton = document.createElement('button');
+  locationButton.textContent = 'Go to Current Location';
+  locationButton.classList.add('custom-map-control-button');
+  map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(locationButton);
+  locationButton.addEventListener('click', () => {
+    console.log('clicked');
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          };
+          locateWindow.setPosition(pos);
+          locateWindow.setContent('Location found.');
+          locateWindow.open(map);
+          map.setCenter(pos);
+        },
+        () => {
+          handleLocationError(true, locateWindow, map.getCenter());
+        },
+      );
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, locateWindow, map.getCenter());
+    }
+  });
+};
