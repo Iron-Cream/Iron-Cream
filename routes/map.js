@@ -2,10 +2,6 @@ const router = require('express').Router();
 const Store = require('../models/Store');
 const { loginCheck } = require('./middlewares');
 
-router.get('/add', loginCheck(), (req, res) => {
-  res.render('stores/add', { user: req.user });
-});
-
 router.get('/view/:id', loginCheck(), (req, res) => {
   const id = req.params.id;
   Store.findById(id)
@@ -36,12 +32,11 @@ router.get('/mapdata', (req, res) => {
   });
 });
 
-router.get('/map', (req, res) => {
-  res.render('map');
+router.get('/add', loginCheck(), (req, res) => {
+  res.render('stores/add', { user: req.user });
 });
 
-router.post('/map', (req, res, next) => {
-  console.log('this is the log:', req.body);
+router.post('/add', (req, res, next) => {
   const { name, placeId, location } = req.body;
   let lat = location.slice(1, location.indexOf(','));
   let lng = location.slice(location.indexOf(' ') + 1, location.indexOf(')'));

@@ -1,24 +1,21 @@
-let map, infoWindow, storeInfo;
+let storeInfo;
 const input = document.getElementById('pac-input');
-let markers = [];
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: { lat: 52.520008, lng: 13.404954 },
-    zoom: 10,
-  });
-
+function addStore() {
+  initMap();
+  // position search bar
   const autocomplete = new google.maps.places.Autocomplete(input);
   autocomplete.bindTo('bounds', map);
   // Specify just the place data fields that you need.
   autocomplete.setFields(['place_id', 'geometry', 'name']);
   map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
   const infowindow = new google.maps.InfoWindow();
   const infowindowContent = document.getElementById('infowindow-content');
   infowindow.setContent(infowindowContent);
 
   const icon = {
-    url: './images/ice-cream-iconx50.png',
+    url: './images/blue-creme.png',
     size: new google.maps.Size(50, 75),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(17, 34),
@@ -69,34 +66,5 @@ function initMap() {
 
     infowindow.setContent(contentString);
     infowindow.open(map, marker);
-  });
-
-  // center map on user location
-  const locationButton = document.createElement('button');
-  locationButton.textContent = 'Go to Current Location';
-  locationButton.classList.add('custom-map-control-button');
-  map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(locationButton);
-  locationButton.addEventListener('click', () => {
-    // Try HTML5 geolocation.
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const pos = {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-          };
-          infoWindow.setPosition(pos);
-          infoWindow.setContent('Location found.');
-          infoWindow.open(map);
-          map.setCenter(pos);
-        },
-        () => {
-          handleLocationError(true, infoWindow, map.getCenter());
-        },
-      );
-    } else {
-      // Browser doesn't support Geolocation
-      handleLocationError(false, infoWindow, map.getCenter());
-    }
   });
 }

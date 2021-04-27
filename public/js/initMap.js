@@ -1,7 +1,7 @@
 let map, locateWindow;
 let markers = [];
 
-function homeMap() {
+function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 52.520008, lng: 13.404954 },
     zoom: 10,
