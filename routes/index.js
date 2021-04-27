@@ -3,11 +3,22 @@ const { loginCheck } = require('./middlewares');
 const User = require('../models/User');
 const { uploader, cloudinary } = require('../config/cloudinary');
 const Store = require('../models/Store');
-// const axios = require('axios').default;
 
 /* GET home page */
 router.get('/', (req, res) => {
   res.render('index', { user: req.user });
+});
+
+router.post('/view/:id', (req, res) => {
+  const id = req.params.id;
+  Store.findById(id)
+    .then((store) => {
+      console.log(store);
+      res.render('stores/show', { store });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 });
 
 router.get('/mapdata', (req, res) => {

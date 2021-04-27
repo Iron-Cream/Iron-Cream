@@ -38,7 +38,7 @@ function getMapData() {
         // create info window
         const contentString = `<div id="marker-content">
         ${place.name}<br>
-        <form action="/map" method="POST">
+        <form action="/view/${place._id}" method="POST">
           <input type='hidden' name='name' id='name' value="${place.name}">
           <input type='hidden' name='id' id='id' value="${place._id}">
           <button type="submit" id="view">View</button>
