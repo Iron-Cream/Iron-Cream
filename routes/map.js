@@ -1,12 +1,40 @@
-const app = require('express').Router();
+const router = require('express').Router();
 const Store = require('../models/Store');
+const { loginCheck } = require('./middlewares');
 
-app.get('/map', (req, res) => {
-  res.render('map');
+router.get('/view/:id', loginCheck(), (req, res) => {
+  const id = req.params.id;
+  Store.findById(id)
+    .then((store) => {
+      res.render('stores/show', { store, user: req.user });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 });
 
-app.post('/map', (req, res, next) => {
-  console.log('this is the log:', req.body);
+router.post('/view/:id', (req, res) => {
+  const id = req.params.id;
+  Store.findById(id)
+    .then((store) => {
+      res.render('stores/show', { store, user: req.user });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+
+router.get('/mapdata', (req, res) => {
+  Store.find().then((stores) => {
+    res.send({ stores });
+  });
+});
+
+router.get('/add', loginCheck(), (req, res) => {
+  res.render('stores/add', { user: req.user });
+});
+
+router.post('/add', (req, res, next) => {
   const { name, placeId, location } = req.body;
   let lat = location.slice(1, location.indexOf(','));
   let lng = location.slice(location.indexOf(' ') + 1, location.indexOf(')'));
@@ -16,12 +44,23 @@ app.post('/map', (req, res, next) => {
     location: { type: 'Point', coordinates: { lat, lng } },
     placeId,
   })
-    .then(() => {
-      res.redirect('map');
+    .then((store) => {
+      console.log(store);
+      res.redirect(`add/${store._id}`);
     })
     .catch((error) => {
       next(error);
     });
 });
 
-module.exports = app;
+router.get('/add/:id', (req, res, next) => {
+  const id = req.params.id;
+  Store.findById(id)
+    .then((store) => {
+      res.render('stores/addOne', { store, user: req.user });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+module.exports = router;

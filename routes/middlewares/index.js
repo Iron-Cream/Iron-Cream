@@ -9,7 +9,7 @@ const loginCheck = () => {
       next();
     } else {
       res.render('auth/login', {
-        err_msg: 'User must me logged in to see the profile page',
+        err_msg: 'User must me logged in to see this page.',
       });
     }
   };
