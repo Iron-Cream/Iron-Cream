@@ -111,8 +111,10 @@ h1 {
   flex-flow: row;
   justify-content: flex-end;
   align-items: center;
+  background: darkcyan;
 }
 
 .navbar a {
   margin: 10px 30px;
+  color: white;
 }

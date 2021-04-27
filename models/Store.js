@@ -12,7 +12,6 @@ const storeSchema = new Schema({
     },
     coordinates: [Number],
   },
-  address: String,
   id: String,
 });
 
