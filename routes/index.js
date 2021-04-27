@@ -27,6 +27,8 @@ router.post(
       if (oldUser.avatar !== null) {
         cloudinary.uploader.destroy(oldUser.avatar.cloudinaryId);
       }
+
+      res.redirect('/profile');
     } catch (err) {
       next(err);
     }
