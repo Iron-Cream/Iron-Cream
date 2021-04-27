@@ -13,6 +13,12 @@ router.post('/view/:id', (req, res) => {
     });
 });
 
+router.get('/mapdata', (req, res) => {
+  Store.find().then((stores) => {
+    res.send({ stores });
+  });
+});
+
 router.get('/map', (req, res) => {
   res.render('map');
 });

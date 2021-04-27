@@ -9,12 +9,6 @@ router.get('/', (req, res) => {
   res.render('index', { user: req.user });
 });
 
-router.get('/mapdata', (req, res) => {
-  Store.find().then((stores) => {
-    res.send({ stores });
-  });
-});
-
 router.get('/profile', loginCheck(), (req, res) => {
   res.render('profile', { user: req.user });
 });
