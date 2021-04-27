@@ -8,11 +8,19 @@ const userSchema = new Schema(
       required: true,
       minLength: 3,
       maxLength: 50,
+      trim: true,
     },
     password: {
       type: String,
       required: true,
       minLength: 8,
+    },
+    email: {
+      type: String,
+      trim: true,
+      lowercase: true,
+      required: true,
+      unique: true,
     },
     role: {
       type: String,
@@ -20,7 +28,13 @@ const userSchema = new Schema(
       default: 'user',
     },
     avatar: {
-      type: String,
+      originalname: { type: String },
+      path: {
+        type: String,
+        default:
+          'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png',
+      },
+      cloudinaryId: { type: String },
     },
     favourites: [{ type: Schema.Types.ObjectId, ref: 'Store' }],
   },

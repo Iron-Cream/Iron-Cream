@@ -2,28 +2,29 @@ const router = require('express').Router();
 const bcrypt = require('bcrypt');
 const passport = require('passport');
 const User = require('../models/User');
-const { validateSignUp } = require('./middlewares');
+const { validateSignUp, notLoggedInCheck } = require('./middlewares');
 
-router.get('/signup', (req, res) => {
+router.get('/signup', notLoggedInCheck(), (req, res) => {
   res.render('auth/signup');
 });
 
 router.post('/signup', validateSignUp(), async (req, res) => {
-  const { username, password } = req.body;
+  const { username, email, password } = req.body;
 
   const salt = bcrypt.genSaltSync();
   const hash = bcrypt.hashSync(password, salt);
-  await User.create({ username, password: hash });
+  await User.create({ username, email, password: hash });
 
   // here send mail etc
 
-  res.render(
-    'auth/login',
-    { msg: 'Sign Up successfull!' } /*, { fromSignUp: true }*/,
-  );
+  res.render('auth/login', {
+    msg: 'You Signed Up Successfully!',
+    justSignedUp:
+      "Validate your account thorough the link we've send you to your email account (not yet implemented)",
+  });
 });
 
-router.get('/login', (req, res) => {
+router.get('/login', notLoggedInCheck(), (req, res) => {
   res.render('auth/login');
 });
 
@@ -33,12 +34,13 @@ router.post(
     successRedirect: '/profile',
     failureRedirect: '/login',
     passReqToCallback: true,
+    failureFlash: true,
   }),
 );
 
-// router.get('/logout', (req, res) => {
-//   req.logout();
-//   res.redirect('/');
-// });
+router.get('/logout', (req, res) => {
+  req.logout();
+  res.redirect('/');
+});
 
 module.exports = router;

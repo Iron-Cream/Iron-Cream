@@ -15,6 +15,16 @@ const loginCheck = () => {
   };
 };
 
+const notLoggedInCheck = () => {
+  return (req, res, next) => {
+    if (!req.isAuthenticated()) {
+      next();
+    } else {
+      res.redirect('/profile');
+    }
+  };
+};
+
 const validateSignUp = () => {
   return async (req, res, next) => {
     try {
@@ -55,4 +65,5 @@ const validateSignUp = () => {
 module.exports = {
   loginCheck,
   validateSignUp,
+  notLoggedInCheck,
 };

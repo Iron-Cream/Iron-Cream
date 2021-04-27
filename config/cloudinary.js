@@ -11,8 +11,8 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
-    folder: 'movie-app',
-    allowed_formats: 'jpg, png',
+    folder: 'iron-cream',
+    allowed_formats: 'jpg, jpeg, png, gif',
   },
 });
 
