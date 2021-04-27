@@ -26,7 +26,7 @@ const storeSchema = new Schema(
         lng: Number,
       },
     },
-    placesId: String,
+    placeId: String,
     comments: [
       {
         user: {
