@@ -9,18 +9,6 @@ router.get('/', (req, res) => {
   res.render('index', { user: req.user });
 });
 
-router.post('/view/:id', (req, res) => {
-  const id = req.params.id;
-  Store.findById(id)
-    .then((store) => {
-      console.log(store);
-      res.render('stores/show', { store });
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-});
-
 router.get('/mapdata', (req, res) => {
   Store.find().then((stores) => {
     res.send({ stores });

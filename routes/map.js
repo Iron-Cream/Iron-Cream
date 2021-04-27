@@ -1,6 +1,18 @@
 const app = require('express').Router();
 const Store = require('../models/Store');
 
+router.post('/view/:id', (req, res) => {
+  const id = req.params.id;
+  Store.findById(id)
+    .then((store) => {
+      console.log(store);
+      res.render('stores/show', { store });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+
 app.get('/map', (req, res) => {
   res.render('map');
 });
