@@ -1,6 +1,10 @@
 const router = require('express').Router();
 const Store = require('../models/Store');
 
+router.get('/add', (req, res) => {
+  res.render('stores/add');
+});
+
 router.post('/view/:id', (req, res) => {
   const id = req.params.id;
   Store.findById(id)
