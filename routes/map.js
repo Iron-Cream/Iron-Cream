@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const Store = require('../models/Store');
+const { loginCheck } = require('./middlewares');
 
-router.get('/add', (req, res) => {
+router.get('/add', loginCheck(), (req, res) => {
   res.render('stores/add');
 });
 
