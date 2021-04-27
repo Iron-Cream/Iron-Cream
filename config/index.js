@@ -9,6 +9,7 @@ const MongoStore = require('connect-mongo');
 const User = require('../models/User');
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcrypt');
+const hbs = require('hbs');
 
 // Middleware configuration
 module.exports = (app) => {
@@ -18,6 +19,7 @@ module.exports = (app) => {
   app.use(cookieParser());
   app.set('views', path.join(__dirname, '..', 'views'));
   app.set('view engine', 'hbs');
+  hbs.registerPartials(__dirname + '/../views/partials');
   console.log({ directory: __dirname + '/..' + '/public' });
   app.use(express.static(path.join(__dirname, '..', 'public')));
   app.use(
