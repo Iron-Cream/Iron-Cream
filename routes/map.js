@@ -1,4 +1,4 @@
-const app = require('express').Router();
+const router = require('express').Router();
 const Store = require('../models/Store');
 
 router.post('/view/:id', (req, res) => {
@@ -13,11 +13,11 @@ router.post('/view/:id', (req, res) => {
     });
 });
 
-app.get('/map', (req, res) => {
+router.get('/map', (req, res) => {
   res.render('map');
 });
 
-app.post('/map', (req, res, next) => {
+router.post('/map', (req, res, next) => {
   console.log('this is the log:', req.body);
   const { name, placeId, location } = req.body;
   let lat = location.slice(1, location.indexOf(','));
@@ -36,4 +36,4 @@ app.post('/map', (req, res, next) => {
     });
 });
 
-module.exports = app;
+module.exports = router;
