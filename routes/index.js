@@ -3,11 +3,12 @@ const { loginCheck } = require('./middlewares');
 const User = require('../models/User');
 const { uploader, cloudinary } = require('../config/cloudinary');
 const Store = require('../models/Store');
-const axios = require('axios').default;
+// const axios = require('axios').default;
 
 /* GET home page */
 router.get('/', (req, res) => {
   res.render('index', { user: req.user });
+});
 
 router.get('/mapdata', (req, res) => {
   Store.find().then((stores) => {
@@ -25,7 +26,22 @@ router.post(
   uploader.single('pic'),
   async (req, res, next) => {
     try {
-      const { filename: cloudinaryId, path, originalname } = req.file;
+      if (typeof req.file === 'undefined') {
+        res.render('profile', {
+          user: req.user,
+          err_msg: "You haven't selected any image",
+        });
+        return;
+      }
+
+      let { filename: cloudinaryId, path, originalname } = req.file;
+
+      path = cloudinary.url(cloudinaryId, {
+        gravity: 'face',
+        height: 200,
+        width: 200,
+        crop: 'thumb',
+      });
 
       const oldUser = await User.findByIdAndUpdate(req.params.id, {
         avatar: { cloudinaryId, path, originalname },

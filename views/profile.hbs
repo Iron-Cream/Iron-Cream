@@ -6,6 +6,10 @@
 <img class="profile-pic" src="{{ user.avatar.path }}" alt="" />
 {{/if}}
 
+{{#if err_msg}}
+<p class="warning">{{ err_msg }}</p>
+{{/if}}
+
 <form
   action="/new-pic/{{ user._id }}"
   method="post"
