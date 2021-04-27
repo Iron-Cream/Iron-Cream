@@ -8,13 +8,14 @@ const storeSchema = new Schema(
       required: true,
       minLength: 3,
     },
-    description: String,
+    description: {
+      type: String,
+    },
     picture: {
       picPath: String,
     },
     address: {
       type: String,
-      minLength: 10,
     },
     location: {
       type: {
@@ -26,7 +27,7 @@ const storeSchema = new Schema(
         lng: Number,
       },
     },
-    placesId: String,
+    placeId: String,
     comments: [
       {
         user: {
