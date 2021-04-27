@@ -118,3 +118,15 @@ h1 {
   margin: 10px 30px;
   color: white;
 }
+
+.profile-pic {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.profile-logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
