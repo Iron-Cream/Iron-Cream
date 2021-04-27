@@ -19,7 +19,7 @@ router.post('/signup', validateSignUp(), async (req, res) => {
 
   res.render(
     'auth/login',
-    { msg: 'Sign Up successfull!' } /*, { fromSignUp: true }*/,
+    { msg: 'You Signed Up Successfully!' } /*, { fromSignUp: true }*/,
   );
 });
 
@@ -36,9 +36,9 @@ router.post(
   }),
 );
 
-// router.get('/logout', (req, res) => {
-//   req.logout();
-//   res.redirect('/');
-// });
+router.get('/logout', (req, res) => {
+  req.logout();
+  res.redirect('/');
+});
 
 module.exports = router;
