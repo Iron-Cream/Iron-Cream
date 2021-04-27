@@ -3,7 +3,19 @@ const Store = require('../models/Store');
 const { loginCheck } = require('./middlewares');
 
 router.get('/add', loginCheck(), (req, res) => {
-  res.render('stores/add');
+  res.render('stores/add', { user: req.user });
+});
+
+router.get('/view/:id', loginCheck(), (req, res) => {
+  const id = req.params.id;
+  Store.findById(id)
+    .then((store) => {
+      console.log(store);
+      res.render('stores/show', { store, user: req.user });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 });
 
 router.post('/view/:id', (req, res) => {
@@ -11,7 +23,7 @@ router.post('/view/:id', (req, res) => {
   Store.findById(id)
     .then((store) => {
       console.log(store);
-      res.render('stores/show', { store });
+      res.render('stores/show', { store, user: req.user });
     })
     .catch((error) => {
       console.log(error);
