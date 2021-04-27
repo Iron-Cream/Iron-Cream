@@ -3,7 +3,6 @@ const { loginCheck } = require('./middlewares');
 const User = require('../models/User');
 const { uploader, cloudinary } = require('../config/cloudinary');
 const Store = require('../models/Store');
-// const axios = require('axios').default;
 
 /* GET home page */
 router.get('/', (req, res) => {
