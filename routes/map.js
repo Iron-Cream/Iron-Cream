@@ -7,10 +7,14 @@ app.get('/map', (req, res) => {
 
 app.post('/map', (req, res, next) => {
   console.log('this is the log:', req.body);
-  const { name, lat, lng } = req.body;
+  const { name, placeId, location } = req.body;
+  let lat = location.slice(1, location.indexOf(','));
+  let lng = location.slice(location.indexOf(' ') + 1, location.indexOf(')'));
+
   Store.create({
     name,
-    location: { type: 'Point', coordinates: [lat, lng] },
+    location: { type: 'Point', coordinates: { lat, lng } },
+    placeId,
   })
     .then(() => {
       res.redirect('map');
