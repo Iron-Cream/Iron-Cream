@@ -2,9 +2,9 @@ const router = require('express').Router();
 const bcrypt = require('bcrypt');
 const passport = require('passport');
 const User = require('../models/User');
-const { validateSignUp } = require('./middlewares');
+const { validateSignUp, notLoggedInCheck } = require('./middlewares');
 
-router.get('/signup', (req, res) => {
+router.get('/signup', notLoggedInCheck(), (req, res) => {
   res.render('auth/signup');
 });
 
@@ -23,7 +23,7 @@ router.post('/signup', validateSignUp(), async (req, res) => {
   );
 });
 
-router.get('/login', (req, res) => {
+router.get('/login', notLoggedInCheck(), (req, res) => {
   res.render('auth/login');
 });
 
