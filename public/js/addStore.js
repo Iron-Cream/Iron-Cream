@@ -54,9 +54,9 @@ function addStore() {
 
     marker.setVisible(true);
 
-    const contentString = `<div id="marker-content">
+    const addString = `<div id="marker-content">
     ${place.name}<br>
-    <form action="/map" method="POST">
+    <form action="/add" method="POST">
       <input type='hidden' name='name' id='name' value="${place.name}">
       <input type='hidden' name='placeId' id='placeId' value="${place.place_id}">
       <input type='hidden' name='location' id='location' value="${place.geometry.location}">
@@ -64,7 +64,7 @@ function addStore() {
     </form>
     </div>`;
 
-    infowindow.setContent(contentString);
+    infowindow.setContent(addString);
     infowindow.open(map, marker);
   });
 }

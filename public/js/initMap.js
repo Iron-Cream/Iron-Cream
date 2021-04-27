@@ -37,7 +37,7 @@ const getMapData = () => {
         });
 
         // create info window
-        const contentString = `<div id="marker-content">
+        const infoString = `<div id="marker-content">
         ${place.name}<br>
         <form action="/view/${place._id}" method="POST">
           <input type='hidden' name='name' id='name' value="${place.name}">
@@ -47,7 +47,7 @@ const getMapData = () => {
         </div>`;
 
         marker.infowindow = new google.maps.InfoWindow();
-        marker.infowindow.setContent(contentString);
+        marker.infowindow.setContent(infoString);
 
         marker.addListener('click', () => {
           // close all open infowindows

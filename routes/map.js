@@ -6,7 +6,6 @@ router.get('/view/:id', loginCheck(), (req, res) => {
   const id = req.params.id;
   Store.findById(id)
     .then((store) => {
-      console.log(store);
       res.render('stores/show', { store, user: req.user });
     })
     .catch((error) => {
@@ -18,7 +17,6 @@ router.post('/view/:id', (req, res) => {
   const id = req.params.id;
   Store.findById(id)
     .then((store) => {
-      console.log(store);
       res.render('stores/show', { store, user: req.user });
     })
     .catch((error) => {
@@ -46,12 +44,23 @@ router.post('/add', (req, res, next) => {
     location: { type: 'Point', coordinates: { lat, lng } },
     placeId,
   })
-    .then(() => {
-      res.redirect('map');
+    .then((store) => {
+      console.log(store);
+      res.redirect(`add/${store._id}`);
     })
     .catch((error) => {
       next(error);
     });
 });
 
+router.get('/add/:id', (req, res, next) => {
+  const id = req.params.id;
+  Store.findById(id)
+    .then((store) => {
+      res.render('stores/addOne', { store, user: req.user });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
 module.exports = router;
