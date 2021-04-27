@@ -1,0 +1,12 @@
+<nav class="navbar">
+  <a href="/map">Map</a>
+
+  {{#if user}}
+  <a href="/profile">
+    <img class="profile-logo" src="{{ user.avatar.path }}" alt="profile" />
+  </a>
+  {{else}}
+  <a href="/login">Log In</a>
+  <a href="/signup">Sign Up</a>
+  {{/if}}
+</nav>

@@ -1,10 +1,20 @@
+{{> navbar user=user}}
+
 <h1>Hello, {{ user.username }}, you're logged in!</h1>
 
-<img class="profile-pic" src="{{ user.avatar }}" alt="" />
+{{#if user.avatar }}
+<img class="profile-pic" src="{{ user.avatar.path }}" alt="" />
+{{/if}}
 
-<form action="/new-pic" method="post" enctype="multipart/form-data">
-  <label for="pic">Upload new avatar pic: </label>
+<form
+  action="/new-pic/{{ user._id }}"
+  method="post"
+  enctype="multipart/form-data"
+>
+  <label for="pic">Upload new profile pic: </label>
   <input type="file" name="pic" id="pic" />
+
+  <button type="submit">Upload Profile Pic</button>
 </form>
 
 <a href="/">
