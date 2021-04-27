@@ -112,6 +112,7 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   background: darkcyan;
+  height: 50px;
 }
 
 .navbar a {

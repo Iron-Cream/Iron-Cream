@@ -10,12 +10,14 @@
 <p class="success">{{ msg }}</p>
 {{/if}}
 
-<!-- {{#if fromSignUp}}
-<p>Validate your account thorough the link we've send you to your email account</p>
-{{/if}} -->
+{{#if justSignedUp}}
+<p>
+  {{ justSignedUp }}
+</p>
+{{/if}}
 
 <form action="/login" method="post">
-  <label for="username">Username: </label>
+  <label for="username">Username/Email: </label>
   <input type="text" name="username" id="username" />
 
   <label for="password">Password: </label>
