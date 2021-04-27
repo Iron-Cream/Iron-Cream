@@ -9,6 +9,12 @@ router.get('/', (req, res) => {
   res.render('index', { user: req.user });
 });
 
+router.get('/mapdata', (req, res) => {
+  Store.find().then((stores) => {
+    res.send({ stores });
+  });
+});
+
 router.get('/profile', loginCheck(), (req, res) => {
   res.render('profile', { user: req.user });
 });
@@ -19,7 +25,22 @@ router.post(
   uploader.single('pic'),
   async (req, res, next) => {
     try {
-      const { filename: cloudinaryId, path, originalname } = req.file;
+      if (typeof req.file === 'undefined') {
+        res.render('profile', {
+          user: req.user,
+          err_msg: "You haven't selected any image",
+        });
+        return;
+      }
+
+      let { filename: cloudinaryId, path, originalname } = req.file;
+
+      path = cloudinary.url(cloudinaryId, {
+        gravity: 'face',
+        height: 200,
+        width: 200,
+        crop: 'thumb',
+      });
 
       const oldUser = await User.findByIdAndUpdate(req.params.id, {
         avatar: { cloudinaryId, path, originalname },

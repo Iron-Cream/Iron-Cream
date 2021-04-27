@@ -33,19 +33,20 @@ module.exports = (app) => {
   });
 
   passport.use(
-    new LocalStrategy((username, password, done) => {
-      User.findOne({ username: username })
-        .then((user) => {
-          if (user === null || !bcrypt.compareSync(password, user.password)) {
-            console.log({ username, password });
-            console.log(user);
-            done(null, false, { err_msg: 'Wrong Credentials' });
-          } else {
-            console.log(user);
-            done(null, user);
-          }
-        })
-        .catch((err) => done(err));
+    new LocalStrategy(async (username, password, done) => {
+      try {
+        const user =
+          (await User.findOne({ username })) ||
+          (await User.findOne({ email: username }));
+
+        if (user === null || !bcrypt.compareSync(password, user.password)) {
+          done(null, false, { err_msg: 'Wrong Credentials' });
+        } else {
+          done(null, user);
+        }
+      } catch (err) {
+        done(err);
+      }
     }),
   );
 
