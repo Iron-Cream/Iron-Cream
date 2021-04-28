@@ -13,13 +13,23 @@ header {
   justify-content: center;
 }
 
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+#logo {
+  max-width: 150px;
+  height: auto;
+}
+
 .title {
   margin-top: 10px;
   margin-bottom: 0px;
 }
 
 .subtitle {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 ul#opening-hours {
