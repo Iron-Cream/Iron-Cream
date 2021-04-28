@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  padding: 0px;
+  padding: 50px 0 0;
   font: 16px 'Roboto', Helvetica, Arial, sans-serif;
   background: #008c8c;
 }
@@ -15,6 +15,10 @@ h1 {
 
 .success {
   color: green;
+}
+
+.content {
+  padding: 20px;
 }
 
 a,
