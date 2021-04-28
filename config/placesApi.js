@@ -12,4 +12,10 @@ const getDetails = async (placeid) => {
   }
 };
 
-module.exports = getDetails;
+const getPhotoUrl = (id, width = 400) => {
+  let url = `https://maps.googleapis.com/maps/api/place/photo?`;
+  url += `maxwidth=${width}&photoreference=${id}&key=${process.env.GOOGLE_PLACES_API_KEY}`;
+  return url;
+};
+
+module.exports = { getDetails, getPhotoUrl };

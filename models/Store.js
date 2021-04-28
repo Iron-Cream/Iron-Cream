@@ -12,9 +12,9 @@ const storeSchema = new Schema(
     description: {
       type: String,
     },
-    // picture: {
-    //   picPath: String,
-    // },
+    pictureId: {
+      type: String,
+    },
     address: {
       type: String,
     },
