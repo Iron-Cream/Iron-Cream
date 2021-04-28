@@ -137,7 +137,7 @@ const addStore = () => {
   autocomplete.addListener('place_changed', () => {
     infowindow.close();
     const place = autocomplete.getPlace();
-    console.log(place);
+    // console.log(place);
 
     if (!place.geometry || !place.geometry.location) {
       return;
@@ -156,9 +156,10 @@ const addStore = () => {
     });
 
     marker.setVisible(true);
+    // let storeInfo = getStoreInfo(place.place_id);
+    // console.log(storeInfo);
 
-    const addString = `<div id="marker-content">
-    ${place.name}<br>
+    const addString = `<div id="marker-content">${place.name}<br>
     <form action="/" method="POST">
       <input type='hidden' name='name' id='name' value="${place.name}">
       <input type='hidden' name='placeId' id='placeId' value="${place.place_id}">
@@ -171,3 +172,30 @@ const addStore = () => {
     infowindow.open(map, marker);
   });
 };
+
+// const getStoreInfo = (id) => {
+//   let request = {
+//     placeId: `${id}`,
+//     fields: [
+//       'name',
+//       'rating',
+//       'formatted_phone_number',
+//       'geometry',
+//       'formatted_address',
+//       'types',
+//       'photos',
+//     ],
+//   };
+
+//   let service = new google.maps.places.PlacesService(map);
+//   service.getDetails(request, callback).then((res) => {
+//     console.log(res);
+//   });
+
+//   function callback(place, status) {
+//     if (status == google.maps.places.PlacesServiceStatus.OK) {
+//       console.log(place);
+//       return place;
+//     }
+//   }
+// };
