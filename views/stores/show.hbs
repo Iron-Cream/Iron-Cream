@@ -1,5 +1,26 @@
 <div class="content">
     {{#with store}}
-    <h1>{{name}}</h1>
+        <h1>{{name}}</h1>
+        <p>{{address}}</p>
+        <p>{{price_level}}</p>
+        {{#if opening_hours}}
+            <p>Opening hours:</p>
+            <ul>
+            {{#each opening_hours}}
+                <li>{{this}}</li>
+            {{/each}}
+            </ul>
+        {{/if}}
+            <p>Comments:</p>
+            {{#if comments}}
+            <ul>
+            {{#each comments}}
+                <li>{{this}}</li>
+            {{/each}}
+            </ul>
+            {{else}}
+            There are no comments yet.
+        {{/if}}
+
     {{/with}}
 </div>

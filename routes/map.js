@@ -25,7 +25,7 @@ router.get('/view/:id', loginCheck(), (req, res) => {
     });
 });
 
-router.get('/deleteiew/:id', loginCheck(), (req, res) => {
+router.get('/delete/:id', loginCheck(), (req, res) => {
   const id = req.params.id;
   Store.findById(id)
     .then((store) => {
@@ -35,7 +35,7 @@ router.get('/deleteiew/:id', loginCheck(), (req, res) => {
       console.log(error);
     });
 });
-    
+
 router.post('/add', async (req, res, next) => {
   try {
     const { placeId, comments } = req.body;
