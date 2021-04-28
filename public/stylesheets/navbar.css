@@ -1,0 +1,41 @@
+nav {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  background: #007373;
+  height: 50px;
+  justify-content: space-between;
+  padding: 5px 50px;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 20vw;
+  justify-content: space-around;
+}
+
+.home {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.home-icon {
+  background-color: white;
+  border-radius: 35px;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}

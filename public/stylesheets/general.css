@@ -1,0 +1,25 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font: 16px 'Roboto', Helvetica, Arial, sans-serif;
+  background: #008c8c;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.warning {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+a,
+a:visited {
+  color: white;
+  text-decoration: none;
+}

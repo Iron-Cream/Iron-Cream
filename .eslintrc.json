@@ -11,6 +11,7 @@
   },
   "globals": {
     "google": true,
-    "handleLocationError": true
+    "handleLocationError": true,
+    "axios": true
   }
 }

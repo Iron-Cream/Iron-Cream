@@ -1,14 +1,21 @@
-<nav class="navbar">
-  <a href="/">Home</a>
-
-  {{#if user}}
-  <a href="/add">Add a store</a>
-  <a href="/logout">Log Out</a>
-  <a href="/profile">
-    <img class="profile-logo" src="{{ user.avatar.path }}" alt="profile" />
-  </a>
-  {{else}}
-  <a href="/login">Log In</a>
-  <a href="/signup">Sign Up</a>
-  {{/if}}
+<nav>
+  <div class="container home">
+    <a href="/">
+      <div class="home-icon">
+        <img src="/images/home.png" alt="Home" height="30px" />
+      </div>
+    </a>
+  </div>
+  <div class="container nav">
+    {{#if user}}
+    <a href="/add">Add a store</a>
+    <a href="/logout">Log Out</a>
+    <a href="/profile">
+      <img class="profile-logo" src="{{ user.avatar.path }}" alt="profile" />
+    </a>
+    {{else}}
+    <a href="/login">Log In</a>
+    <a href="/signup">Sign Up</a>
+    {{/if}}
+  </div>
 </nav>

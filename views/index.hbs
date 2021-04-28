@@ -1,11 +1,13 @@
-<h1>{{ title }} 🚀🍦</h1>
-<p>Find yummy ice cream near you!</p>
-<div id="map">
-</div>
+<header>
+  <h1 class="title">{{ title }} 🍦</h1>
+  <h3 class="subtitle">The yummiest ice cream nearby!</h3>
+</header>
+
+<div id="map"></div>
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-nkt-AFBdEkiczYwvWRG3p-fW4adJHHY&callback=initMap&libraries=places&v=weekly"
-    async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-nkt-AFBdEkiczYwvWRG3p-fW4adJHHY&callback=initMap&libraries=places&v=weekly"
+  async
 ></script>
 <script type="text/javascript" src="/js/initMap.js"></script>
