@@ -34,13 +34,21 @@ router.get('/view/:id', loginCheck(), (req, res) => {
 
 router.get('/delete/:id', loginCheck(), (req, res) => {
   const id = req.params.id;
-  Store.findById(id)
-    .then((store) => {
-      res.redirect('/profile');
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+  const user = req.user._id;
+  Store.findById(id).then((store) => {
+    if (store.created_by.equals(user)) {
+      Store.findOneAndRemove({ _id: id })
+        .then(() => {
+          console.log('removed!');
+          res.redirect('/profile');
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    } else {
+      console.log('no match!');
+    }
+  });
 });
 
 router.post('/add', async (req, res, next) => {
