@@ -27,7 +27,6 @@ router.get('/view/:id', loginCheck(), (req, res) => {
 router.post('/add', async (req, res, next) => {
   try {
     const { placeId, comments } = req.body;
-
     const place = await getDetails(placeId);
     const {
       formatted_address: address,
@@ -36,9 +35,7 @@ router.post('/add', async (req, res, next) => {
       opening_hours: { weekday_text: opening_hours },
       price_level,
     } = place;
-
     // console.log(place.photos[0])
-    console.log({ address, name, location, opening_hours });
 
     await Store.create({
       placeId,

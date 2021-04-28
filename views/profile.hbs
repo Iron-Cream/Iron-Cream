@@ -1,24 +1,28 @@
-<h1>Hello, {{ user.username }}, you're logged in!</h1>
+<div class="content">
+  <h1>Hello, {{ user.username }}, you're logged in!</h1>
 
-{{#if user.avatar }}
-<img class="profile-pic" src="{{ user.avatar.path }}" alt="" />
-{{/if}}
+  {{#if user.avatar }}
+  <img class="profile-pic" src="{{ user.avatar.path }}" alt="" />
+  {{/if}}
 
-{{#if err_msg}}
-<p class="warning">{{ err_msg }}</p>
-{{/if}}
+  {{#if err_msg}}
+  <p class="warning">{{ err_msg }}</p>
+  {{/if}}
 
-<form
-  action="/new-pic/{{ user._id }}"
-  method="post"
-  enctype="multipart/form-data"
->
-  <label for="pic">Upload new profile pic: </label>
-  <input type="file" name="pic" id="pic" />
+  <form
+    action="/new-pic/{{ user._id }}"
+    method="post"
+    enctype="multipart/form-data"
+  >
+    <label for="pic">Upload new profile pic: </label>
+    <input type="file" name="pic" id="pic" />
 
-  <button type="submit">Upload Profile Pic</button>
-</form>
+    <button type="submit">Upload Profile Pic</button>
+  </form>
 
-<a href="/">
-  <button>Back to Map</button>
-</a>
+  <h2>Your upload history:</h2>
+
+  <a href="/">
+    <button>Back to Map</button>
+  </a>
+</div>
