@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const Store = require('../models/Store');
+const User = require('../models/User');
 const { loginCheck } = require('./middlewares');
 const getDetails = require('../config/placesApi');
 
@@ -24,6 +25,17 @@ router.get('/view/:id', loginCheck(), (req, res) => {
     });
 });
 
+router.get('/deleteiew/:id', loginCheck(), (req, res) => {
+  const id = req.params.id;
+  Store.findById(id)
+    .then((store) => {
+      res.redirect('/profile');
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+    
 router.post('/add', async (req, res, next) => {
   try {
     const { placeId, comments } = req.body;
