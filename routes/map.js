@@ -2,6 +2,12 @@ const router = require('express').Router();
 const Store = require('../models/Store');
 const { loginCheck } = require('./middlewares');
 
+router.get('/mapdata', (req, res) => {
+  Store.find().then((stores) => {
+    res.send({ stores });
+  });
+});
+
 router.get('/view/:id', loginCheck(), (req, res) => {
   const id = req.params.id;
   Store.findById(id)
@@ -24,43 +30,20 @@ router.post('/view/:id', (req, res) => {
     });
 });
 
-router.get('/mapdata', (req, res) => {
-  Store.find().then((stores) => {
-    res.send({ stores });
-  });
-});
-
-router.get('/add', loginCheck(), (req, res) => {
-  res.render('stores/add', { user: req.user });
-});
-
-router.post('/add', (req, res, next) => {
-  const { name, placeId, location } = req.body;
-  let lat = location.slice(1, location.indexOf(','));
-  let lng = location.slice(location.indexOf(' ') + 1, location.indexOf(')'));
-
-  Store.create({
-    name,
-    location: { type: 'Point', coordinates: { lat, lng } },
-    placeId,
-  })
-    .then((store) => {
-      console.log(store);
-      res.redirect(`add/${store._id}`);
-    })
-    .catch((error) => {
-      next(error);
-    });
-});
-
 router.get('/add/:id', (req, res, next) => {
   const id = req.params.id;
   Store.findById(id)
     .then((store) => {
-      res.render('stores/addOne', { store, user: req.user });
+      res.render('stores/add', { store, user: req.user });
     })
     .catch((error) => {
       console.log(error);
     });
 });
+
+router.post('/add/:id', (req, res, next) => {
+  // Store.findOneAndUpdate
+  // res.redirect('/');
+});
+
 module.exports = router;
