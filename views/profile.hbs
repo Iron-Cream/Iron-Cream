@@ -22,18 +22,28 @@
 
   <h2>Your upload history:</h2>
   {{#if stores}}
+  <div id="store-list">
     {{#each stores}}
-    <div class="store-card">
-      <p>{{name}}</p>
-      {{!-- <img src="" alt=""> --}}
-      <a href="/view/{{_id}}">View</a>
-      <a href="#">Edit</a>
-      <a href="/delete/{{_id}}">Delete</a>
-    </div>
+    <section>
+      <div class="top-box">
+        <img src="{{#if picUrl}}{{picUrl}}{{else}}{{pictureId}}{{/if}}" alt="picture of {{title}}" />
+      </div>
+      <div class="bottom-box">
+        <p class="store-name">{{name}}</p>
+        <p class="store-address">{{address}}</p>
+        <div class="buttons">
+          <a class="button" href="/view/{{_id}}">View</a>
+          {{!-- <a href="#">Edit</a> --}}
+          <a class="button" href="/delete/{{_id}}">Delete</a>
+        </div>
+      </div>
+    </section>
     {{/each}}
+  </div>
   {{else}}
-  You haven't submitted any stores yet.
+  You haven't uploaded anything yet.
   {{/if}}
+
   <a href="/">
     Back to Map
   </a>

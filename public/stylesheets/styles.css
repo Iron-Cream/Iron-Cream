@@ -16,6 +16,7 @@ header {
 footer {
   text-align: center;
   padding: 10px;
+  background-color: #007373;
 }
 
 #logo {
@@ -90,4 +91,136 @@ ul#opening-hours {
 #comment-list section .bottom-box .test-details {
   text-align: center;
   font-weight: 500;
+}
+
+#store-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 20px 0;
+  width: 100%;
+}
+
+#store-list section {
+  background-color: #d4d4d4;
+  margin: 10px 10px 30px;
+  width: calc((100% / 4) - 20px);
+  max-width: 300px;
+  border: 3px solid #b18597;
+  border-radius: 15px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+}
+#store-list section .top-box {
+  width: 100%;
+  height: 140px;
+}
+#store-list section img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#store-list section .bottom-box {
+  width: 100%;
+  padding: 10px 10px 20px;
+  height: auto;
+}
+#store-list section .bottom-box p {
+  padding: 5px 0;
+  margin: 0;
+}
+
+#store-list section .bottom-box p.store-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+#store-list section .bottom-box p.store-address {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: dimgray;
+}
+#store-list a {
+  display: block;
+}
+
+.bottom-box .buttons {
+  display: flex;
+}
+
+.bottom-box .button {
+  width: 50%;
+  margin: 10px;
+}
+
+.button {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 0.6rem 1rem;
+  background: #fff0f0;
+  border: 2px solid #b18597;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.button:visited {
+  color: #000;
+}
+.button::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f9c4d2;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.button:hover {
+  background: #ffe9e9;
+  transform: translate(0, 0.25em);
+}
+.button:hover::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.5em, -1em);
+}
+.button:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em);
+}
+.button:active::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  transform: translate3d(0, 0, -1em);
+}
+
+@media (min-width: 501px) and (max-width: 1100px) {
+  #store-list section {
+    width: calc((100% / 2) - 20px);
+  }
+}
+
+@media (max-width: 500px) {
+  #store-list section {
+    width: 100%;
+  }
 }
