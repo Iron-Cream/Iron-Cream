@@ -5,7 +5,9 @@ nav {
   background: #007373;
   height: 50px;
   justify-content: space-between;
-  padding: 5px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
   color: #fff;
 }
 
@@ -16,6 +18,7 @@ nav {
   justify-content: flex-end;
   width: 20vw;
   justify-content: space-around;
+  margin-right: 1em;
 }
 
 .home {
@@ -23,6 +26,7 @@ nav {
   flex-flow: row;
   align-items: center;
   justify-content: flex-start;
+  margin-left: 1em;
 }
 
 .home-icon {
