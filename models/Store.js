@@ -2,6 +2,7 @@ const { Schema, model } = require('mongoose');
 
 const storeSchema = new Schema(
   {
+    placeId: String,
     name: {
       type: String,
       unique: true,
@@ -15,9 +16,9 @@ const storeSchema = new Schema(
     description: {
       type: String,
     },
-    picture: {
-      picPath: String,
-    },
+    // picture: {
+    //   picPath: String,
+    // },
     address: {
       type: String,
     },
@@ -31,7 +32,6 @@ const storeSchema = new Schema(
         lng: Number,
       },
     },
-    placeId: String,
     comments: [
       {
         user: {
@@ -59,6 +59,11 @@ const storeSchema = new Schema(
         },
       },
     ],
+    created_by: {
+      type: Schema.Types.ObjectId,
+    },
+    opening_hours: [String],
+    price_level: Number,
     // flavours: [
     //     { flavour: String }
     // ],

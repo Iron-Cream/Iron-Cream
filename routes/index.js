@@ -2,14 +2,8 @@ const router = require('express').Router();
 const { loginCheck } = require('./middlewares');
 const User = require('../models/User');
 const { uploader, cloudinary } = require('../config/cloudinary');
-const Store = require('../models/Store');
 
-/* GET home page */
 router.get('/', (req, res) => {
-  res.render('index', { user: req.user });
-});
-
-router.post('/', (req, res, next) => {
   res.render('index', { user: req.user });
 });
 
