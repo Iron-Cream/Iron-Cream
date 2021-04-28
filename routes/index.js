@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { loginCheck } = require('./middlewares');
 const User = require('../models/User');
+const Store = require('../models/Store');
 const { uploader, cloudinary } = require('../config/cloudinary');
 
 router.get('/', (req, res) => {
@@ -8,7 +9,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/profile', loginCheck(), (req, res) => {
-  Store.find({ creator: req.user._id })
+  Store.find({ created_by: req.user._id })
     .then((stores) => {
       res.render('profile', { user: req.user, stores });
     })
