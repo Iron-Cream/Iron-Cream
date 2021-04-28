@@ -24,7 +24,7 @@ router.get('/view/:id', (req, res) => {
       },
     })
     .then((store) => {
-      store.picUrl = getPhotoUrl(store.pictureId, 400);
+      // store.picUrl = getPhotoUrl(store.pictureId, 400);
       res.render('stores/show', { store, user: req.user });
     })
     .catch((error) => {

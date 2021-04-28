@@ -13,6 +13,7 @@ const storeSchema = new Schema(
     },
     pictureId: {
       type: String,
+      default: '/images/store-placeholder.jpg',
     },
     address: {
       type: String,

@@ -1,6 +1,6 @@
 <div class="content">
-  <img src="{{ picUrl }}" alt="pic" />
   {{#with store}}
+  <img src="{{#if picUrl}}{{picUrl}}{{else}}{{pictureId}}{{/if}}" alt="pic" />
   <h1>{{ name }}</h1>
   <h2>Address:</h2>
   <p>{{ address }}</p>
