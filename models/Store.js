@@ -5,7 +5,6 @@ const storeSchema = new Schema(
     placeId: String,
     name: {
       type: String,
-      unique: true,
       required: true,
       minLength: 3,
     },
@@ -14,9 +13,11 @@ const storeSchema = new Schema(
     },
     pictureId: {
       type: String,
+      default: '/images/store-placeholder.jpg',
     },
     address: {
       type: String,
+      unique: true,
     },
     location: {
       type: {
@@ -36,7 +37,7 @@ const storeSchema = new Schema(
         },
         text: {
           type: String,
-          minLength: 10,
+          minLength: 5,
           maxLength: 300,
         },
       },
