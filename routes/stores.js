@@ -1,8 +1,7 @@
 const router = require('express').Router();
 const Store = require('../models/Store');
-const User = require('../models/User');
 const { loginCheck } = require('./middlewares');
-const getDetails = require('../config/placesApi');
+const { getDetails, getPhotoUrl } = require('../config/placesApi');
 
 router.get('/mapdata', (req, res) => {
   Store.find()
@@ -14,7 +13,7 @@ router.get('/mapdata', (req, res) => {
     });
 });
 
-router.get('/view/:id', loginCheck(), (req, res) => {
+router.get('/view/:id', (req, res) => {
   const id = req.params.id;
   Store.findById(id)
     .populate({
@@ -25,6 +24,7 @@ router.get('/view/:id', loginCheck(), (req, res) => {
       },
     })
     .then((store) => {
+      store.picUrl = getPhotoUrl(store.pictureId, 400);
       res.render('stores/show', { store, user: req.user });
     })
     .catch((error) => {
@@ -62,12 +62,14 @@ router.post('/add', async (req, res, next) => {
       opening_hours: { weekday_text: opening_hours },
       price_level,
     } = place;
-    // console.log(place.photos[0])
+
+    const pictureId = place.photos[0].photo_reference;
 
     await Store.create({
       placeId,
       name,
       address,
+      pictureId,
       location: { coordinates: location },
       opening_hours,
       price_level,

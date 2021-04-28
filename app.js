@@ -13,8 +13,8 @@ app.locals.title = `Iron-Cream`;
 const index = require('./routes/index');
 app.use('/', index);
 
-const map = require('./routes/map');
-app.use('/', map);
+const stores = require('./routes/stores');
+app.use('/', stores);
 const authRoutes = require('./routes/auth');
 app.use('/', authRoutes);
 
