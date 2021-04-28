@@ -1,26 +1,39 @@
 <div class="content">
     {{#with store}}
         <h1>{{name}}</h1>
+        <h2>Address:</h2>
         <p>{{address}}</p>
+        <h2>Price level:</h2>
         <p>{{price_level}}</p>
         {{#if opening_hours}}
-            <p>Opening hours:</p>
-            <ul>
+            <h2>Opening hours:</h2>
+            <ul id="opening-hours">
             {{#each opening_hours}}
                 <li>{{this}}</li>
             {{/each}}
             </ul>
         {{/if}}
-            <p>Comments:</p>
+            <h2>Comments:</h2>
             {{#if comments}}
-            <ul>
+            <div id="comment-list">
             {{#each comments}}
-                <li>{{this}}</li>
+                <section>
+                <div class="top-box"></div>
+                <img src="{{user.avatar.path}}" alt="user picture">
+                <div class="bottom-box">
+                    <blockquote>
+                    <p>{{text}}</p>
+                    </blockquote>
+                    <div class="test-details">
+                    <p>{{user.username}}</p>
+                    </div>
+                </div>
+                </section>
+            </div>
+
             {{/each}}
-            </ul>
             {{else}}
             There are no comments yet.
         {{/if}}
-
     {{/with}}
 </div>

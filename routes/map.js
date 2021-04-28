@@ -17,6 +17,13 @@ router.get('/mapdata', (req, res) => {
 router.get('/view/:id', loginCheck(), (req, res) => {
   const id = req.params.id;
   Store.findById(id)
+    .populate({
+      path: 'comments',
+      populate: {
+        path: 'user',
+        model: 'User',
+      },
+    })
     .then((store) => {
       res.render('stores/show', { store, user: req.user });
     })
@@ -57,7 +64,7 @@ router.post('/add', async (req, res, next) => {
       opening_hours,
       price_level,
       created_by: req.user._id,
-      comments: comments ? { user: req.user._id, comments: comments } : null,
+      comments: comments ? { user: req.user._id, text: comments } : null,
     });
 
     res.redirect('/');
