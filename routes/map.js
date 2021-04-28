@@ -34,10 +34,10 @@ router.post('/view/:id', (req, res) => {
     });
 });
 
-router.post('/add', (req, res, next) => {
-  let store = req.body;
-  res.render('stores/add', { store });
-});
+// router.post('/add', (req, res, next) => {
+//   let store = req.body;
+//   res.render('stores/add', { store });
+// });
 
 router.post('/add', (req, res, next) => {
   const { name, placeId, coords } = req.body;
@@ -50,7 +50,7 @@ router.post('/add', (req, res, next) => {
     placeId,
   })
     .then((store) => {
-      res.redirect('/add', { store });
+      res.render('stores/add', { store });
     })
     .catch((error) => {
       next(error);
