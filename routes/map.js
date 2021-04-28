@@ -35,6 +35,17 @@ router.post('/view/:id', (req, res) => {
     });
 });
 
+router.get('/deleteiew/:id', loginCheck(), (req, res) => {
+  const id = req.params.id;
+  Store.findById(id)
+    .then((store) => {
+      res.redirect('/profile');
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+
 router.post('/add', (req, res, next) => {
   const { name, placeId, coords } = req.body;
   const lat = coords.slice(1, coords.indexOf(','));
