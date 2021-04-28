@@ -14,7 +14,13 @@ router.post('/', (req, res, next) => {
 });
 
 router.get('/profile', loginCheck(), (req, res) => {
-  res.render('profile', { user: req.user });
+  Store.find({ creator: req.user._id })
+    .then((stores) => {
+      res.render('profile', { user: req.user, stores });
+    })
+    .catch((err) => next(err));
+
+  // res.render('profile', { user: req.user });
 });
 
 router.post(

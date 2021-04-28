@@ -21,8 +21,20 @@
   </form>
 
   <h2>Your upload history:</h2>
-
+  {{#if stores}}
+    {{#each stores}}
+    <div class="store-card">
+      <p>{{name}}</p>
+      {{!-- <img src="" alt=""> --}}
+      <a href="/view/{{_id}}">View</a>
+      <a href="#">Edit</a>
+      <a href="#">Delete</a>
+    </div>
+    {{/each}}
+  {{else}}
+  You haven't submitted any stores yet.
+  {{/if}}
   <a href="/">
-    <button>Back to Map</button>
+    Back to Map
   </a>
 </div>

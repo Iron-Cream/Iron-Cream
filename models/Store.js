@@ -8,6 +8,10 @@ const storeSchema = new Schema(
       required: true,
       minLength: 3,
     },
+    creator: {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
+    },
     description: {
       type: String,
     },
