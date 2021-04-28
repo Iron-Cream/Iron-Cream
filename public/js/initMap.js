@@ -31,6 +31,7 @@ const getMapData = () => {
       };
 
       for (let place of mapData) {
+        console.log(place);
         // Loop through the results array and place a marker for each set of coordinates.
         const coords = place.location.coordinates;
         const latLng = new google.maps.LatLng(coords.lat, coords.lng);
@@ -44,9 +45,8 @@ const getMapData = () => {
         // create info window
         const infoString = `<div id="marker-content">
         ${place.name}<br>
-        <form action="/view/${place._id}" method="POST">
-          <input type='hidden' name='name' id='name' value="${place.name}">
-          <input type='hidden' name='id' id='id' value="${place._id}">
+        ${place.address}<br>
+        <form action="/view/${place._id}" method="GET">
           <button type="submit" id="view">View</button>
           </form>
         </div>`;
@@ -161,9 +161,8 @@ const addStore = () => {
 
     const addString = `<div id="marker-content">${place.name}<br>
     <form action="/add" method="POST">
-      <input type='hidden' name='name' id='name' value="${place.name}">
       <input type='hidden' name='placeId' id='placeId' value="${place.place_id}">
-      <input type='hidden' name='coords' id='coords' value="${place.geometry.location}">
+      <input name='comments' id='comments' placeholder='Add comment here'>
       <button type="submit" id="submit">Add this store</button>
     </form>
     </div>`;
