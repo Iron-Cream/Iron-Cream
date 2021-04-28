@@ -21,3 +21,63 @@ header {
 .subtitle {
   margin-top: 5px;
 }
+
+ul#opening-hours {
+  list-style-type: none;
+}
+
+#comment-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  max-width: 100%;
+}
+#comment-list section {
+  margin-bottom: 30px;
+  width: 264px;
+}
+#comment-list section .top-box {
+  background-color: #dfdbd5;
+  width: 263px;
+  height: 103px;
+  position: absolute;
+  z-index: 1;
+}
+#comment-list section img {
+  background-color: gray;
+  border-radius: 100%;
+  border: 3px soild #d4d4d4;
+  width: 133px;
+  height: 133px;
+  object-fit: cover;
+  position: relative;
+  display: block;
+  margin: auto;
+  top: 15px;
+  z-index: 5;
+}
+#comment-list section .bottom-box {
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+  width: 263px;
+  padding-bottom: 20px;
+  height: auto;
+  transform: translateY(-50px);
+}
+#comment-list section .bottom-box blockquote {
+  margin: 0 auto;
+  padding: 0;
+  width: 210px;
+}
+#comment-list section .bottom-box blockquote p {
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: italic;
+  line-height: 21px;
+  padding-top: 60px;
+}
+#comment-list section .bottom-box .test-details {
+  text-align: center;
+  font-weight: 500;
+}

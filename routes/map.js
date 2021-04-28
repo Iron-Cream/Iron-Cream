@@ -17,6 +17,13 @@ router.get('/mapdata', (req, res) => {
 router.get('/view/:id', loginCheck(), (req, res) => {
   const id = req.params.id;
   Store.findById(id)
+    .populate({
+      path: 'comments',
+      populate: {
+        path: 'user',
+        model: 'User',
+      },
+    })
     .then((store) => {
       res.render('stores/show', { store, user: req.user });
     })
@@ -25,17 +32,25 @@ router.get('/view/:id', loginCheck(), (req, res) => {
     });
 });
 
-router.get('/deleteiew/:id', loginCheck(), (req, res) => {
+router.get('/delete/:id', loginCheck(), (req, res) => {
   const id = req.params.id;
-  Store.findById(id)
-    .then((store) => {
-      res.redirect('/profile');
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+  const user = req.user._id;
+  Store.findById(id).then((store) => {
+    if (store.created_by.equals(user)) {
+      Store.findOneAndRemove({ _id: id })
+        .then(() => {
+          console.log('removed!');
+          res.redirect('/profile');
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    } else {
+      console.log('no match!');
+    }
+  });
 });
-    
+
 router.post('/add', async (req, res, next) => {
   try {
     const { placeId, comments } = req.body;
@@ -57,7 +72,7 @@ router.post('/add', async (req, res, next) => {
       opening_hours,
       price_level,
       created_by: req.user._id,
-      comments: comments ? { user: req.user._id, comments: comments } : null,
+      comments: comments ? { user: req.user._id, text: comments } : null,
     });
 
     res.redirect('/');
