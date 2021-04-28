@@ -1,5 +1,14 @@
 <h1>{{ title }} 🚀🍦</h1>
 <p>Find yummy ice cream near you!</p>
+
+{{#if user}}
+<input
+    id="pac-input"
+    class="controls"
+    type="text"
+    placeholder="Search Box"
+/>
+{{/if}}
 <div id="map">
 </div>
 
@@ -8,4 +17,4 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-nkt-AFBdEkiczYwvWRG3p-fW4adJHHY&callback=initMap&libraries=places&v=weekly"
     async
 ></script>
-<script type="text/javascript" src="/js/initMap.js"></script>
+<script type="text/javascript" src="/js/initMap.js" {{#if user}}user="true"{{else}}user="false"{{/if}}></script>
