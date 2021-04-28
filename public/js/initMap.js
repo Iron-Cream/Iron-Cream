@@ -160,10 +160,10 @@ const addStore = () => {
     // console.log(storeInfo);
 
     const addString = `<div id="marker-content">${place.name}<br>
-    <form action="/" method="POST">
+    <form action="/add" method="POST">
       <input type='hidden' name='name' id='name' value="${place.name}">
       <input type='hidden' name='placeId' id='placeId' value="${place.place_id}">
-      <input type='hidden' name='location' id='location' value="${place.geometry.location}">
+      <input type='hidden' name='coords' id='coords' value="${place.geometry.location}">
       <button type="submit" id="submit">Add this store</button>
     </form>
     </div>`;

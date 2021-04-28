@@ -10,27 +10,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res, next) => {
-  const { name, placeId, location } = req.body;
-  let lat = location.slice(1, location.indexOf(','));
-  let lng = location.slice(location.indexOf(' ') + 1, location.indexOf(')'));
-
-  Store.create({
-    name,
-    location: { type: 'Point', coordinates: { lat, lng } },
-    placeId,
-  })
-    .then((store) => {
-      res.redirect(`add/${store._id}`);
-    })
-    .catch((error) => {
-      next(error);
-    });
-});
-
-router.get('/mapdata', (req, res) => {
-  Store.find().then((stores) => {
-    res.send({ stores });
-  });
+  res.render('index', { user: req.user });
 });
 
 router.get('/profile', loginCheck(), (req, res) => {
