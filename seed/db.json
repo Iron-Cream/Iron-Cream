@@ -1,422 +1,2086 @@
 [
   {
-    "name": "Woop Woop Ice Cream Store",
-    "address": "Rosenthaler Str. 3, 10119 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5287334, "lng": 13.4019124 }
-    }
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Luisenstraße 14, 10117 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5233652, "lng": 13.379304 },
+      "viewport": {
+        "northeast": { "lat": 52.52465802989272, "lng": 13.38076542989272 },
+        "southwest": { "lat": 52.52195837010728, "lng": 13.37806577010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "der Eisladen in Berlin Mitte",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 681,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105855718069288730527\">Der Eisladen</a>"
+        ],
+        "photo_reference": "ATtYBwKKDEqZAmYSh0OXYW9SpWc2FztyqTl6dCudwWn3UkrO-v60FTl_KVDBRjV68b0zn3i82w6fr3dC0pcF98OD4rbR-FmfycA0W2Q-Db0yEkEV9uXW20kJiTJButT939s0pey97X-MG1dB4BiHBkt7gHCMVpssCZPLGtqnx8voDjcZTsJw",
+        "width": 1024
+      }
+    ],
+    "place_id": "ChIJ_0kRoINJqEcRNqZUuCdoACk",
+    "plus_code": {
+      "compound_code": "G9FH+8P Berlin",
+      "global_code": "9F4MG9FH+8P"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJ_0kRoINJqEcRNqZUuCdoACk",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 572
   },
   {
-    "name": "Cuore di Vetro",
-    "address": "Max-Beer-Straße 33, 10119 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5266037, "lng": 13.4085516 }
-    }
-  },
-  {
-    "name": "Scoops berlin - Icecream - Cakes - Coffee",
-    "address": "Novalisstraße 17, 10115 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.52769, "lng": 13.38875 }
-    }
-  },
-  {
-    "name": "Waffel oder Becher",
-    "address": "Spandauer Str. 2, 10178 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5208729, "lng": 13.4042781 }
-    }
-  },
-  {
-    "name": "Süsse Sünde",
-    "address": "Weinbergsweg 21, 10119 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5311287, "lng": 13.4020839 }
-    }
-  },
-  {
-    "name": "OAK & ICE",
-    "address": "Schönhauser Allee 52, 10437 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5428824, "lng": 13.4126635 }
-    }
-  },
-  {
-    "name": "Julian & Elisa",
-    "address": "Markgrafenstraße 41, 10117 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.51488999999999, "lng": 13.39334 }
-    }
-  },
-  {
-    "name": "Süßfein Brunnenstraße",
-    "address": "Mietshaus, Brunnenstraße 156, 10115 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5354981, "lng": 13.3975582 }
-    }
-  },
-  {
-    "name": "Rosa Canina",
-    "address": "Pasteurstraße 32, 10407 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5323577, "lng": 13.4357685 }
-    }
-  },
-  {
-    "name": "Gelateria italy",
-    "address": "Chausseestraße 16, 10115 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5297251, "lng": 13.3844702 }
-    }
-  },
-  {
-    "name": "Early Bird",
-    "address": "Winsstraße 68, 10405 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5320408, "lng": 13.423408 }
-    }
-  },
-  {
-    "name": "Bandy Brooks",
-    "address": "Friedrichstraße 96, 10117 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5197697, "lng": 13.3886949 }
-    }
-  },
-  {
-    "name": "Lumia Gelato e Caffé",
-    "address": "Galeria Kaufhof Berlin Alexanderplatz. 9 dircksenstraße, Alexanderpl. laden, 3, 10178 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5221897, "lng": 13.4112583 }
-    }
-  },
-  {
-    "name": "Ben & Jerry’s",
-    "address": "Weinbergsweg 24, 10119 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.530752, "lng": 13.401795 }
-    }
-  },
-  {
-    "name": "Café Gelateria La Luna",
-    "address": "Rathausstraße 6, 10178 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5204623, "lng": 13.4108652 }
-    }
-  },
-  {
-    "name": "Eisspatz",
-    "address": "Schönhauser Allee 184, 10119 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5296122, "lng": 13.4099049 }
-    }
-  },
-  {
-    "name": "Il Glaciale",
-    "address": "Kollwitzstraße 59, 10435 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.53541999999999, "lng": 13.4165802 }
-    }
-  },
-  {
-    "name": "Eisdiele-Cuffaro",
-    "address": "Kollwitzstraße 66, 10435 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5360753, "lng": 13.4182779 }
-    }
-  },
-  {
-    "name": "Rosa Canina",
-    "address": "Hufelandstraße 7, 10407 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5326606, "lng": 13.4307422 }
-    }
-  },
-  {
-    "name": "Giovanni L",
-    "address": "10178, Grunerstraße 20, 10179 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5197133, "lng": 13.4153336 }
-    }
-  },
-  {
-    "name": "Zuckerschlösschen | Softeis | soft ice cream | süsse Souvenirs | Sweet Souvenirs | Alexanderplatz | Berlin Mitte",
-    "address": "Rathausstraße 5, 10178 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.519998, "lng": 13.411164 }
-    }
-  },
-  {
-    "name": "Süßfein Rykestraße",
-    "address": "Rykestraße 50, 10405 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5355109, "lng": 13.4194793 }
-    }
-  },
-  {
-    "name": "Berliner Eismanufaktur",
-    "address": "Sredzkistraße 63-65, 10405 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5376157, "lng": 13.4221967 }
-    }
-  },
-  {
-    "name": "Eispatisserie Hokey Pokey",
-    "address": "Stargarder Str. 72, 10437 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.54687269999999, "lng": 13.4176744 }
-    }
-  },
-  {
-    "name": "KAVLAK Eismanufaktur (Kreuzberg)",
-    "address": "Oranienstraße 99, 10969 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5069082, "lng": 13.3984796 }
-    }
-  },
-  {
-    "name": "Black Coffee",
-    "address": "Schwartzkopffstraße 19, 10115 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5346205, "lng": 13.37905 }
-    }
-  },
-  {
-    "name": "JONES ice cream",
-    "address": "Goltzstraße 3, 10781 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.490486, "lng": 13.353453 }
-    }
-  },
-  {
-    "name": "Fräulein Frost",
-    "address": "Friedelstraße 38, 12047 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.49236939999999, "lng": 13.4276751 }
-    }
-  },
-  {
-    "name": "Eispatisserie Hokey Pokey Pankow",
-    "address": "Berliner Str. 49a, 13189 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5594797, "lng": 13.4127411 }
-    }
-  },
-  {
-    "name": "Berlin Homemade Icecream",
-    "address": "Elßholzstraße 10, 10781 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.49263800000001, "lng": 13.356392 }
-    }
-  },
-  {
-    "name": "ROYAL EISLADEN",
-    "address": "Lenbachstraße 9, 10245 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.50521, "lng": 13.46603 }
-    }
-  },
-  {
-    "name": "Vanille & Marille",
-    "address": "Hagelberger Str. 1, 10965 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.4915099, "lng": 13.3863539 }
-    }
-  },
-  {
-    "name": "Gelateria Mos Eisley",
-    "address": "Herrfurthpl. 6, 12049 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.4772438, "lng": 13.4211357 }
-    }
-  },
-  {
-    "name": "Eis Henri",
-    "address": "Brunnenstraße 97, 13355 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.54596919999999, "lng": 13.3903944 }
-    }
-  },
-  {
-    "name": "Bio-Eiscafé Caramello",
-    "address": "Wühlischstraße 31, 10245 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5098102, "lng": 13.4569953 }
-    }
-  },
-  {
-    "name": "Aldemir Eis",
-    "address": "Falckensteinstraße 7, 10997 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.499229, "lng": 13.4428648 }
-    }
-  },
-  {
-    "name": "Ice cream parlor at Gleisdreieck",
-    "address": "Flottwellstraße 14, 10785 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5008123, "lng": 13.3707331 }
-    }
-  },
-  {
-    "name": "Eismanufaktur Berlin",
-    "address": "Maxstraße 11, 13347 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.55007999999999, "lng": 13.36402 }
-    }
-  },
-  {
-    "name": "Eis Toto",
-    "address": "Schönwalder Str. 30, 13347 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.54227119999999, "lng": 13.3750472 }
-    }
-  },
-  {
-    "name": "Süße Sünde",
-    "address": "Niederbarnimstraße 21, 10247 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5139149, "lng": 13.459341 }
-    }
-  },
-  {
-    "name": "Italian ice cream",
-    "address": "Brunnenstraße 197-198, 10119 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.52980720000001, "lng": 13.4007973 }
-    }
-  },
-  {
-    "name": "CANAL Artisanal Ice cream & pastry",
-    "address": "Rosenthaler Str. 40, 10178 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.52401589999999, "lng": 13.4023943 }
-    }
-  },
-  {
-    "name": "Eis*Bar",
-    "address": "Kastanienallee 10, 10435 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5394575, "lng": 13.4102674 }
-    }
-  },
-  {
-    "name": "Duo - Sicilian Ice Cream",
-    "address": "Skalitzer Str. 82, 10997 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5006767, "lng": 13.4388173 }
-    }
-  },
-  {
-    "name": "Al Teatro Eiscafé",
-    "address": "Bahnhof Friedrichstraße, Friedrichstraße 142, 10117 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5203071, "lng": 13.3866229 }
-    }
-  },
-  {
-    "name": "YES EIS",
-    "address": "Fehrbelliner Str. 83, 10119 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5322847, "lng": 13.4057729 }
-    }
-  },
-  {
-    "name": "Eismanufaktur Berlin",
-    "address": "Auguststraße 63, 10117 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.52726999999999, "lng": 13.396824 }
-    }
-  },
-  {
-    "name": "Nice - Eiszeit",
-    "address": "Leipziger Pl. 12, 10117 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.51063809999999, "lng": 13.3817068 }
-    }
-  },
-  {
-    "name": "Rosa Canina",
-    "address": "Ackerstraße 174, 10115 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.52892929999999, "lng": 13.397458 }
-    }
-  },
-  {
-    "name": "Berliner Eismanufaktur",
-    "address": "Sredzkistraße 63-65, 10405 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5376157, "lng": 13.4221967 }
-    }
-  },
-  {
-    "name": "Zuckerschlösschen | Softeis | soft ice cream | süsse Souvenirs | Sweet Souvenirs | Alexanderplatz | Berlin Mitte",
-    "address": "Rathausstraße 5, 10178 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.519998, "lng": 13.411164 }
-    }
-  },
-  {
-    "name": "Il Gelataio",
-    "address": "Am Friedrichshain 5, 10407 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5294527, "lng": 13.434796 }
-    }
-  },
-  {
-    "name": "Eis Plansche",
-    "address": "Eichendorffstraße 13, 10115 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.53110969999999, "lng": 13.3868418 }
-    }
-  },
-  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Schlegelstraße 21, 10115 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5304326, "lng": 13.3871112 },
+      "viewport": {
+        "northeast": { "lat": 52.53178242989273, "lng": 13.38846102989272 },
+        "southwest": { "lat": 52.52908277010728, "lng": 13.38576137010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
     "name": "Eismieze Berlin",
-    "address": "Schlegelstraße 21, 10115 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5304326, "lng": 13.3871112 }
-    }
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2048,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109082369974101756907\">Eismieze Berlin</a>"
+        ],
+        "photo_reference": "ATtYBwJT_CW6pVhwbIoXDqPloEiDHqZE2DOYolFf0vxlKkeDOKSHdWSeC7G377CRRbfHDnLi9h9i6rO_ioFgnaE1Sq47JQO0QtJ0rFP4vYSpiHlfpvSOqSRcjnt5Om88g_BjMAjfnWXjiRDMAlQiYK_LBylrcz1xZSykrWxTiRJIC1wLgXg7",
+        "width": 1530
+      }
+    ],
+    "place_id": "ChIJByaBPOxRqEcRBNEjyYdsp7k",
+    "plus_code": {
+      "compound_code": "G9JP+5R Berlin",
+      "global_code": "9F4MG9JP+5R"
+    },
+    "price_level": 1,
+    "rating": 4.7,
+    "reference": "ChIJByaBPOxRqEcRBNEjyYdsp7k",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 163
   },
   {
-    "name": "Gianni Eis",
-    "address": "Rykestraße 26, 10405 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.538617, "lng": 13.4226255 }
-    }
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Auguststraße 63, 10117 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.52726999999999, "lng": 13.396824 },
+      "viewport": {
+        "northeast": { "lat": 52.52858447989272, "lng": 13.39812872989272 },
+        "southwest": { "lat": 52.52588482010728, "lng": 13.39542907010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Eismanufaktur Berlin",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108767153270142383741\">Eismanufaktur</a>"
+        ],
+        "photo_reference": "ATtYBwKSKJpJdTjGR72rzK0V8EeqejgU089F1FgrEorCpvkSsRV36TxolSd31Kw5t0qgq7IWf6eBW_KDALXDb0rB1zvyoqqDsBKE5avZxwRLmRZOxc-b8Kg0fpQF30UFgJpR5y2w4WmQLk2pU5oRTaNdPeAYNi3NdoiUESaHZy-Py98qCJn9",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJX5SeceZRqEcRlXvx3O9XNiY",
+    "plus_code": {
+      "compound_code": "G9GW+WP Berlin",
+      "global_code": "9F4MG9GW+WP"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJX5SeceZRqEcRlXvx3O9XNiY",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
+    "user_ratings_total": 273
   },
   {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Kollwitzstraße 59, 10435 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.53541999999999, "lng": 13.4165802 },
+      "viewport": {
+        "northeast": { "lat": 52.53679707989272, "lng": 13.41808102989272 },
+        "southwest": { "lat": 52.53409742010728, "lng": 13.41538137010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Il Glaciale",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105878043639968659624\">A Google User</a>"
+        ],
+        "photo_reference": "ATtYBwL6qyDcqqDT9EA355zhTJOnm7TYUBu5kicwWrg4duwTUE2hCVTYrsEME-CJaF6uSiXVojgC65wQlwgGvF6aePdqBcWMrwdJqp4SDzZVjZVAOc4cWwxI1C_0ucZRDSGY096h7q8sjw0Ou-0h2zAnVV0a1om4G8KH7pnwg0nrV0fEqXgp",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJtYWsOwJOqEcREK7On5g0AZ0",
+    "plus_code": {
+      "compound_code": "GCP8+5J Berlin",
+      "global_code": "9F4MGCP8+5J"
+    },
+    "price_level": 1,
+    "rating": 4.4,
+    "reference": "ChIJtYWsOwJOqEcREK7On5g0AZ0",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 78
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Weinbergsweg 21, 10119 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5311287, "lng": 13.4020839 },
+      "viewport": {
+        "northeast": { "lat": 52.53243867989271, "lng": 13.40356692989272 },
+        "southwest": { "lat": 52.52973902010727, "lng": 13.40086727010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Süsse Sünde",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2976,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100383693433345533637\">Stefan Stoev</a>"
+        ],
+        "photo_reference": "ATtYBwInUXJVVdLpgJJvtMRdeYsYzsgOE_oPSLB_I7ly7de-LTQg4_ZASxVge5Ojb60AV1bkEH7tsXpLjqwbzxepPCYbaRBewLxP2la1Z2d3kmqRoPbi57aPEMhsI3IfxbePOZFvBUq2frQeE7GHbrByRHPvaH9vb6YjKLdHt3L9LMHWYNQo",
+        "width": 3968
+      }
+    ],
+    "place_id": "ChIJN7wqleRRqEcRm5ZPPyjyW5o",
+    "plus_code": {
+      "compound_code": "GCJ2+FR Berlin",
+      "global_code": "9F4MGCJ2+FR"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJN7wqleRRqEcRm5ZPPyjyW5o",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 309
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Raumerstraße 31, 10437 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.54176529999999, "lng": 13.4221176 },
+      "viewport": {
+        "northeast": { "lat": 52.54306047989272, "lng": 13.42343392989272 },
+        "southwest": { "lat": 52.54036082010728, "lng": 13.42073427010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Eislabor",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1665,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115869493049997276346\">A Google User</a>"
+        ],
+        "photo_reference": "ATtYBwLo0TMDByVdogxfvIJ7gFsL-UBAV56Vo3hN7P2xIZ866uMEvTbZYhES-ayD1sFsZ-I9AiG-JOa6IDg4jY6hO_5fdaBiTdf1TvjV2wkzpJddXttDH8cprUXXE6QTQIsCGoO-gt3vcQBt68wXKUrX5Idkv731gOfeZCRNXTGye8fIJlLz",
+        "width": 2880
+      }
+    ],
+    "place_id": "ChIJ5bgfMP5NqEcR7XOMonrrbYc",
+    "plus_code": {
+      "compound_code": "GCRC+PR Berlin",
+      "global_code": "9F4MGCRC+PR"
+    },
+    "rating": 4.2,
+    "reference": "ChIJ5bgfMP5NqEcR7XOMonrrbYc",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 30
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Bahnhof Friedrichstraße, Friedrichstraße 142, 10117 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5203071, "lng": 13.3866229 },
+      "viewport": {
+        "northeast": { "lat": 52.52149467989273, "lng": 13.38788297989272 },
+        "southwest": { "lat": 52.51879502010728, "lng": 13.38518332010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Al Teatro Eiscafé",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109785865589917996093\">Bulent Samsunlu</a>"
+        ],
+        "photo_reference": "ATtYBwKHGDRJk92aefOu5hFKuMbk3Ogsl-0XtiUWaPm4L4WUFyM7uxa7GCDsvw5hmKX9LwWH2-qJhQVQSXz2XD0TAKF5IQDbv6DMGtd6Oqg4PBiv-nDJ3vdsPnrR0S9HioW_PmcMX2xafE2jZgJ9TLHw-MyxDtb-gtVXpvK6ky1QsuidkziH",
+        "width": 1846
+      }
+    ],
+    "place_id": "ChIJJyRIGsNRqEcRlwmjgT7rcJg",
+    "plus_code": {
+      "compound_code": "G9CP+4J Berlin",
+      "global_code": "9F4MG9CP+4J"
+    },
+    "price_level": 2,
+    "rating": 2.6,
+    "reference": "ChIJJyRIGsNRqEcRlwmjgT7rcJg",
+    "types": ["cafe", "food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 69
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Husemannstraße 14, 10435 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.53794, "lng": 13.41783 },
+      "viewport": {
+        "northeast": { "lat": 52.53924697989272, "lng": 13.41903582989272 },
+        "southwest": { "lat": 52.53654732010727, "lng": 13.41633617010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "name": "Eiscafé Annamaria",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3456,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101632498031234031808\">giada Zinno di</a>"
+        ],
+        "photo_reference": "ATtYBwJuZcVEZjuyn-tur4VwoEoHLcQNlLtVHNJjQpw6aF2sekT__SsqbIhEcHK0Evovp5VLBdEIW4MHkVfmf-QF7Je5zEqxI8B1ljH7wL1gSizuAa6ihUAn97jG68yojLUyIag2v-CkaQRyI1MckCh2nz6S7yZQhyAr13whPHr5kbiiE5Hj",
+        "width": 4608
+      }
+    ],
+    "place_id": "ChIJ5V2guwFOqEcRgFwQcj8QSbM",
+    "plus_code": {
+      "compound_code": "GCQ9+54 Berlin",
+      "global_code": "9F4MGCQ9+54"
+    },
+    "rating": 4.4,
+    "reference": "ChIJ5V2guwFOqEcRgFwQcj8QSbM",
+    "types": ["cafe", "food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 63
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Pasteurstraße 32, 10407 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5323577, "lng": 13.4357685 },
+      "viewport": {
+        "northeast": { "lat": 52.53369707989272, "lng": 13.43721487989272 },
+        "southwest": { "lat": 52.53099742010728, "lng": 13.43451522010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Rosa Canina",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2448,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110986501509139437053\">Eni Meni</a>"
+        ],
+        "photo_reference": "ATtYBwKOPyoJSi6Nf2sx1vQncoOEjmsTBhEckPYzmaRjFKH381i8p9_FKpNgbuKI2XMYVW98Ab_PSyCMnR_uorz79Suzvsve-hOxPzQmvOWJabKQ9wBHzUroxZKK96BiEW_gPm8xOY5DMmv7zRIbTR5-FUzddAfqcNNysDcB3JPaB_H9TZED",
+        "width": 3264
+      }
+    ],
+    "place_id": "ChIJzd5KJwxOqEcRa_hZXiEywX0",
+    "plus_code": {
+      "compound_code": "GCJP+W8 Berlin",
+      "global_code": "9F4MGCJP+W8"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJzd5KJwxOqEcRa_hZXiEywX0",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 148
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Brunnenstraße 55, 13355 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5390638, "lng": 13.3959348 },
+      "viewport": {
+        "northeast": { "lat": 52.54035942989272, "lng": 13.39709717989272 },
+        "southwest": { "lat": 52.53765977010728, "lng": 13.39439752010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "name": "Eiscafé Eisberg",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106720524931505588580\">Aysel Akbaba</a>"
+        ],
+        "photo_reference": "ATtYBwLJBuNqD6Z5bO1pzDaWXPhV6BVUCE1dK-nIPrvoEKht0HTbfvRMgYYDnEyujLXBlncbBFvbYuR0i6yg-0GiPhqrs_vES4YaFrB-xV-qTXDqT-3pXTR8Zl0luQKybvrtVHKMKc7_-_ksa05d36Qf_G4JKGJcguyodRrxD0cVcmj8zW2S",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJMw-G1vZRqEcRjtJ53GfDczM",
+    "plus_code": {
+      "compound_code": "G9QW+J9 Berlin",
+      "global_code": "9F4MG9QW+J9"
+    },
+    "price_level": 1,
+    "rating": 4.1,
+    "reference": "ChIJMw-G1vZRqEcRjtJ53GfDczM",
+    "types": ["cafe", "food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 332
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Sredzkistraße 63-65, 10405 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5376157, "lng": 13.4221967 },
+      "viewport": {
+        "northeast": { "lat": 52.53890642989272, "lng": 13.42348127989272 },
+        "southwest": { "lat": 52.53620677010728, "lng": 13.42078162010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Berliner Eismanufaktur",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101304288939330683087\">Norbert Baumann</a>"
+        ],
+        "photo_reference": "ATtYBwLf6FVnGbmd0sl9ykWgTaaE2HGyCUfTCfoGKR5abCfGdZuVySoGeblLtuAphF90zdnnWE35n4sORUGdMPybto_mNCWKJJ13ttYKaewYabwb3PGT-Kmf6s8Dsn4g_osuoMXk6pbkzl9aGBcq-oi6ue6EMpAdkYE8jYOujWozWcQcYHkh",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJB9fWMQFOqEcRGItUXve-7QA",
+    "plus_code": {
+      "compound_code": "GCQC+2V Berlin",
+      "global_code": "9F4MGCQC+2V"
+    },
+    "rating": 4.1,
+    "reference": "ChIJB9fWMQFOqEcRGItUXve-7QA",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 45
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Max-Beer-Straße 33, 10119 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5266037, "lng": 13.4085516 },
+      "viewport": {
+        "northeast": { "lat": 52.52793572989272, "lng": 13.41001042989272 },
+        "southwest": { "lat": 52.52523607010728, "lng": 13.40731077010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Cuore di Vetro",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3456,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115481939393465250867\">Benedikt Glatzl</a>"
+        ],
+        "photo_reference": "ATtYBwIec_xXpjQ_EqmHAC2-szw5S2ds47vGAwMZVotZ0sXFALmNKgq8DUPd4FKXGI625LHZv_BM3G8UCcQIM46k-N8bqRLX9oehyfsQdRzgOT_NDNi8Cddpmp4MEW2sTof1WWOE6cGEdX3ka1K-DFsW8TZnKqVUrc5xRkcfAWypOyI8IFDE",
+        "width": 4608
+      }
+    ],
+    "place_id": "ChIJVwi_HOJRqEcRdZxCHyZt1D0",
+    "plus_code": {
+      "compound_code": "GCG5+JC Berlin",
+      "global_code": "9F4MGCG5+JC"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJVwi_HOJRqEcRdZxCHyZt1D0",
+    "types": ["cafe", "food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 1127
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Friedrichstraße 96, 10117 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5197697, "lng": 13.3886949 },
+      "viewport": {
+        "northeast": { "lat": 52.52112807989271, "lng": 13.38997812989272 },
+        "southwest": { "lat": 52.51842842010727, "lng": 13.38727847010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Bandy Brooks",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2448,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115441723265980500296\">Mladen Maric</a>"
+        ],
+        "photo_reference": "ATtYBwLkD9keV0jH6SDcvl0k43KehakO-kIkktQJpdttIW76STXFfuIhKiDIi5k0a_93X90-qSqdPK-xo7kedVR0_9hRBuwN9pOuVibuVrUTF_P0dnm3w3HBdO4NIwZ1Y49e7WX5FWrN7S39zf6hQdhjORf9hfAvAsXbe7FOZXjYeTi1E4dL",
+        "width": 3264
+      }
+    ],
+    "place_id": "ChIJA7vqF8NRqEcR4lNgARtLL-8",
+    "plus_code": {
+      "compound_code": "G99Q+WF Berlin",
+      "global_code": "9F4MG99Q+WF"
+    },
+    "price_level": 2,
+    "rating": 3.9,
+    "reference": "ChIJA7vqF8NRqEcR4lNgARtLL-8",
+    "types": [
+      "meal_takeaway",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
+    "user_ratings_total": 230
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Mietshaus, Brunnenstraße 156, 10115 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5354981, "lng": 13.3975582 },
+      "viewport": {
+        "northeast": { "lat": 52.53684792989272, "lng": 13.39890802989272 },
+        "southwest": { "lat": 52.53414827010727, "lng": 13.39620837010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Süßfein Brunnenstraße",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107602427689010305552\">Jaime Mendez</a>"
+        ],
+        "photo_reference": "ATtYBwKiyQ49hIL5CzFYfs5bN2NEXXi0APxx0QXyDHN6j_GmR6GRqdo_cM_y25xaoMLuyW2WscUxTR_CC1MUFcj27KqSohT8rC8o45aUWTGwEdobUuEzCi3EcEyo5D1nrlHzpLlRY70rZx6TKKIqQDO83x8XwQww6Dd6OGKjWdu6oDh3bBE",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJszLOYvBRqEcR1aKb72hxwno",
+    "plus_code": {
+      "compound_code": "G9PX+52 Berlin",
+      "global_code": "9F4MG9PX+52"
+    },
+    "price_level": 2,
+    "rating": 4.8,
+    "reference": "ChIJszLOYvBRqEcR1aKb72hxwno",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 275
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Rosenthaler Str. 40, 10178 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.52401589999999, "lng": 13.4023943 },
+      "viewport": {
+        "northeast": { "lat": 52.52536572989272, "lng": 13.40374412989272 },
+        "southwest": { "lat": 52.52266607010727, "lng": 13.40104447010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "CANAL Artisanal Ice cream & pastry",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111020533055956454864\">anders lindberg</a>"
+        ],
+        "photo_reference": "ATtYBwL2EYhtqEZmWBm17E3EwFaPj_smpOYHerbwIz_esgfMT-bF6FZzs6q4CVhhesUK16Kp__x_XxhQxbxys4uaouZYp02IEJ62JE8GWQ46W6ojwKjAByJqNg6PMh1GRwdwW_kKb6dgVOJf20khM9rFPs3PS-85DnLunD7vzW2PE8fBt68W",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJiX4h3-BRqEcRe0iFUHG6JRo",
+    "plus_code": {
+      "compound_code": "GCF2+JX Berlin",
+      "global_code": "9F4MGCF2+JX"
+    },
+    "price_level": 2,
+    "rating": 4.7,
+    "reference": "ChIJiX4h3-BRqEcRe0iFUHG6JRo",
+    "types": ["bakery", "food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 249
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Hufelandstraße 7, 10407 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5326606, "lng": 13.4307422 },
+      "viewport": {
+        "northeast": { "lat": 52.53401042989272, "lng": 13.43209202989272 },
+        "southwest": { "lat": 52.53131077010728, "lng": 13.42939237010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Rosa Canina",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109183421514540102815\">Daniel Stoeber</a>"
+        ],
+        "photo_reference": "ATtYBwKPjxaN6vIn7OUKW4YqGQnWTGp21w3h5VK6k1uJr1dxED0yCJyQR41iOvJRb-YE9y2-JArIU97aDodRIVbpiPFZWpKbCUKKfEP3sXkLzRSaXpsRG4SsBBrQr4Qi_X4mJ0qx8UiJih0r5qkyuAnU-UpkBticwxD_HQ0as7ICZAU8STX0",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJM4pSEA9OqEcR9wTGmfJWNFU",
+    "plus_code": {
+      "compound_code": "GCMJ+37 Berlin",
+      "global_code": "9F4MGCMJ+37"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJM4pSEA9OqEcR9wTGmfJWNFU",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 220
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "SchneeEISchen, Scharnweberstraße 20, 10247 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5127809, "lng": 13.4673837 },
+      "viewport": {
+        "northeast": { "lat": 52.51406272989272, "lng": 13.46879997989272 },
+        "southwest": { "lat": 52.51136307010728, "lng": 13.46610032010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Eisdiele SchneeEISchen Berlin Eisladen",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104143134744688357051\">A Google User</a>"
+        ],
+        "photo_reference": "ATtYBwK8hJFKNuVOaQUmcI37AcHKnOzb36vAksEYWbzvJnEC-51wjk4fgcpS8JMh-IIek0uAUfnYfSvj395RoLmjkfqYotpdqXkPhfRZFBNHFMy3JkBPjij1n1xmGU2zITMvq3hjjYxVDNgfxSNcu9BWpKWHQ7kt6TEsi0WA5qfUj0lrRNau",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJz25-PfVOqEcRfmSFnfMVMGk",
+    "plus_code": {
+      "compound_code": "GF78+4X Berlin",
+      "global_code": "9F4MGF78+4X"
+    },
+    "price_level": 1,
+    "rating": 4.8,
+    "reference": "ChIJz25-PfVOqEcRfmSFnfMVMGk",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
+    "user_ratings_total": 103
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Kollwitzstraße 66, 10435 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5360753, "lng": 13.4182779 },
+      "viewport": {
+        "northeast": { "lat": 52.53742512989273, "lng": 13.41962772989272 },
+        "southwest": { "lat": 52.53472547010729, "lng": 13.41692807010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Eisdiele-Cuffaro",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100136047692810070461\">Joerg Hilger</a>"
+        ],
+        "photo_reference": "ATtYBwLuMALcXTIMG-0ccqJLykQQYnnm5fJeYtWqC4xBT70dKZNGzrU8xbJaRqgf7P7_PoJJvQ8cv20GpOI1bXhNLrInmTLvZbuyQhbh4rHOJc38o2sI9JJXZUk3OCFTEIMJv1efOG5K15QiowgQ1LIu1_dDCcbPNJS7r5hBmF2tuU3gofEi",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJLRumKgJOqEcRT31huxoe43k",
+    "plus_code": {
+      "compound_code": "GCP9+C8 Berlin",
+      "global_code": "9F4MGCP9+C8"
+    },
+    "rating": 4.2,
+    "reference": "ChIJLRumKgJOqEcRT31huxoe43k",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 22
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Badstraße, 13357 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5522065, "lng": 13.3821407 },
+      "viewport": {
+        "northeast": { "lat": 52.55349942989272, "lng": 13.38346422989272 },
+        "southwest": { "lat": 52.55079977010727, "lng": 13.38076457010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "name": "Eis Boutique",
+    "photos": [
+      {
+        "height": 6000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113845877410381973950\">A Google User</a>"
+        ],
+        "photo_reference": "ATtYBwIZeM-MnPOii3OBVfRycxs2IMhLw0mIJP6wW_NYJPsHNJasRlTbsxvoolhubq7JIrlHnOXaD2eb2qgo5_OaRVpcvuAu9E6hD8K1tW_KO9q3nZT9x6S048N4uMUemJ-ffMqSWc4FReoN3KFwCrpQEKDIuPL6SGySAVcUWwARSrmCw4gG",
+        "width": 8000
+      }
+    ],
+    "place_id": "ChIJrTXqEyRSqEcRe3umpeyLmn8",
+    "plus_code": {
+      "compound_code": "H92J+VV Berlin",
+      "global_code": "9F4MH92J+VV"
+    },
+    "rating": 5,
+    "reference": "ChIJrTXqEyRSqEcRe3umpeyLmn8",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 1
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Lenbachstraße 9, 10245 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.50521, "lng": 13.46603 },
+      "viewport": {
+        "northeast": { "lat": 52.50651332989272, "lng": 13.46747372989272 },
+        "southwest": { "lat": 52.50381367010727, "lng": 13.46477407010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "ROYAL EISLADEN",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102355632036600094600\">Arian Khudhir</a>"
+        ],
+        "photo_reference": "ATtYBwIHzIlg2qeXpvredvgNjHaKcHVUiVdDo23_V9z_SxztmtbYYEGWVw1EQrj0qmmC5hdlsf4Q4hYyQX__DvhS72GZESGvkKmq7abNJvotP3ZIpYmpzvSPVrXHOPrh80aXBvkTEG_0vOUqQYPDVrv4XxuRfQiMMKA2t4WWAdE3qCMqTqrL",
+        "width": 2268
+      }
+    ],
+    "place_id": "ChIJebAKEfdOqEcRN9XEj0-h74w",
+    "plus_code": {
+      "compound_code": "GF48+3C Berlin",
+      "global_code": "9F4MGF48+3C"
+    },
+    "price_level": 1,
+    "rating": 4.8,
+    "reference": "ChIJebAKEfdOqEcRN9XEj0-h74w",
+    "types": ["cafe", "food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 144
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Oderberger Str. 38, 10435 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.539694, "lng": 13.4060184 },
+      "viewport": {
+        "northeast": { "lat": 52.54113162989272, "lng": 13.40748892989272 },
+        "southwest": { "lat": 52.53843197010728, "lng": 13.40478927010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Eispatisserie Hokey Pokey (PAR Creamery)",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2848,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110224075724316127651\">A Google User</a>"
+        ],
+        "photo_reference": "ATtYBwJ1AxqYpvCPDYyGBPIOcvM5l0QMTraoLsEVUNh32ErORMvWuEvrhGvmJGp62da3-VWJK_4NP8H_AMOEmmk7mcP_DTZrY-SWxLMj7WhitKpKIzUDLRkQUfQ_du9Wr1_tNDZi07N8Sw3SBPVjHxygglCtSDNwgc9oqRxhZ6dbfx0JCmWl",
+        "width": 4272
+      }
+    ],
+    "place_id": "ChIJ1bJFng1RqEcRsuaEuDOpUmI",
+    "plus_code": {
+      "compound_code": "GCQ4+VC Berlin",
+      "global_code": "9F4MGCQ4+VC"
+    },
+    "rating": 4.8,
+    "reference": "ChIJ1bJFng1RqEcRsuaEuDOpUmI",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 316
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Rosenthaler Str. 40, 10178 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.52401589999999, "lng": 13.4023943 },
+      "viewport": {
+        "northeast": { "lat": 52.52536572989272, "lng": 13.40374412989272 },
+        "southwest": { "lat": 52.52266607010727, "lng": 13.40104447010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "CANAL Artisanal Ice cream & pastry",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1196,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111968471458349375813\">Waffel oder Becher</a>"
+        ],
+        "photo_reference": "ATtYBwJnFZkMtv93gpkQGtF6N0e8kBpk6VU6eYNJVaOd3KmWrQmAalWlrnCcyQWNRN9vmfit4w3adediQbbtVt9YfTqvKC1iIoaDtKOPJlPxwVWW2PvEUtKwxWcvEQhsi80q0cbDP7ltOL0izu2gIJQER5mY29HafKen12jzDc7SjZc4vwHE",
+        "width": 1186
+      }
+    ],
+    "place_id": "ChIJiX4h3-BRqEcRe0iFUHG6JRo",
+    "plus_code": {
+      "compound_code": "GCF2+JX Berlin",
+      "global_code": "9F4MGCF2+JX"
+    },
+    "price_level": 2,
+    "rating": 4.7,
+    "reference": "ChIJiX4h3-BRqEcRe0iFUHG6JRo",
+    "types": ["bakery", "food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 249
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Kremmener Str. 8, 10435 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5393733, "lng": 13.4024359 },
+      "viewport": {
+        "northeast": { "lat": 52.54067477989272, "lng": 13.40383807989272 },
+        "southwest": { "lat": 52.53797512010728, "lng": 13.40113842010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
     "name": "cookies and cream",
-    "address": "Kremmener Str. 8, 10435 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5393733, "lng": 13.4024359 }
-    }
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1529,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103555495207705035407\">cookies and cream</a>"
+        ],
+        "photo_reference": "ATtYBwKKK50VFAzlD6uxY-YFOHb8I2y7ad3cdlfocSQFPN4DrDY2QVVqZ-E3c5nvkYVsOTjBZSdPX4QcWSX1hpKwG7fL3knIcWIi1OiIQ3CPtYaxshKmVTlt8iM0HkfIL93biYj3lZoyanl7yIYkZ_JxfIemg1zAJqCDFYeWcpcoG9VdiwpV",
+        "width": 1529
+      }
+    ],
+    "place_id": "ChIJhbSHwPlRqEcRQG6lseO1k-s",
+    "plus_code": {
+      "compound_code": "GCQ2+PX Berlin",
+      "global_code": "9F4MGCQ2+PX"
+    },
+    "rating": 4.7,
+    "reference": "ChIJhbSHwPlRqEcRQG6lseO1k-s",
+    "types": [
+      "cafe",
+      "bakery",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
+    "user_ratings_total": 205
   },
   {
-    "name": "Eiscafe am Park",
-    "address": "ehem. \"Zur alten Gaslaterne, Lilli-Henoch-Straße 19, 10405 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5401444, "lng": 13.4333554 }
-    }
+    "business_status": "CLOSED_TEMPORARILY",
+    "formatted_address": "Friedrichstraße 48, 10117 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5084434, "lng": 13.390542 },
+      "viewport": {
+        "northeast": { "lat": 52.50978407989272, "lng": 13.39173027989272 },
+        "southwest": { "lat": 52.50708442010728, "lng": 13.38903062010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Woop Woop Ice Cream Truck",
+    "permanently_closed": true,
+    "photos": [
+      {
+        "height": 2988,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116207435839974578366\">Woop Woop</a>"
+        ],
+        "photo_reference": "ATtYBwI4_GFTElFUrhtmdyNYShNgJewU9UZbx02nrFPfxdIwmsBZPkDAS2firWXu-61ETEQEfig1GBjOswtQDYRiU36OgdU7OjgwL7jGt_Yf46WpoOWYjGOTMEnbGgFeIeMaIdg8r3m2AEJpGjtevB4X3_SBp0_OIz8a__OYOj4sZTeOPKhX",
+        "width": 4058
+      }
+    ],
+    "place_id": "ChIJ860FakpOqEcRZqOIWcKoHaY",
+    "plus_code": {
+      "compound_code": "G95R+96 Berlin",
+      "global_code": "9F4MG95R+96"
+    },
+    "rating": 4.3,
+    "reference": "ChIJ860FakpOqEcRZqOIWcKoHaY",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 36
   },
   {
-    "name": "Hokey Pokey Boutique",
-    "address": "Stargarder Str. 73, 10437 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5469818, "lng": 13.4174335 }
-    }
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Rykestraße 40, 10405 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.537447, "lng": 13.4210568 },
+      "viewport": {
+        "northeast": { "lat": 52.53879682989272, "lng": 13.42240662989272 },
+        "southwest": { "lat": 52.53609717010728, "lng": 13.41970697010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Tribeca Ice Cream",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3543,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115660132585709810150\">Tribeca Superfood</a>"
+        ],
+        "photo_reference": "ATtYBwL3GxTxbbNkfhLWrkTyW4hbORFQtzKXjKnj1XaUw7pfB8PePzyYnq6gJ5fw2-IsBM8eaaD-abBYXxTxn4n4ixfJjFiXR7o0xwmZ_EcVVyKwdpZ3hVB4IXjuOISSn0chtNogmWjHnuZmfZfE5ms58jqEx4JL-7jD5pQT6FX9E6WbvfKM",
+        "width": 5314
+      }
+    ],
+    "place_id": "ChIJiTK-mFlQqEcRjaDPLNu3DLI",
+    "plus_code": {
+      "compound_code": "GCPC+XC Berlin",
+      "global_code": "9F4MGCPC+XC"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJiTK-mFlQqEcRjaDPLNu3DLI",
+    "types": ["restaurant", "food", "point_of_interest", "establishment"],
+    "user_ratings_total": 304
   },
   {
-    "name": "Delabuu Ice Cream",
-    "address": "Krossener Str. 15, 10245 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.5106054, "lng": 13.4571422 }
-    }
+    "business_status": "CLOSED_PERMANENTLY",
+    "formatted_address": "Oranienstraße 99, 10969 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5069082, "lng": 13.3984796 },
+      "viewport": {
+        "northeast": { "lat": 52.50825802989272, "lng": 13.39982942989272 },
+        "southwest": { "lat": 52.50555837010728, "lng": 13.39712977010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "KAVLAK Eismanufaktur (Kreuzberg)",
+    "permanently_closed": true,
+    "photos": [
+      {
+        "height": 1836,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103846414623736836565\">Ahmet Kavlak</a>"
+        ],
+        "photo_reference": "ATtYBwJmcOnby29EaDVFySQt18dClFfGPWqUPcMCsPHLNLBbUwuilQjInNu5gGCstIYtR7EgnHkt5HqG0rjub2wTZ-nAbYutnDSv5XUvGYSrl_cMIVIr-a4BUHFhvWttsdWDFToshdj9D7fnq9IQoUnDSdjbn_k7SAg4vOdy1_S08Lak1l3r",
+        "width": 3264
+      }
+    ],
+    "place_id": "ChIJ6zvAFtZRqEcR5pxGypL_tzI",
+    "plus_code": {
+      "compound_code": "G94X+Q9 Berlin",
+      "global_code": "9F4MG94X+Q9"
+    },
+    "price_level": 1,
+    "rating": 4.5,
+    "reference": "ChIJ6zvAFtZRqEcR5pxGypL_tzI",
+    "types": [
+      "cafe",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
+    "user_ratings_total": 168
   },
   {
-    "name": "Al Teatro",
-    "address": "Am Ostbahnhof 9, 10243 Berlin, Germany",
-    "location": {
-      "coordinates": { "lat": 52.50991029999999, "lng": 13.4342941 }
-    }
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Schlegelstraße 21, 10115 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5304326, "lng": 13.3871112 },
+      "viewport": {
+        "northeast": { "lat": 52.53178242989273, "lng": 13.38846102989272 },
+        "southwest": { "lat": 52.52908277010728, "lng": 13.38576137010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Eismieze Berlin",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1599,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108102187564874879193\">Stefan Schade</a>"
+        ],
+        "photo_reference": "ATtYBwLhfF0FEXKgQyasqRWt-UZOH164jBawRI1G0FoL7-Rt0jfDvt5g2nfspYpmNIsF5YAKe-tCrbR8FrWAzseQ5l1txgYN7Ac06PtsMm2_UF7B9FBxLtUqV1LEG4xSR7g9gtlrcr3TgsxsAnrn3KP6MdMPWpl8GOoQQtSA9XumVLDLtRHH",
+        "width": 1200
+      }
+    ],
+    "place_id": "ChIJByaBPOxRqEcRBNEjyYdsp7k",
+    "plus_code": {
+      "compound_code": "G9JP+5R Berlin",
+      "global_code": "9F4MG9JP+5R"
+    },
+    "price_level": 1,
+    "rating": 4.7,
+    "reference": "ChIJByaBPOxRqEcRBNEjyYdsp7k",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 163
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Kastanienallee 102, 10435 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5397574, "lng": 13.4112536 },
+      "viewport": {
+        "northeast": { "lat": 52.54110722989272, "lng": 13.41260342989272 },
+        "southwest": { "lat": 52.53840757010727, "lng": 13.40990377010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Ben & Jerry’s",
+    "place_id": "ChIJbUjSAv9RqEcRZKyPrXy3ot0",
+    "plus_code": {
+      "compound_code": "GCQ6+WG Berlin",
+      "global_code": "9F4MGCQ6+WG"
+    },
+    "rating": 0,
+    "reference": "ChIJbUjSAv9RqEcRZKyPrXy3ot0",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 0
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Auguststraße 63, 10117 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.52726999999999, "lng": 13.396824 },
+      "viewport": {
+        "northeast": { "lat": 52.52858447989272, "lng": 13.39812872989272 },
+        "southwest": { "lat": 52.52588482010728, "lng": 13.39542907010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Eismanufaktur Berlin",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 768,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108767153270142383741\">Eismanufaktur</a>"
+        ],
+        "photo_reference": "ATtYBwKRXoRYgUtEOaAV0TQamxzErlESSJC9jR4KO_hArkxejSa9IDE8JBee1J6TLMVDQFblaJZJBQQ-kJGVdjxZeOc6BKRIWslwESU1I3CLlD_DHzkej4V58kGTe6za7WoA1NsbjBAfISnqq0w4FckEHNIzZUt8E577MQzlcc2iGBvfJop4",
+        "width": 768
+      }
+    ],
+    "place_id": "ChIJX5SeceZRqEcRlXvx3O9XNiY",
+    "plus_code": {
+      "compound_code": "G9GW+WP Berlin",
+      "global_code": "9F4MG9GW+WP"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJX5SeceZRqEcRlXvx3O9XNiY",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
+    "user_ratings_total": 273
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Raumerstraße 31, 10437 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.54176529999999, "lng": 13.4221176 },
+      "viewport": {
+        "northeast": { "lat": 52.54306047989272, "lng": 13.42343392989272 },
+        "southwest": { "lat": 52.54036082010728, "lng": 13.42073427010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Eislabor",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1665,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115869493049997276346\">A Google User</a>"
+        ],
+        "photo_reference": "ATtYBwLq6girQ2FTbTmGQ5N3bxEq7IEAVGR7ZYmHFE5HYOJzO26221YtLGm0jPSmhJsYM2bz_i1LSJ4navOzqKw-61DWOYAc_JYa28dSZY5K_W_HGJYTSN8fbmdoALZkDR4LtrG0lHSLXRCXfrTSKU9WKB8nnXt9ufF6N7YvibtOyZ8mAVXm",
+        "width": 2880
+      }
+    ],
+    "place_id": "ChIJ5bgfMP5NqEcR7XOMonrrbYc",
+    "plus_code": {
+      "compound_code": "GCRC+PR Berlin",
+      "global_code": "9F4MGCRC+PR"
+    },
+    "rating": 4.2,
+    "reference": "ChIJ5bgfMP5NqEcR7XOMonrrbYc",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 30
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Ackerstraße 174, 10115 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.52892929999999, "lng": 13.397458 },
+      "viewport": {
+        "northeast": { "lat": 52.53027912989272, "lng": 13.39880782989272 },
+        "southwest": { "lat": 52.52757947010728, "lng": 13.39610817010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Rosa Canina",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4160,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101080506055708215206\">Pavel Burkalo</a>"
+        ],
+        "photo_reference": "ATtYBwKAFBrg9UhadxcoziHLZWaAA9ybTShHQqem0pcYS-X9mEU3ARS83U3GKKk1PdymF4hK8J-f53ZMoGTXMg50c9iL7fKAoP8FVmrLff_vje_WTXTeHVjODV4Q3YrkAaxsm7cvfFiRShxejY7uUswLjo99b5y0W2X0xt-kmRvA4i9SyJDs",
+        "width": 3120
+      }
+    ],
+    "place_id": "ChIJDVUWCNNRqEcR9ye78j87zEk",
+    "plus_code": {
+      "compound_code": "G9HW+HX Berlin",
+      "global_code": "9F4MG9HW+HX"
+    },
+    "rating": 4.7,
+    "reference": "ChIJDVUWCNNRqEcR9ye78j87zEk",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 25
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Bahnhof Friedrichstraße, Friedrichstraße 142, 10117 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5203071, "lng": 13.3866229 },
+      "viewport": {
+        "northeast": { "lat": 52.52149467989273, "lng": 13.38788297989272 },
+        "southwest": { "lat": 52.51879502010728, "lng": 13.38518332010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Al Teatro Eiscafé",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109785865589917996093\">Bulent Samsunlu</a>"
+        ],
+        "photo_reference": "ATtYBwKzvX1XAD0Wf0UG--knlIv3lUVDiLS-EKE81VoibZeMjJ3eIQOoMJy5YrBrLbIpSikT4NUz61fALrVBtlCSUWrFG6ZuHJfpmEnGS80bUteFsd2JnIUrn4HjpFNCZ5aaqaLSPjzDFTr-mqBCwMIisS5mdKT5T3j_eMcRyFc2q4nUDe-6",
+        "width": 1846
+      }
+    ],
+    "place_id": "ChIJJyRIGsNRqEcRlwmjgT7rcJg",
+    "plus_code": {
+      "compound_code": "G9CP+4J Berlin",
+      "global_code": "9F4MG9CP+4J"
+    },
+    "price_level": 2,
+    "rating": 2.6,
+    "reference": "ChIJJyRIGsNRqEcRlwmjgT7rcJg",
+    "types": ["cafe", "food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 69
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Potsdamer Platz 5, 10785 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5105126, "lng": 13.3764003 },
+      "viewport": {
+        "northeast": { "lat": 52.51186467989272, "lng": 13.37788172989272 },
+        "southwest": { "lat": 52.50916502010728, "lng": 13.37518207010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Häagen-Dazs",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 864,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110868245331686961703\">Tamer Osman</a>"
+        ],
+        "photo_reference": "ATtYBwJBH8sgpanmOa9jZ6GDNXfBgUz55dMdRy9Gw_-BiKNLW1Xn0GPKe8utyn8UxVvlhN4MWpzhIZR_wLjvZHSG-jxeHXfpwBJtjtfekmgJpl8DeOKkiBkhsx8btZxqj8ZXfj6ujAkHxRTWtBQ-RDTpZ2IwTr_iY3fqgbu_Fss1X2YPHDlt",
+        "width": 1296
+      }
+    ],
+    "place_id": "ChIJyyTkF8lRqEcRQYPsmjOP0FY",
+    "plus_code": {
+      "compound_code": "G96G+6H Berlin",
+      "global_code": "9F4MG96G+6H"
+    },
+    "price_level": 3,
+    "rating": 3.6,
+    "reference": "ChIJyyTkF8lRqEcRQYPsmjOP0FY",
+    "types": ["cafe", "food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 610
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Fehrbelliner Str. 83, 10119 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5322847, "lng": 13.4057729 },
+      "viewport": {
+        "northeast": { "lat": 52.53361747989273, "lng": 13.40743017989272 },
+        "southwest": { "lat": 52.53091782010728, "lng": 13.40473052010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "YES EIS",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1920,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113679098698448103981\">CraftFire 110</a>"
+        ],
+        "photo_reference": "ATtYBwKGUit5-SWLpdj-qn3PNGUtr-AuQrCF_M8EsavX9NbLw8S0l82AjKD7c8H62PoO2Lg0JCLtrJIJKafOPTuIO5J8aGXTbZBUxJ9RoCHHDoU9kQMPmIpO82gUc0ScTYlh2qORVfvgN4bIO1Z-csCZjeUsdzBShoDcL5r7I9yA6ebd9SUF",
+        "width": 1080
+      }
+    ],
+    "place_id": "ChIJ9Uw7UqdRqEcR8Sh2A9UcoxA",
+    "plus_code": {
+      "compound_code": "GCJ4+W8 Berlin",
+      "global_code": "9F4MGCJ4+W8"
+    },
+    "rating": 4.7,
+    "reference": "ChIJ9Uw7UqdRqEcR8Sh2A9UcoxA",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
+    "user_ratings_total": 13
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Oderberger Str. 6, 10435 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.538534, "lng": 13.41043 },
+      "viewport": {
+        "northeast": { "lat": 52.53979032989272, "lng": 13.41173767989272 },
+        "southwest": { "lat": 52.53709067010728, "lng": 13.40903802010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "name": "Dari Frozen Yogurt",
+    "photos": [
+      {
+        "height": 2205,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114360043510009439897\">Daniel Mulder</a>"
+        ],
+        "photo_reference": "ATtYBwKTLx4tRIHq7uYKzZhuJ_x6uTJXT_Y06xRgku9D0DrtPx-0-H2yl2kc1ppD2Y6HU4HHbzCYSwCBH0YaToBgutyk-6wRJtHLV4bxLqDQ617uQmBds-75FUBmivyQmjZrvgHCGQ4d-8GzuXEVVopi1usRkCOnS3eVmKA2iNh3TgLMXvMO",
+        "width": 2205
+      }
+    ],
+    "place_id": "ChIJF7Wp7f5RqEcRhBIcs1l9aoM",
+    "plus_code": {
+      "compound_code": "GCQ6+C5 Berlin",
+      "global_code": "9F4MGCQ6+C5"
+    },
+    "price_level": 2,
+    "rating": 4.3,
+    "reference": "ChIJF7Wp7f5RqEcRhBIcs1l9aoM",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
+    "user_ratings_total": 87
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Rykestraße 50, 10405 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5355109, "lng": 13.4194793 },
+      "viewport": {
+        "northeast": { "lat": 52.53686072989272, "lng": 13.42082912989272 },
+        "southwest": { "lat": 52.53416107010728, "lng": 13.41812947010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Süßfein Rykestraße",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111147476573682261803\">Charles Collet</a>"
+        ],
+        "photo_reference": "ATtYBwJDC7gvp6I_V8D4eswuZyzJoy-RHQUYwQX9_5L0hlN7hfJgHnSdDsc5t9SYLtLM9zOiiZPiYXPcMLIksSYTIWaizvEPMa4Oy0GWC--6bh-RZi2WD32x64M1UNuPjShEshY4hc_3Rl-8Nk4ZVHEdA3iwsbUZy6qlG3Ay5-3uKAJfTw6L",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJvf3pM-9PqEcR7uP-E5MiTVI",
+    "plus_code": {
+      "compound_code": "GCP9+6Q Berlin",
+      "global_code": "9F4MGCP9+6Q"
+    },
+    "rating": 4.7,
+    "reference": "ChIJvf3pM-9PqEcR7uP-E5MiTVI",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 110
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Alexa, Grunerstraße 20, 10179 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5191329, "lng": 13.4166351 },
+      "viewport": {
+        "northeast": { "lat": 52.52059172989273, "lng": 13.41797247989272 },
+        "southwest": { "lat": 52.51789207010728, "lng": 13.41527282010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Langnese Happiness Station",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 800,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105670912461751634664\">Jenni Schneider</a>"
+        ],
+        "photo_reference": "ATtYBwKSwnUSlRYOCY0gco8endhOgShtGSq4e7ZLWKcS3APzPmeiBeGePGXmwe_4L5zETyYQGrrItUFWHO9JFTyjw6Ago_Zh0SNCf7NpLzwx6kHbL4hn54pTatwI2HdK1ZALQ_yfI3gSBDNa9pDzuP_cENs-KZI1aGIz1a3fuvukdHhvLWeN",
+        "width": 800
+      }
+    ],
+    "place_id": "ChIJqU-eZSJOqEcRxfFu4l5sG4c",
+    "plus_code": {
+      "compound_code": "GC98+MM Berlin",
+      "global_code": "9F4MGC98+MM"
+    },
+    "rating": 3.1,
+    "reference": "ChIJqU-eZSJOqEcRxfFu4l5sG4c",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 15
+  },
+  {
+    "business_status": "CLOSED_TEMPORARILY",
+    "formatted_address": "Eichendorffstraße 13, 10115 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.53110969999999, "lng": 13.3868418 },
+      "viewport": {
+        "northeast": { "lat": 52.53245952989272, "lng": 13.38819162989272 },
+        "southwest": { "lat": 52.52975987010728, "lng": 13.38549197010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Eis Plansche",
+    "permanently_closed": true,
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107639155809523939852\">A Google User</a>"
+        ],
+        "photo_reference": "ATtYBwKJsrozzUGFh5gGKs3RCjS_a-eMZLkxhhdIYigF1tYupAzXSsdc4s7whq0S25I6oYOFeL1Eug26hOQN_x7WrwJzM5hspMMwOsjulGZf6XSUhwMDzoM2kxQk4lgu4UzyrHm8_cr9hxCjSBwiYkaPSKYSVwxRCaO2iszuFK9yebRAUYVj",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJUceDjxNRqEcReVNRtW04oZc",
+    "plus_code": {
+      "compound_code": "G9JP+CP Berlin",
+      "global_code": "9F4MG9JP+CP"
+    },
+    "rating": 4.5,
+    "reference": "ChIJUceDjxNRqEcReVNRtW04oZc",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 17
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Grunerstraße 20, 10179 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.51860850000001, "lng": 13.4161622 },
+      "viewport": {
+        "northeast": { "lat": 52.51990502989273, "lng": 13.41712952989272 },
+        "southwest": { "lat": 52.51720537010728, "lng": 13.41442987010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Wonderpots Frozen Yogurt @ALEXA",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2988,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115600150491441510040\">Undine Neumann</a>"
+        ],
+        "photo_reference": "ATtYBwLwXJ3OBVU7mO6l-ixjwrKFF8coYVlA1_67LljVQ8ii44793TkppCwONtdbrR32QtqP6DPc3L-Hml4n74EDn8ysL8WlZF4YkylnlS0_MKBhiqWq_USmkSeikWxD0KNuUMAmtVcfDMgXccAT94vhUtP9tzu4baFAROtITjp8x_sDxw8",
+        "width": 5312
+      }
+    ],
+    "place_id": "ChIJHyGEAyJOqEcRMO4fuT9WLBE",
+    "plus_code": {
+      "compound_code": "GC98+CF Berlin",
+      "global_code": "9F4MGC98+CF"
+    },
+    "rating": 3.8,
+    "reference": "ChIJHyGEAyJOqEcRMO4fuT9WLBE",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 104
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Leipziger Pl. 12, 10117 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.51063809999999, "lng": 13.3817068 },
+      "viewport": {
+        "northeast": { "lat": 52.51196387989272, "lng": 13.38306847989272 },
+        "southwest": { "lat": 52.50926422010727, "lng": 13.38036882010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Nice - Eiszeit",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 807,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116940369076887671169\">Mohamed Elsawi</a>"
+        ],
+        "photo_reference": "ATtYBwJXCzlbLQmDt41hyoZrPZ9gCtLkKPDqneirq8NgZeN7lcU7O41WYnJeExOyOW1ssVMuOKdyDvfg0VEwVS1neaj9VsNWM6xw1zy_KeJSLlwDe4Iau2K4lDNt63EocsM9nDrMWhwhZ5bkIQ3IbIzlCV0hRnuZtcRyHbbMBedvZ29Ke91j",
+        "width": 1125
+      }
+    ],
+    "place_id": "ChIJL4SmA89RqEcRsVA853y8-r8",
+    "plus_code": {
+      "compound_code": "G96J+7M Berlin",
+      "global_code": "9F4MG96J+7M"
+    },
+    "price_level": 2,
+    "rating": 4,
+    "reference": "ChIJL4SmA89RqEcRsVA853y8-r8",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 85
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Oderberger Str. 38, 10435 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.539694, "lng": 13.4060184 },
+      "viewport": {
+        "northeast": { "lat": 52.54113162989272, "lng": 13.40748892989272 },
+        "southwest": { "lat": 52.53843197010728, "lng": 13.40478927010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Eispatisserie Hokey Pokey (PAR Creamery)",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2848,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110224075724316127651\">A Google User</a>"
+        ],
+        "photo_reference": "ATtYBwKhNpqMioCMyvDBiAq559twf47agqAHT-hApUuuZLI-0znszVZQx-HAwLOd6SUXauV5N1_C985C9uGpWM-eLJNTgegVtPc44E9KhGWY521dxE2CH0TThvLqKVigMQwqL29Yin0V3Bx8Rn76KpcUQubWOwc1hyXAymD9YloOyhOWafgW",
+        "width": 4272
+      }
+    ],
+    "place_id": "ChIJ1bJFng1RqEcRsuaEuDOpUmI",
+    "plus_code": {
+      "compound_code": "GCQ4+VC Berlin",
+      "global_code": "9F4MGCQ4+VC"
+    },
+    "rating": 4.8,
+    "reference": "ChIJ1bJFng1RqEcRsuaEuDOpUmI",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 316
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Rudi-Dutschke-Straße 18 A, 10969 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5070503, "lng": 13.393778 },
+      "viewport": {
+        "northeast": { "lat": 52.50840012989272, "lng": 13.39512782989272 },
+        "southwest": { "lat": 52.50570047010728, "lng": 13.39242817010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "name": "Misch Misch Berlin",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112592679792308357199\">aquaHeli</a>"
+        ],
+        "photo_reference": "ATtYBwLOQTyYmo9pIOOETyjVi62mmLPoSfFgsNn5Wy168nauUSYG2FL0v4jz-e-GgxEnLnBHAsnmCjmEG9bhR_x8bGRiV4aM7WZzyzV8NDJeEDvg4Y69uoRq6O-rjAw5BKIHwmAm9oOR2a_2xp3Ekt3azvRpEvFMplUxWif4bje4ViLVRet5",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJTbfzX9tRqEcRNt6sEWHW0aM",
+    "plus_code": {
+      "compound_code": "G94V+RG Berlin",
+      "global_code": "9F4MG94V+RG"
+    },
+    "rating": 4.5,
+    "reference": "ChIJTbfzX9tRqEcRNt6sEWHW0aM",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
+    "user_ratings_total": 170
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Graefestraße 80, 10967 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.4932899, "lng": 13.4182172 },
+      "viewport": {
+        "northeast": { "lat": 52.49469482989273, "lng": 13.41948947989272 },
+        "southwest": { "lat": 52.49199517010729, "lng": 13.41678982010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Lecko Mio Gelateria",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 854,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112954737340867553544\">A Google User</a>"
+        ],
+        "photo_reference": "ATtYBwKHgyq8DoI9saPVmhkXbBrEtpWT5X_vxXxd2H2LTrCLAYpxGmWjUQzfrZlHOY6CMQlSYQ9fPdpX_jBjSJSS3jAbwWVdOQbsDGXW5YZCfNx4YPUVy7Ul9sES6rYWWTNCh880NRbhHmfRiz-JdusQrJ62q-oRPbWkYSRQp5E2Fy2BpptG",
+        "width": 1280
+      }
+    ],
+    "place_id": "ChIJa-Lb64tPqEcRY737WHTDL_Y",
+    "plus_code": {
+      "compound_code": "FCV9+87 Berlin",
+      "global_code": "9F4MFCV9+87"
+    },
+    "price_level": 2,
+    "rating": 4.7,
+    "reference": "ChIJa-Lb64tPqEcRY737WHTDL_Y",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 176
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Rykestraße 40, 10405 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.537447, "lng": 13.4210568 },
+      "viewport": {
+        "northeast": { "lat": 52.53879682989272, "lng": 13.42240662989272 },
+        "southwest": { "lat": 52.53609717010728, "lng": 13.41970697010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Tribeca Ice Cream",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3543,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115660132585709810150\">Tribeca Superfood</a>"
+        ],
+        "photo_reference": "ATtYBwKW_lEmspRpwz_IHKiMJKIczqYrEUDEuZxufGHyNbn6ZAwGuX_P-Z2RYQmpBolYUysholGYLV_W4YAUh8i8fMYkSVoCDue7JD7sh1x21kLG9cwPQQvLZvtES_x768PDuu-AKIPb9uTX3a6KHrFt7VVFHJ5OQ2AQpQNgroqtf8HOPxmc",
+        "width": 5314
+      }
+    ],
+    "place_id": "ChIJiTK-mFlQqEcRjaDPLNu3DLI",
+    "plus_code": {
+      "compound_code": "GCPC+XC Berlin",
+      "global_code": "9F4MGCPC+XC"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJiTK-mFlQqEcRjaDPLNu3DLI",
+    "types": ["restaurant", "food", "point_of_interest", "establishment"],
+    "user_ratings_total": 304
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Goltzstraße 3, 10781 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.490486, "lng": 13.353453 },
+      "viewport": {
+        "northeast": { "lat": 52.49184622989272, "lng": 13.35467712989272 },
+        "southwest": { "lat": 52.48914657010727, "lng": 13.35197747010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "JONES ice cream",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 809,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107371207069370453655\">JONES Ice Cream</a>"
+        ],
+        "photo_reference": "ATtYBwKADuVgjzcHoFW5EH_JcL0E1eFQ2bS6cyLjqS4e4_34m0W8CUiZddtJiHfBTLMaZJiMB8Q8-iv1VFLkZ1UiCDoV9DrNZQLhoXi45o_13650H0i21sN1NZLemyG11j5Onfkfp39KiTpfsHVGB3UK5r8nfH97pqfJvGjpQ--8v_zSPEPD",
+        "width": 809
+      }
+    ],
+    "place_id": "ChIJjTe8oUZQqEcRml6NR6UKqvQ",
+    "plus_code": {
+      "compound_code": "F9R3+59 Berlin",
+      "global_code": "9F4MF9R3+59"
+    },
+    "price_level": 2,
+    "rating": 4.7,
+    "reference": "ChIJjTe8oUZQqEcRml6NR6UKqvQ",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 1362
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Friedelstraße 38, 12047 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.49236939999999, "lng": 13.4276751 },
+      "viewport": {
+        "northeast": { "lat": 52.49372272989272, "lng": 13.42919342989272 },
+        "southwest": { "lat": 52.49102307010727, "lng": 13.42649377010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Fräulein Frost",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104856365869249478156\">Shirley den Hartog</a>"
+        ],
+        "photo_reference": "ATtYBwJ0NcWVdvUNmbIPtSUlyHGKeJTGk3r14Tj32ILoDP23gTxar732xPTxfPWkrBiAYasNxgXtss8v9ZAW9wrqgBaXVABULyzjy-2e1k8Oc_6e9kMr6e_42nRA85brjPaYak_6_pQ2ISIvfFhEPrSrN2xOL6n2CVwALrhzOVVNPOkDEa2Q",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJJ5T2LrRPqEcRlcJwwx84H1E",
+    "plus_code": {
+      "compound_code": "FCRH+W3 Berlin",
+      "global_code": "9F4MFCRH+W3"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJJ5T2LrRPqEcRlcJwwx84H1E",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 462
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Körtestraße 10, 10967 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.491241, "lng": 13.411108 },
+      "viewport": {
+        "northeast": { "lat": 52.49253407989271, "lng": 13.41254147989272 },
+        "southwest": { "lat": 52.48983442010727, "lng": 13.40984182010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "The Ice-maker - Berlin",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105165527917723156029\">Jonathan Lansey</a>"
+        ],
+        "photo_reference": "ATtYBwKKfW2bHBUK98gcI_wk5S4HIOX-4uJQVgA_3jZNQ4osEitKQi3jCpyl9VVs4hH1rQZqi82_Zo-uk_oHVBxvIOBKAcXV5PbJ-4UZ6MOlKIybs-kgdL4sFFTWe65CXBcAN0nY5_6GCVHan0H6nOnBLPjtl0fOnEMgtwQl9mvvSy93-lwx",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ85RmUNBPqEcR69cgtbbnsi4",
+    "plus_code": {
+      "compound_code": "FCR6+FC Berlin",
+      "global_code": "9F4MFCR6+FC"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJ85RmUNBPqEcR69cgtbbnsi4",
+    "types": ["cafe", "food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 236
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Elßholzstraße 10, 10781 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.49263800000001, "lng": 13.356392 },
+      "viewport": {
+        "northeast": { "lat": 52.49398782989273, "lng": 13.35774182989272 },
+        "southwest": { "lat": 52.49128817010729, "lng": 13.35504217010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Berlin Homemade Icecream",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2448,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100314518732833115568\">Maike M</a>"
+        ],
+        "photo_reference": "ATtYBwLIV3Fu-n_ARXlqPDLjvmhc_cJYsUOeTIrLyFvjYKmAKs8_Xyp-HU9h8ecU3b4tIXhb_1XrlK4JJid6bVkYhgttuTkc1OBAXxvUyCm9FPjAhp6qslgvOouJuCfId40C4EDxLpUSTFD_8u9d7lE6ZdfpDSglUImwnXLZPOtOcbnlrWYb",
+        "width": 3264
+      }
+    ],
+    "place_id": "ChIJ6Wh9QUZQqEcRdWCQkJDhGwk",
+    "plus_code": {
+      "compound_code": "F9V4+3H Berlin",
+      "global_code": "9F4MF9V4+3H"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJ6Wh9QUZQqEcRdWCQkJDhGwk",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 235
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Hagelberger Str. 1, 10965 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.4915099, "lng": 13.3863539 },
+      "viewport": {
+        "northeast": { "lat": 52.49276707989272, "lng": 13.38771772989272 },
+        "southwest": { "lat": 52.49006742010727, "lng": 13.38501807010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Vanille & Marille",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108033911888785942618\">Michael Werkmann</a>"
+        ],
+        "photo_reference": "ATtYBwLew4_dGeWLwD5DgZ2__0JByqAn0_K00Xh5HJSD09JEr1CXhky4FrFV50qJCkM-6Wsfir2-5Lxq6U7BK_7tImTOqXEGTs0XjiFig1MJCGTTWbLo3SrDs4ZN5zZrJeeU3H_omENbxNqGrFKHNfWlWBm5RjHIwzP2da8zaYr2P7U6hXP3",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJN4Freo9aqEcRloPfb4JP9yc",
+    "plus_code": {
+      "compound_code": "F9RP+JG Berlin",
+      "global_code": "9F4MF9RP+JG"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJN4Freo9aqEcRloPfb4JP9yc",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 1033
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Wörther Str. 22, 10405 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5356184, "lng": 13.4211388 },
+      "viewport": {
+        "northeast": { "lat": 52.53696822989273, "lng": 13.42248862989272 },
+        "southwest": { "lat": 52.53426857010729, "lng": 13.41978897010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "name": "Tenzan Lab.",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 1080,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114638626150590466706\">A Google User</a>"
+        ],
+        "photo_reference": "ATtYBwIX2YcbwBOSOA1bNd49wLlPc13F0LufgFqfSorKI5qcAGupGLdxZ-pD6OXVdOM4O134cVTwLkCz15VtmNDd01v-QhHNneZBTwVH7LNKFJmh6nqki4F6U_9oE6FNkPqrsGfRpqWLrhvuwBjYQ7dhEZ6WmhP0XRweEManc6ZUxQN2LQBn",
+        "width": 1080
+      }
+    ],
+    "place_id": "ChIJtZ9U1eBPqEcRSxHqr9gk0zA",
+    "plus_code": {
+      "compound_code": "GCPC+6F Berlin",
+      "global_code": "9F4MGCPC+6F"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJtZ9U1eBPqEcRSxHqr9gk0zA",
+    "types": [
+      "cafe",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
+    "user_ratings_total": 270
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Herrfurthpl. 6, 12049 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.4772438, "lng": 13.4211357 },
+      "viewport": {
+        "northeast": { "lat": 52.47853572989272, "lng": 13.42260202989272 },
+        "southwest": { "lat": 52.47583607010728, "lng": 13.41990237010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Gelateria Mos Eisley",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 683,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112122705514157080016\">Gelateria Mos Eisley</a>"
+        ],
+        "photo_reference": "ATtYBwKHOsvIlC18PfhHASaH-bMQhf5clH7OwXxUF2MbJV0hudNdyYV_AQ1am7jERQUiE0Ru7yxqgm9YlG8M9o9oo1JsD2KUA0MwHVUWRqiWXpzZ2xoWqTpq6o6Nh6LLK36LmHE3zhi2v0rvKD-EwBDthcUrDuG5VSvHtryKOS3ZGu_Okbwu",
+        "width": 1024
+      }
+    ],
+    "place_id": "ChIJB7IJOb5PqEcRklSZlNcsf3c",
+    "plus_code": {
+      "compound_code": "FCGC+VF Berlin",
+      "global_code": "9F4MFCGC+VF"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJB7IJOb5PqEcRklSZlNcsf3c",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 367
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Lenbachstraße 9, 10245 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.50521, "lng": 13.46603 },
+      "viewport": {
+        "northeast": { "lat": 52.50651332989272, "lng": 13.46747372989272 },
+        "southwest": { "lat": 52.50381367010727, "lng": 13.46477407010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "ROYAL EISLADEN",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2268,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101927742603210381083\">Recardo Krämer</a>"
+        ],
+        "photo_reference": "ATtYBwJK2FwGVwUbT7jfhgnmDZjQ9L1jrZc2n4k3-t32V6JEQqg5BewZ1-rLX-NhQbucs2YCub7x-7JoeTVaAcBbSaYx1N-DB1DIky2sv19ouMgDlJWd8KdyDtOr2NQc469cC-siwQM_Nhh42afVo0EZsQa-22pm7pDcpxNcEGZgM-g-pEB6",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJebAKEfdOqEcRN9XEj0-h74w",
+    "plus_code": {
+      "compound_code": "GF48+3C Berlin",
+      "global_code": "9F4MGF48+3C"
+    },
+    "price_level": 1,
+    "rating": 4.8,
+    "reference": "ChIJebAKEfdOqEcRN9XEj0-h74w",
+    "types": ["cafe", "food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 144
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Wühlischstraße 31, 10245 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5098102, "lng": 13.4569953 },
+      "viewport": {
+        "northeast": { "lat": 52.51110422989272, "lng": 13.45839432989272 },
+        "southwest": { "lat": 52.50840457010727, "lng": 13.45569467010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Bio-Eiscafé Caramello",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2048,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115525247050129170564\">Karin Janner</a>"
+        ],
+        "photo_reference": "ATtYBwJGYPzYR6RKdJGt5DqzwxpOwsjY2HdQPRUzAInJuRmfBeNex98gNmM52QLWkbmzw9UjkpmyLXHfttJmoMt5ZemD4WO-FiOL8ECgidqnnFtaw7R7tAIy3U98Hfr0y_m8NtQYDVwHLhN0BQcwGaB4ROfv8SAg4xsxPRkYSR5GlrRycL_3",
+        "width": 2048
+      }
+    ],
+    "place_id": "ChIJ-U0kS1lOqEcRbbI7mHXW8J4",
+    "plus_code": {
+      "compound_code": "GF54+WQ Berlin",
+      "global_code": "9F4MGF54+WQ"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJ-U0kS1lOqEcRbbI7mHXW8J4",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 217
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Falckensteinstraße 7, 10997 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.499229, "lng": 13.4428648 },
+      "viewport": {
+        "northeast": { "lat": 52.50057882989272, "lng": 13.44421462989272 },
+        "southwest": { "lat": 52.49787917010728, "lng": 13.44151497010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Aldemir Eis",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2268,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114699950365532592595\">Robin Nickella</a>"
+        ],
+        "photo_reference": "ATtYBwLHFKDG9J47TqV8F_xLreJdhfxCy_pIuJ5DbBMN0okRx32lixx-99_8uNGgWW9XI19wyoH8pgFm16__qXZveL8b99_sER0S-vgTSmd41sbJOR8pyGHtGCZJyWnp5l9_D8IxCNvZlqoxEl_kNLvwlmScijSSrYSDasQ9fOcMsA3dV0cK",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJHSikik1OqEcRFfN8hCBI0qM",
+    "plus_code": {
+      "compound_code": "FCXV+M4 Berlin",
+      "global_code": "9F4MFCXV+M4"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJHSikik1OqEcRFfN8hCBI0qM",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 1095
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Grolmanstraße 14a, 10623 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5086802, "lng": 13.319905 },
+      "viewport": {
+        "northeast": { "lat": 52.51007812989272, "lng": 13.32135057989272 },
+        "southwest": { "lat": 52.50737847010728, "lng": 13.31865092010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Katchi Ice Cream",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114719196850546828086\">A Google User</a>"
+        ],
+        "photo_reference": "ATtYBwJquB4ul7pMT33DMBK0yncHgapFabOwts_St20TPb0B1BtpIratAtpYhugDzXpAq36pDp_H4RO3lkLPPsnoNqu6B1fs2QfT1WXfvXchMC5Uj98ChfGGdLcGDEi6plJ-ZyQtS1DAkKVgzqCzw_6r_hM_iHIEjahdE-uUzGFMuCDunljN",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJ4diziq5RqEcR_iuVaZ6gwhA",
+    "plus_code": {
+      "compound_code": "G859+FX Berlin",
+      "global_code": "9F4MG859+FX"
+    },
+    "price_level": 2,
+    "rating": 4.8,
+    "reference": "ChIJ4diziq5RqEcR_iuVaZ6gwhA",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 444
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Berliner Str. 49a, 13189 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5594797, "lng": 13.4127411 },
+      "viewport": {
+        "northeast": { "lat": 52.56087222989272, "lng": 13.41386237989272 },
+        "southwest": { "lat": 52.55817257010728, "lng": 13.41116272010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Eispatisserie Hokey Pokey Pankow",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2552,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102045207020159999119\">A Google User</a>"
+        ],
+        "photo_reference": "ATtYBwLdNWwVCniw_Jh4pfKmq8lehM_m2KFxblje_i2aI4T90o_dphydIpFyP5Kdazj1idaGZliX-W12GHzAstNuNGGbUUV8k6zIl_jMrJEoZSA2QOESCTdBYp_ayA0EJfqUKEwC2W5OEXXjjS4GST4pnTIYVv_XmnOjYDWzzKSgW5Z3nlo3",
+        "width": 2728
+      }
+    ],
+    "place_id": "ChIJqYrNwA1SqEcRAZmROw_N3nM",
+    "plus_code": {
+      "compound_code": "HC57+Q3 Berlin",
+      "global_code": "9F4MHC57+Q3"
+    },
+    "price_level": 2,
+    "rating": 4.7,
+    "reference": "ChIJqYrNwA1SqEcRAZmROw_N3nM",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
+    "user_ratings_total": 385
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Flensburger Str. 5, 10557 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5202415, "lng": 13.3444281 },
+      "viewport": {
+        "northeast": { "lat": 52.52167207989272, "lng": 13.34579552989272 },
+        "southwest": { "lat": 52.51897242010727, "lng": 13.34309587010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Eisteufelchen",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3841,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112145400226988374458\">A Google User</a>"
+        ],
+        "photo_reference": "ATtYBwJ5lGuNTcqBScGwSCUPfz-QRNVOBLNnvfypfHqq7q7V5-sJpWtERZbE-8V_4q5Voq_Zi47gz3lBpUy--HFPu2cxn3n79wTspGZIeh-2JKUvUTg78a_spfeSdFVtvRDi-5_L0LeO7qV4ssxq5w8WhwVOk87Szgt2rJetFxO51Arn1DQq",
+        "width": 2479
+      }
+    ],
+    "place_id": "ChIJ_cSidKdRqEcRzXvoaBgOb4Y",
+    "plus_code": {
+      "compound_code": "G8CV+3Q Berlin",
+      "global_code": "9F4MG8CV+3Q"
+    },
+    "price_level": 1,
+    "rating": 4.7,
+    "reference": "ChIJ_cSidKdRqEcRzXvoaBgOb4Y",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 176
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "48 Böhmische Straße, 12055 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.4733489, "lng": 13.448727 },
+      "viewport": {
+        "northeast": { "lat": 52.47467437989271, "lng": 13.45013137989272 },
+        "southwest": { "lat": 52.47197472010727, "lng": 13.44743172010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "EISDERIX",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100996513262882147654\">Calorista&#39;s Journey</a>"
+        ],
+        "photo_reference": "ATtYBwIjnxcJUFlGy78MST-aQ0acyb2IOXMF4JGwlLyLiXciLw9UVG2gCFL0ZKwHssfdNz11FQoLPncjGj09VcN8gQ_yeBia3BkW0QBWbUl-vj8toyqBPrcYceq0WWNRiPpBxpAtLT0gUvJEUE5eeAsTlydnirnN5JE2tdL6oyUhr8h0CN7T",
+        "width": 750
+      }
+    ],
+    "place_id": "ChIJ1SHI0ApPqEcR-oX8efeZWWs",
+    "plus_code": {
+      "compound_code": "FCFX+8F Berlin",
+      "global_code": "9F4MFCFX+8F"
+    },
+    "price_level": 2,
+    "rating": 4.8,
+    "reference": "ChIJ1SHI0ApPqEcR-oX8efeZWWs",
+    "types": ["food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 200
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Kurfürstendamm 224, 10719 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.5031249, "lng": 13.3295311 },
+      "viewport": {
+        "northeast": { "lat": 52.50437597989272, "lng": 13.33071907989272 },
+        "southwest": { "lat": 52.50167632010728, "lng": 13.32801942010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Häagen-Dazs",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4500,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115005648941278370962\">Häagen-Dazs Shop</a>"
+        ],
+        "photo_reference": "ATtYBwIQdiS8iTjl4EwPZ7-AFRXC3m78-dSjM4hp3Lkjz5hTxGGQ2EuNaJ4qulXAbCmlLmdUitKNtqDmdnyleRNE-IMW8-QUTZJooSiF_E5Phqc2bty7z4smP1ZQfPLOZov0KpgRwo31myw25NVHkbakG2jswrNe4g6zhJzXlWYkGDqdQO1a",
+        "width": 4500
+      }
+    ],
+    "place_id": "ChIJY5Xdsf5QqEcRrBKgT33bH54",
+    "plus_code": {
+      "compound_code": "G83H+6R Berlin",
+      "global_code": "9F4MG83H+6R"
+    },
+    "price_level": 3,
+    "rating": 4.2,
+    "reference": "ChIJY5Xdsf5QqEcRrBKgT33bH54",
+    "types": ["cafe", "food", "point_of_interest", "store", "establishment"],
+    "user_ratings_total": 434
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Graefestraße 7, 10967 Berlin, Germany",
+    "geometry": {
+      "location": { "lat": 52.4945877, "lng": 13.4187531 },
+      "viewport": {
+        "northeast": { "lat": 52.49591162989272, "lng": 13.42018857989272 },
+        "southwest": { "lat": 52.49321197010728, "lng": 13.41748892010728 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "name": "Eismanufaktur Berlin",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1280,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/118002128000968410583\">Café Eismanufakrur</a>"
+        ],
+        "photo_reference": "ATtYBwKTWH_j1MlQ2qcQkjOSOg3BCdDS9CB6_IdKO4ReLoSNGT-secLj4gekoJNAs_xRqfrj8kev14fqRn8C_f0NLpwjcNwC-Operff9YgZN3_hxFVhZRCoztsIak3szlLcOLSwnGrs_3jCGorfEQxfiboVPeCjbb-fT3ADmncU5UQDxEUS4",
+        "width": 1248
+      }
+    ],
+    "place_id": "ChIJGy2Ol8tPqEcRIJxuBX6lVjs",
+    "plus_code": {
+      "compound_code": "FCV9+RG Berlin",
+      "global_code": "9F4MFCV9+RG"
+    },
+    "rating": 4.2,
+    "reference": "ChIJGy2Ol8tPqEcRIJxuBX6lVjs",
+    "types": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
+    "user_ratings_total": 131
   }
 ]

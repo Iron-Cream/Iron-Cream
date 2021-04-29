@@ -7,10 +7,12 @@
   <h1>{{ name }}</h1>
   <h2>Address:</h2>
   <p>{{ address }}</p>
+
   {{#if price_level}}
   <h2>Price level:</h2>
   <p>{{ price_level }}</p>
   {{/if}}
+
   {{#if opening_hours}}
   <h2>Opening hours:</h2>
   <ul id="opening-hours">
@@ -19,8 +21,9 @@
     {{/each}}
   </ul>
   {{/if}}
-  <h2>Comments:</h2>
+
   {{#if comments}}
+  <h2>Comments:</h2>
   <div id="comment-list">
     {{#each comments}}
     <section>
@@ -35,10 +38,20 @@
         </div>
       </div>
     </section>
+    {{/each}}
   </div>
-  {{/each}}
   {{else}}
   There are no comments yet.
   {{/if}}
   {{/with}}
+
+  {{#if favourite}}
+  <a class="button" id="add_fav" value="{{ store._id }}">Add to favourites</a>
+  {{else}}
+  <a class="button" id="del_fav" value="{{ store._id }}"
+    >Remove from favourites</a
+  >
+  {{/if}}
 </div>
+
+<script src="/js/script.js"></script>

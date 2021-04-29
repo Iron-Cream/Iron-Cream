@@ -40,7 +40,7 @@ const storeSchema = new Schema(
         text: {
           type: String,
           minLength: 5,
-          maxLength: 300,
+          maxLength: 500,
         },
       },
     ],

@@ -27,6 +27,19 @@ router.get('/profile', loginCheck(), (req, res, next) => {
     .catch((err) => next(err));
 });
 
+router.get('/favourites/add/:id', async (req, res, next) => {
+  try {
+    await User.findOneAndUpdate(
+      { _id: req.user._id },
+      { $push: { favourites: req.params._id } },
+    );
+
+    res.redirect('/profile');
+  } catch (err) {
+    next(err);
+  }
+});
+
 router.get('/favourites/delete/:id', async (req, res, next) => {
   try {
     await User.findOneAndUpdate(
