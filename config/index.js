@@ -5,6 +5,7 @@ const favicon = require('serve-favicon');
 const path = require('path');
 const hbs = require('hbs');
 const passport = require('./passport');
+const flash = require('connect-flash');
 
 // Middleware configuration
 module.exports = (app) => {
@@ -20,4 +21,5 @@ module.exports = (app) => {
     favicon(path.join(__dirname, '..', 'public', 'images', 'favicon.ico')),
   );
   passport(app);
+  app.use(flash());
 };

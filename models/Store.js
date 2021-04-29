@@ -2,7 +2,10 @@ const { Schema, model } = require('mongoose');
 
 const storeSchema = new Schema(
   {
-    placeId: String,
+    placeId: {
+      type: String,
+      unique: true,
+    },
     name: {
       type: String,
       required: true,
@@ -65,9 +68,6 @@ const storeSchema = new Schema(
     },
     opening_hours: [String],
     price_level: Number,
-    // flavours: [
-    //     { flavour: String }
-    // ],
   },
   { timestamps: true },
 );

@@ -58,14 +58,21 @@ router.post('/add', async (req, res, next) => {
       formatted_address: address,
       name,
       geometry: { location },
-      opening_hours: { weekday_text: opening_hours },
-      price_level,
-      rating: avg_rating,
+      opening_hours: { weekday_text: opening_hours } = null,
+      price_level = null,
+      rating: avg_rating = null,
     } = place;
-
-    console.log({ place });
-
     const pictureId = place.photos[0].photo_reference;
+
+    const store = await Store.find({ placeId });
+    if (store !== null) {
+      req.flash(
+        'err_msg',
+        'The stored you tried to add is already in the Database.',
+      );
+      res.redirect('/');
+      return;
+    }
 
     await Store.create({
       // from map

@@ -7,7 +7,11 @@ const User = require('../models/User');
 const Store = require('../models/Store');
 
 router.get('/', (req, res) => {
-  res.render('index', { user: req.user, apiKey: process.env.MAPS_API_KEY });
+  res.render('index', {
+    user: req.user,
+    err_msg: req.flash('err_msg'),
+    apiKey: process.env.MAPS_API_KEY,
+  });
 });
 
 router.get('/profile', loginCheck(), (req, res, next) => {

@@ -106,3 +106,9 @@
   color: darkcyan;
   font-weight: 600;
 }
+
+.db-warning {
+  text-align: center;
+  margin: 0px;
+  background: white;
+}
