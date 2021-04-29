@@ -98,4 +98,11 @@
 #store_title {
   text-align: center;
   margin-bottom: 0px;
+  color: darkcyan;
+}
+
+#store_details {
+  margin-bottom: 0px;
+  color: darkcyan;
+  font-weight: 600;
 }
