@@ -42,8 +42,16 @@ const getMapData = () => {
 
         // create info window
         const infoString = `<div id="marker-content">
-        ${place.name}<br>
-        ${place.address}<br>
+        <h3 id="store_title">${place.name}</h3>
+        <h4 id="store_details">${place.address}</h4>
+        <h4 id="store_details">Rating: ${place.avg_rating}</h4>
+        ${
+          place.price_level
+            ? '<h4 id="store_details">Price level: ' +
+              place.price_level +
+              '</h4>'
+            : ''
+        }
         <form action="/view/${place._id}" method="GET">
           <button type="submit" id="view">View</button>
           </form>

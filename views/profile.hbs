@@ -1,19 +1,25 @@
 <div class="banner">
   <div class="banner-text">
-  {{#if user.avatar }}
+    {{#if user.avatar }}
     <img class="profile-pic" src="{{ user.avatar.path }}" alt="" />
-  {{/if}}
-    <h1>Hello, {{ user.username }},<br>welcome back!</h1>
+    {{/if}}
+    <h1>Hello, {{ user.username }},<br />welcome back!</h1>
   </div>
 </div>
 <div id="profile" class="content">
   <div class="user-info">
-    <p><span>Username:</span><span>{{user.username}}</span></p>
-    <p><span>Email:</span><span>{{user.email}}</span></p>
-      <form id="pic-upload"
+    <p>
+      <span>Username:</span><span>{{ user.username }}</span>
+    </p>
+    <p>
+      <span>Email:</span><span>{{ user.email }}</span>
+    </p>
+    <form
+      id="pic-upload"
       action="/new-pic/{{ user._id }}"
       method="post"
-      enctype="multipart/form-data">
+      enctype="multipart/form-data"
+    >
       <label for="pic">Upload new profile pic:</label>
       <div class="pic-submit-btn">
         <input type="file" name="pic" id="pic" />
@@ -21,7 +27,6 @@
       </div>
     </form>
   </div>
-
 
   {{#if err_msg}}
   <p class="warning">{{ err_msg }}</p>
@@ -33,15 +38,15 @@
     {{#each stores}}
     <section>
       <div class="top-box">
-        <img src="{{#if picUrl}}{{picUrl}}{{else}}{{pictureId}}{{/if}}" alt="picture of {{title}}" />
+        <img src="{{ picUrl }}" alt="picture of {{ title }}" />
       </div>
       <div class="bottom-box">
-        <p class="store-name">{{name}}</p>
-        <p class="store-address">{{address}}</p>
+        <p class="store-name">{{ name }}</p>
+        <p class="store-address">{{ address }}</p>
         <div class="buttons">
-          <a class="button" href="/view/{{_id}}">View</a>
+          <a class="button" href="/view/{{ _id }}">View</a>
           {{!-- <a href="#">Edit</a> --}}
-          <a class="button" href="/delete/{{_id}}">Delete</a>
+          <a class="button" href="/delete/{{ _id }}">Delete</a>
         </div>
       </div>
     </section>

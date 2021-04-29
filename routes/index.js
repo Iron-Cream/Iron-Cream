@@ -2,7 +2,7 @@ require('dotenv/config');
 const router = require('express').Router();
 const { loginCheck } = require('./middlewares');
 const { uploader, cloudinary } = require('../config/cloudinary');
-const { getDetails, getPhotoUrl } = require('../config/placesApi');
+const { getPhotoUrl } = require('../config/placesApi');
 const User = require('../models/User');
 const Store = require('../models/Store');
 

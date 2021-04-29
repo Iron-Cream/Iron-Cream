@@ -58,28 +58,29 @@ router.post('/add', async (req, res, next) => {
       formatted_address: address,
       name,
       geometry: { location },
+      opening_hours: { weekday_text: opening_hours },
+      price_level,
+      rating: avg_rating,
     } = place;
 
-    let opening_hours, price_level;
-    if (place.opening_hours) {
-      opening_hours = place.opening_hours.weekday_text;
-    }
-    if (place.price_level) {
-      price_level = place.price_level;
-    }
+    console.log({ place });
 
-    // const pictureId = place.photos[0].photo_reference;
+    const pictureId = place.photos[0].photo_reference;
 
     await Store.create({
+      // from map
       placeId,
+      comments: comments ? { user: req.user._id, text: comments } : null,
+      // from placesAPI
       name,
       address,
-      // pictureId,
+      pictureId,
       location: { coordinates: location },
       opening_hours,
       price_level,
+      // from user
       created_by: req.user._id,
-      comments: comments ? { user: req.user._id, text: comments } : null,
+      avg_rating,
     });
 
     res.redirect('/');

@@ -79,3 +79,30 @@
 #target {
   width: 345px;
 }
+
+#marker-content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 15px;
+}
+
+#view {
+  margin: 15px 5px 5px 5px;
+  background: darkcyan;
+  color: white;
+  border: 0px;
+  padding: 10px 40px;
+}
+
+#store_title {
+  text-align: center;
+  margin-bottom: 0px;
+  color: darkcyan;
+}
+
+#store_details {
+  margin-bottom: 0px;
+  color: darkcyan;
+  font-weight: 600;
+}

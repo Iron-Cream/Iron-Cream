@@ -234,6 +234,7 @@ ul#opening-hours {
   background-color: #0073739e;
   text-align: center;
   border-radius: 15px;
+  width: 60vw;
 }
 .banner h1 {
   color: #fff;
