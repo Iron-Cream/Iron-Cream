@@ -13,7 +13,6 @@ const storeSchema = new Schema(
     },
     pictureId: {
       type: String,
-      default: '/images/store-placeholder.jpg',
     },
     address: {
       type: String,
@@ -56,6 +55,10 @@ const storeSchema = new Schema(
         },
       },
     ],
+    avg_rating: {
+      type: Number,
+      default: 0,
+    },
     created_by: {
       type: Schema.Types.ObjectId,
       ref: 'User',

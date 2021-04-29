@@ -13,7 +13,10 @@ const getDetails = async (placeid) => {
   }
 };
 
-const getPhotoUrl = (id, width = 400) =>
-  `https://maps.googleapis.com/maps/api/place/photo?maxwidth=${width}&photoreference=${id}&key=${apiKey}`;
+const getPhotoUrl = (id, width = 400) => {
+  if (!id)
+    return 'https://res.cloudinary.com/doh6rpdke/image/upload/v1619682409/iron-cream/store-placeholder_vnixco.jpg';
+  return `https://maps.googleapis.com/maps/api/place/photo?maxwidth=${width}&photoreference=${id}&key=${apiKey}`;
+};
 
 module.exports = { getDetails, getPhotoUrl };

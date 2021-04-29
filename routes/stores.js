@@ -68,13 +68,13 @@ router.post('/add', async (req, res, next) => {
       price_level = place.price_level;
     }
 
-    // const pictureId = place.photos[0].photo_reference;
+    const pictureId = place.photos[0].photo_reference;
 
     await Store.create({
       placeId,
       name,
       address,
-      // pictureId,
+      pictureId,
       location: { coordinates: location },
       opening_hours,
       price_level,

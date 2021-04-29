@@ -42,8 +42,8 @@ const getMapData = () => {
 
         // create info window
         const infoString = `<div id="marker-content">
-        ${place.name}<br>
-        ${place.address}<br>
+        <h4 id="store_title">${place.name}</h4>
+        <p id="store_address">${place.address}</p>
         <form action="/view/${place._id}" method="GET">
           <button type="submit" id="view">View</button>
           </form>
