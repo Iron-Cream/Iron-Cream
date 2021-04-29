@@ -43,7 +43,7 @@
   {{#each comments}}
   <section>
     <div class="top-box"></div>
-    <img src="{{ user.avatar.path }}" alt="user picture" />
+    <img src="{{ user.avatar.path }}" alt="user picture"/>
     <div class="bottom-box">
       <blockquote>
         <p>{{ text }}</p>
@@ -56,7 +56,7 @@
   {{/each}}
 </div>
 {{else}}
-There are no comments yet.
+<p id="no-comment">There are no comments yet.</p>
 {{/if}}
 <form action="/view/{{_id}}" method="POST" id="comment-form">
   <label for="comment">Add a comment <img src="/images/comment.png" alt="speach bubble"></label>

@@ -93,6 +93,10 @@ ul#opening-hours {
   text-align: center;
   font-weight: 500;
 }
+#no-comment {
+  text-align: center;
+  margin: 30px 0 50px;
+}
 #favorites-header {
   margin-top: 50px;
   text-align: center;
