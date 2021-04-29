@@ -31,7 +31,7 @@ router.get('/favourites/add/:id', async (req, res, next) => {
   try {
     await User.findOneAndUpdate(
       { _id: req.user._id },
-      { $push: { favourites: req.params._id } },
+      { $addToSet: { favourites: req.params.id } },
     );
 
     res.redirect('/profile');
@@ -44,15 +44,16 @@ router.get('/favourites/delete/:id', async (req, res, next) => {
   try {
     const newFavourites = req.user.favourites.filter((fav) => {
       console.log(fav);
-      return fav === req.params.id;
+      return fav !== req.params.id;
     });
 
     console.log(req.user.favourites);
     console.log(newFavourites);
 
-    await User.findByIdAndUpdate(req.user._id, {
-      favourites: newFavourites,
-    });
+    await User.findOneAndUpdate(
+      { _id: req.user._id },
+      { $pull: { favourites: req.params.id } },
+    );
 
     res.redirect('/profile');
   } catch (err) {

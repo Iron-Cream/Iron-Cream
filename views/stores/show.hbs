@@ -30,12 +30,12 @@
 
     <div id="fav_buttons">
       {{#if favourite}}
-      <a id="del_fav" value="{{ store._id }}"
+      <a id="del_fav" href="/favourites/delete/{{ _id }}"
         ><img src="/images/cross.png" alt="cross icon" />Remove from
         favourites</a
       >
       {{else}}
-      <a id="add_fav" value="{{ store._id }}"
+      <a id="add_fav" href="/favourites/add/{{ _id }}"
         ><img src="/images/heart.png" alt="heart icon" />Add to favourites</a
       >
       {{/if}}
