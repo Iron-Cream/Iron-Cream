@@ -85,7 +85,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 15px;
+  padding: 0 10px;
 }
 
 #map-btn {
@@ -114,6 +114,15 @@
   margin-bottom: 0px;
   color: darkcyan;
   font-weight: 600;
+}
+
+#marker-content form {
+  display: flex;
+  flex-flow: column;
+}
+
+#marker-content #comments {
+  margin-bottom: 10px;
 }
 
 .db-warning {
