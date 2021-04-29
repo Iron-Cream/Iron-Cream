@@ -1,6 +1,7 @@
 #map {
   height: 80vh;
   width: 100%;
+  color: black;
 }
 
 #map button.custom-map-control-button {
@@ -109,6 +110,6 @@
 
 .db-warning {
   text-align: center;
-  margin: 0px;
+  margin-top: 0px;
   background: white;
 }

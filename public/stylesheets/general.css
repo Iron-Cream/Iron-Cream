@@ -7,10 +7,21 @@ body {
   padding: 50px 0 0;
   font: 16px 'Roboto', Helvetica, Arial, sans-serif;
   background: #179292;
+  color: white;
 }
 
 h1 {
   font-size: 3em;
+}
+
+h2 {
+  text-align: center;
+}
+
+a,
+a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 .warning {
@@ -23,10 +34,4 @@ h1 {
 
 .content {
   padding: 20px;
-}
-
-a,
-a:visited {
-  color: white;
-  text-decoration: none;
 }

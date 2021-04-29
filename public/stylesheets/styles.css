@@ -11,6 +11,7 @@ footer {
   text-align: center;
   padding: 10px;
   background-color: #007373;
+  color: #fff;
 }
 
 #logo {
@@ -90,10 +91,11 @@ ul#opening-hours {
 #store-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   margin: 20px 0;
   width: 100%;
+  color: black;
 }
 
 #store-list section {
@@ -259,6 +261,7 @@ ul#opening-hours {
   border-radius: 15px;
   box-shadow: 5px 1px 6px -2px rgba(0, 0, 0, 0.16);
   max-width: 600px;
+  color: black;
 }
 .user-info p span:first-of-type {
   display: inline-block;
