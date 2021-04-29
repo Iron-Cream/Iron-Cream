@@ -1,10 +1,10 @@
 require('dotenv/config');
 const router = require('express').Router();
 const { loginCheck } = require('./middlewares');
-const User = require('../models/User');
-const Store = require('../models/Store');
 const { uploader, cloudinary } = require('../config/cloudinary');
 const { getDetails, getPhotoUrl } = require('../config/placesApi');
+const User = require('../models/User');
+const Store = require('../models/Store');
 
 router.get('/', (req, res) => {
   res.render('index', { user: req.user, apiKey: process.env.MAPS_API_KEY });

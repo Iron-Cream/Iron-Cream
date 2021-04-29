@@ -220,67 +220,75 @@ ul#opening-hours {
   transform: translate3d(0, 0, -1em);
 }
 
-#profile h1 {
-  font-size: 2rem;
-}
-.user-info {
+.banner {
+  width: 100%;
+  height: 400px;
+  background-image: url('/images/icecream-bg.jpg');
+  background-position: center;
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  align-items: center;
+}
+.banner .banner-text {
+  padding: 40px 70px;
+  background-color: #0073739e;
+  text-align: center;
+  border-radius: 15px;
+}
+.banner h1 {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 0;
+  padding: 0;
 }
 .profile-pic {
-  margin: 30px;
   border-radius: 50%;
   max-width: 150px;
   height: auto;
   border: 3px solid #f1f5f8;
+  margin-bottom: 20px;
 }
-.left {
-  background-color: #f1f5f8;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border: 3px solid #b18597;
-  border-right: none;
-  box-shadow: -5px 1px 6px -2px rgba(0, 0, 0, 0.16);
-}
-.right {
+
+.user-info {
+  margin: 20px auto;
   background-color: #f1f5f8;
   padding: 20px;
   border: 3px solid #b18597;
-  border-left: none;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
   box-shadow: 5px 1px 6px -2px rgba(0, 0, 0, 0.16);
+  max-width: 600px;
 }
-.right p span:first-of-type {
+.user-info p span:first-of-type {
   display: inline-block;
   width: 40%;
   min-width: 100px;
   font-weight: 600;
 }
-.right p span:last-of-type {
+.riguser-info p span:last-of-type {
   display: inline-block;
   width: 60%;
 }
 
-.right #pic-upload {
+.user-info #pic-upload {
   display: flex;
   font-weight: 600;
 }
 
-.right #pic-upload label {
+.user-info #pic-upload label {
   width: 40%;
   min-width: 100px;
 }
 
-.right #pic-upload .pic-submit-btn {
+.user-info #pic-upload .pic-submit-btn {
   width: 60%;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
 }
-.right #pic-upload .pic-submit-btn button {
+.user-info #pic-upload .pic-submit-btn button {
   margin: 10px 0;
+  max-width: 250px;
 }
 
 @media (min-width: 501px) and (max-width: 1100px) {
