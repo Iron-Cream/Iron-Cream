@@ -6,12 +6,10 @@
         <section>
             <img src="{{ picUrl }}" alt="picture of {{ title }}" />
             <div class="manage-info">
-                <p class="store-name">{{ name }}</p>
-                {{created_by}}
+                <a class="store-name" href="/view/{{ _id }}">{{name}}</a>
                 <p class="store-address">{{ address }}</p>
                 <div class="buttons">
-                    <a class="button" href="/view/{{ _id }}">View</a>
-                    <a href="/view/{{ _id }}">Edit</a>
+                    <a class="button" href="#">Edit</a>
                     <a class="button" href="/delete/{{ _id }}">Delete</a>
                 </div>
             </div>
