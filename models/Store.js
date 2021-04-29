@@ -67,7 +67,10 @@ const storeSchema = new Schema(
       ref: 'User',
     },
     opening_hours: [String],
-    price_level: Number,
+    price_level: {
+      type: Number | String,
+      default: 'unknown',
+    },
   },
   { timestamps: true },
 );
