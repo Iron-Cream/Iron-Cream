@@ -24,6 +24,11 @@ router.get('/view/:id', (req, res) => {
       },
     })
     .then((store) => {
+      const { price_level } = store;
+      store.icecream_level = '';
+      for (let i = 0; i < price_level; i++) {
+        store.icecream_level += '🍨';
+      }
       store.picUrl = getPhotoUrl(store.pictureId, 400);
       res.render('stores/show', { store, user: req.user });
     })
@@ -39,14 +44,13 @@ router.get('/delete/:id', loginCheck(), (req, res) => {
     if (store.created_by.equals(user)) {
       Store.findOneAndRemove({ _id: id })
         .then(() => {
-          console.log('removed!');
           res.redirect('/profile');
         })
         .catch((error) => {
           console.log(error);
         });
     } else {
-      console.log('no match!');
+      res.redirect('/profile');
     }
   });
 });
@@ -108,11 +112,40 @@ router.post('/add', async (req, res, next) => {
   }
 });
 
+router.get('/edit/:id', loginCheck(), (req, res, next) => {
+  const id = req.params.id;
+  const user = req.user._id;
+  Store.findById(id)
+    .then((store) => {
+      store.picUrl = getPhotoUrl(store.pictureId, 400);
+      res.render('stores/edit', { store, user: req.user });
+    })
+    .catch((error) => {
+      next(error);
+    });
+});
+
+router.post('/edit/:id', (req, res, next) => {
+  const id = req.params.id;
+  const { name, description, opening_hours } = req.body;
+  Store.findByIdAndUpdate(id, {
+    name,
+    description,
+    opening_hours,
+  })
+    .then(() => {
+      res.redirect(`/view/${id}`);
+    })
+    .catch((err) => {
+      next(err);
+    });
+});
+
 router.get('/manage', loginCheck(), (req, res, next) => {
   const user = req.user._id;
   if (user.role === 'admin') {
     Store.find()
-      .populate('created_by')
+      // .populate('created_by')
       .then((stores) => {
         stores.forEach((store) => {
           store.picUrl = getPhotoUrl(store.pictureId, 400);

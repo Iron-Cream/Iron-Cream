@@ -1,44 +1,52 @@
 <div class="content">
-  {{#with store}}
-  <img
-    src="{{#if picUrl}}{{ picUrl }}{{else}}{{ pictureId }}{{/if}}"
-    alt="picture of {{ title }}"
-  />
-  <h1>{{ name }}</h1>
-  <h2>Address:</h2>
-  <p>{{ address }}</p>
-  {{#if price_level}}
-  <h2>Price level:</h2>
-  <p>{{ price_level }}</p>
-  {{/if}}
-  {{#if opening_hours}}
-  <h2>Opening hours:</h2>
-  <ul id="opening-hours">
-    {{#each opening_hours}}
-    <li>{{ this }}</li>
-    {{/each}}
-  </ul>
-  {{/if}}
-  <h2>Comments:</h2>
-  {{#if comments}}
-  <div id="comment-list">
-    {{#each comments}}
-    <section>
-      <div class="top-box"></div>
-      <img src="{{ user.avatar.path }}" alt="user picture" />
-      <div class="bottom-box">
-        <blockquote>
-          <p>{{ text }}</p>
-        </blockquote>
-        <div class="test-details">
-          <p>{{ user.username }}</p>
-        </div>
+  <div id="show">
+    {{#with store}}
+    <img
+      src="{{#if picUrl}}{{ picUrl }}{{else}}{{ pictureId }}{{/if}}"
+      alt="picture of {{ title }}"
+    />
+    <div class="bottom-text">
+      <h1>{{ name }}</h1>
+      <h3>Address:</h3>
+      <p>{{ address }}</p>
+      {{#if price_level}}
+      <h3>Price level:</h3>
+      <p>{{ icecream_level }}</p>
+      {{/if}}
+      {{#if opening_hours}}
+      <h3>Opening hours:</h3>
+      <ul id="opening-hours">
+        {{#each opening_hours}}
+        <li>{{ this }}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
+      {{#if description}}
+      <h3>Description:</h3>
+      <p>{{ description }}</p>
+      {{/if}}
       </div>
-    </section>
-  </div>
-  {{/each}}
-  {{else}}
-  There are no comments yet.
-  {{/if}}
-  {{/with}}
+    </div>
+    <h2>What other users say about {{name}}:</h2>
+    {{#if comments}}
+    <div id="comment-list">
+      {{#each comments}}
+      <section>
+        <div class="top-box"></div>
+        <img src="{{ user.avatar.path }}" alt="user picture" />
+        <div class="bottom-box">
+          <blockquote>
+            <p>{{ text }}</p>
+          </blockquote>
+          <div class="test-details">
+            <p>{{ user.username }}</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    {{/each}}
+    {{else}}
+    There are no comments yet.
+    {{/if}}
+    {{/with}}
 </div>
