@@ -123,7 +123,8 @@ const addStore = () => {
   infowindow.setContent(infowindowContent);
 
   const icon = {
-    url: './images/blue-creme.png',
+    url:
+      'https://res.cloudinary.com/doh6rpdke/image/upload/v1619682408/iron-cream/blue-creme_benj2w.png',
     size: new google.maps.Size(50, 75),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(17, 34),
