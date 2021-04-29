@@ -24,6 +24,11 @@ router.get('/view/:id', (req, res) => {
       },
     })
     .then((store) => {
+      const { price_level } = store;
+      store.icecream_level = '';
+      for (let i = 0; i < price_level; i++) {
+        store.icecream_level += '🍨';
+      }
       store.picUrl = getPhotoUrl(store.pictureId, 400);
       res.render('stores/show', { store, user: req.user });
     })
@@ -39,14 +44,13 @@ router.get('/delete/:id', loginCheck(), (req, res) => {
     if (store.created_by.equals(user)) {
       Store.findOneAndRemove({ _id: id })
         .then(() => {
-          console.log('removed!');
           res.redirect('/profile');
         })
         .catch((error) => {
           console.log(error);
         });
     } else {
-      console.log('no match!');
+      res.redirect('/profile');
     }
   });
 });
@@ -114,7 +118,7 @@ router.get('/edit/:id', loginCheck(), (req, res, next) => {
   Store.findById(id)
     .then((store) => {
       store.picUrl = getPhotoUrl(store.pictureId, 400);
-      res.render('stores/edit', { store });
+      res.render('stores/edit', { store, user: req.user });
     })
     .catch((error) => {
       next(error);

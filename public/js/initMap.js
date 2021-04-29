@@ -41,6 +41,12 @@ const getMapData = () => {
         });
 
         // create info window
+        if (place.price_level) {
+          place.icecream_level = '';
+          for (let i = 0; i < place.price_level; i++) {
+            place.icecream_level += '🍨';
+          }
+        }
         const infoString = `<div id="marker-content">
         <h3 id="store_title">${place.name}</h3>
         <h4 id="store_details">${place.address}</h4>
@@ -48,7 +54,7 @@ const getMapData = () => {
         ${
           place.price_level
             ? '<h4 id="store_details">Price level: ' +
-              place.price_level +
+              place.icecream_level +
               '</h4>'
             : ''
         }
