@@ -223,7 +223,7 @@ ul#opening-hours {
 .banner {
   width: 100%;
   height: 400px;
-  background-image: url('/images/icecream-bg.jpg');
+  background-image: url('https://res.cloudinary.com/doh6rpdke/image/upload/v1619682409/iron-cream/icecream-bg_f78pvm.jpg');
   background-position: center;
   display: flex;
   justify-content: center;

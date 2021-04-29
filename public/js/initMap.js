@@ -22,7 +22,8 @@ const getMapData = () => {
     .then(function (response) {
       let mapData = response.data.stores;
       const icon = {
-        url: './images/ice-cream-iconx50.png',
+        url:
+          'https://res.cloudinary.com/doh6rpdke/image/upload/v1619682409/iron-cream/ice-cream-iconx50_utlbpj.png',
         size: new google.maps.Size(50, 75),
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(17, 34),
