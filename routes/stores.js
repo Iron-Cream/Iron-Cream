@@ -91,7 +91,7 @@ router.post('/add', async (req, res, next) => {
       });
 
       await User.findOneAndUpdate(
-        { _id: req.body.id },
+        { _id: req.user._id },
         { $push: { favourites: newStore._id } },
       );
 
