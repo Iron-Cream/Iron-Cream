@@ -46,13 +46,13 @@ ul#opening-hours {
 #comment-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   margin: 20px 0;
   max-width: 100%;
 }
 #comment-list section {
-  margin-bottom: 30px;
+  margin: 50px;
   width: 264px;
 }
 #comment-list section .top-box {
@@ -278,7 +278,7 @@ ul#opening-hours {
 #manage-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-center;
+  justify-content: center;
 }
 #manage-list section {
   background-color: #f1f5f8;
