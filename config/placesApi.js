@@ -1,6 +1,7 @@
 require('dotenv').config();
 const Places = require('google-places-web').default;
-Places.apiKey = process.env.GOOGLE_PLACES_API_KEY;
+const apiKey = process.env.GOOGLE_PLACES_API_KEY;
+Places.apiKey = apiKey;
 
 const getDetails = async (placeid) => {
   try {
@@ -12,10 +13,7 @@ const getDetails = async (placeid) => {
   }
 };
 
-const getPhotoUrl = (id, width = 400) => {
-  let url = `https://maps.googleapis.com/maps/api/place/photo?`;
-  url += `maxwidth=${width}&photoreference=${id}&key=${process.env.GOOGLE_PLACES_API_KEY}`;
-  return url;
-};
+const getPhotoUrl = (id, width = 400) =>
+  `https://maps.googleapis.com/maps/api/place/photo?maxwidth=${width}&photoreference=${id}&key=${apiKey}`;
 
 module.exports = { getDetails, getPhotoUrl };
