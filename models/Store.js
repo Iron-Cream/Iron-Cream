@@ -68,8 +68,7 @@ const storeSchema = new Schema(
     },
     opening_hours: [String],
     price_level: {
-      type: Number | String,
-      default: 'unknown',
+      type: Number,
     },
   },
   { timestamps: true },
