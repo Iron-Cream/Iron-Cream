@@ -19,6 +19,10 @@
     {{/each}}
   </ul>
   {{/if}}
+  {{#if description}}
+  <h2>Description:</h2>
+  <p>{{ description }}</p>
+  {{/if}}
   <h2>Comments:</h2>
   {{#if comments}}
   <div id="comment-list">

@@ -1,16 +1,19 @@
 <div id="edit" class="content">
     {{#with store}}
-    <h1>Edit {{name}}</h1>
-
     <form action="/edit/{{_id}}" method="POST">
-        <label for="name">Title: </label>
-        <input type="text" name="name" id="name" value="{{ name }}">
-
-        <label for="description">Description: </label>
-        <input type="text" name="description" id="description" value="{{ description }}">
-
-        <label for="opening_hours">Opening hours: </label>
-        <input type="text" name="opening_hours" id="opening_hours" value="{{ opening_hours }}">
+        <h2>Edit information for {{name}} 🍨</h2>
+        <div class="row">
+            <label for="name">Title: </label>
+            <input type="text" name="name" id="name" value="{{ name }}">
+        </div>
+        <div class="row">
+            <label for="description">Description: </label>
+            <input type="text" name="description" id="description" value="{{ description }}">
+        </div>
+        <div class="row">
+            <label for="opening_hours">Opening hours: </label>
+            <input type="text" name="opening_hours" id="opening_hours" value="{{ opening_hours }}">
+        </div>
 
     <button type="submit">Edit this store</button>
     </form>
