@@ -1,26 +1,25 @@
+<div class="banner">
+  <div class="banner-text">
+  {{#if user.avatar }}
+    <img class="profile-pic" src="{{ user.avatar.path }}" alt="" />
+  {{/if}}
+    <h1>Hello, {{ user.username }},<br>welcome back!</h1>
+  </div>
+</div>
 <div id="profile" class="content">
-  <h1>Hello, {{ user.username }}, welcome back!</h1>
-
   <div class="user-info">
-    <div class="left">
-      {{#if user.avatar }}
-        <img class="profile-pic" src="{{ user.avatar.path }}" alt="" />
-      {{/if}}
-    </div>
-    <div class="right">
-      <p><span>Username:</span><span>{{user.username}}</span></p>
-      <p><span>Email:</span><span>{{user.email}}</span></p>
-        <form id="pic-upload"
-        action="/new-pic/{{ user._id }}"
-        method="post"
-        enctype="multipart/form-data">
-        <label for="pic">Upload new profile pic:</label>
-        <div class="pic-submit-btn">
-          <input type="file" name="pic" id="pic" />
-          <button type="submit">Upload Profile Pic</button>
-        </div>
-      </form>
-    </div>
+    <p><span>Username:</span><span>{{user.username}}</span></p>
+    <p><span>Email:</span><span>{{user.email}}</span></p>
+      <form id="pic-upload"
+      action="/new-pic/{{ user._id }}"
+      method="post"
+      enctype="multipart/form-data">
+      <label for="pic">Upload new profile pic:</label>
+      <div class="pic-submit-btn">
+        <input type="file" name="pic" id="pic" />
+        <button type="submit">Upload Profile Pic</button>
+      </div>
+    </form>
   </div>
 
 
@@ -51,8 +50,4 @@
   {{else}}
   You haven't uploaded anything yet.
   {{/if}}
-
-  <a href="/">
-    Back to Map
-  </a>
 </div>
