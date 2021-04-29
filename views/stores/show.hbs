@@ -8,7 +8,9 @@
   <h2>Address:</h2>
   <p>{{ address }}</p>
   <h2>Price level:</h2>
+  {{#if price_level}}
   <p>{{ price_level }}</p>
+  {{/if}}
   {{#if opening_hours}}
   <h2>Opening hours:</h2>
   <ul id="opening-hours">
