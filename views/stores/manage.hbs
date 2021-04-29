@@ -1,23 +1,23 @@
 <div class="content">
-{{#if stores}}
-  <div id="store-list">
+    <h1>Manage submissions:</h1>
+    {{#if stores}}
+    <div id="manage-list">
     {{#each stores}}
-    <section>
-      <div class="top-box">
-        <img src="{{ picUrl }}" alt="picture of {{ title }}" />
-      </div>
-      <div class="bottom-box">
-        <p class="store-name">{{ name }}</p>
-        <p class="store-address">{{ address }}</p>
-        <div class="buttons">
-          <a class="button" href="/view/{{ _id }}">View</a>
-          <a href="/view/{{ _id }}">Edit</a>
-          <a class="button" href="/delete/{{ _id }}">Delete</a>
-        </div>
-      </div>
-    </section>
+        <section>
+            <img src="{{ picUrl }}" alt="picture of {{ title }}" />
+            <div class="manage-info">
+                <p class="store-name">{{ name }}</p>
+                {{created_by}}
+                <p class="store-address">{{ address }}</p>
+                <div class="buttons">
+                    <a class="button" href="/view/{{ _id }}">View</a>
+                    <a href="/view/{{ _id }}">Edit</a>
+                    <a class="button" href="/delete/{{ _id }}">Delete</a>
+                </div>
+            </div>
+        </section>
     {{/each}}
-  </div>
+    </div>
   {{else}}
   You haven't uploaded anything yet.
   {{/if}}

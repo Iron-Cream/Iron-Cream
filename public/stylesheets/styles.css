@@ -295,6 +295,35 @@ ul#opening-hours {
   max-width: 250px;
 }
 
+#manage-list section {
+  background-color: #f1f5f8;
+  margin: 10px 10px 30px;
+  width: 50%;
+  border: 3px solid #b18597;
+  border-radius: 15px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+}
+#manage-list section img {
+  width: 30%;
+  min-width: 200px;
+  height: 100%;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+}
+#manage-list section .manage-info {
+  padding: 20px;
+}
+#manage-list section .manage-info .store-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+#manage-list section .manage-info .store-address {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: dimgray;
+}
+
 @media (min-width: 501px) and (max-width: 1100px) {
   #store-list section {
     width: calc((100% / 2) - 20px);
