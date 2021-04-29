@@ -53,9 +53,9 @@ const getMapData = () => {
         <h4 id="store_details">Rating: ${place.avg_rating}</h4>
         ${
           place.price_level
-            ? '<h4 id="store_details">Price level: ' +
+            ? '<h4 id="store_details" class="icecream_level">Price level: <span>' +
               place.icecream_level +
-              '</h4>'
+              '</span></h4>'
             : ''
         }
         <form action="/view/${place._id}" method="GET">
@@ -171,7 +171,7 @@ const addStore = () => {
     <h3 id="store_title">${place.name}</h3><br>
     <form action="/add" method="POST">
       <input type='hidden' name='placeId' id='placeId' value="${place.place_id}">
-      <input name='comments' id='comments' placeholder='Add comment here'>
+      <textarea id="comments" name="comments" placeholder="Add comment here."></textarea>
       <button type="submit" id="map-btn">Add this store</button>
     </form>
     </div>`;
