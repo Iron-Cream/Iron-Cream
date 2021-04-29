@@ -42,7 +42,7 @@ router.post('/login', (req, res, next) => {
       if (err) {
         return next(err);
       }
-      return res.render('profile', { user });
+      return res.redirect('/profile');
     });
   })(req, res, next);
 });
