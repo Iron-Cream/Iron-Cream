@@ -402,6 +402,51 @@ ul#opening-hours {
   margin: 40px auto;
 }
 
+#comment-form {
+  margin: 20px auto;
+  background-color: #f1f5f8;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 6px rgb(0 0 0 / 16%);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px 30px;
+}
+#comment-form label {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+#comment-form label img {
+  width: 50px;
+  height: auto;
+}
+#comment-form textarea {
+  height: 150px;
+  width: 100%;
+  padding: 10px;
+}
+#comment-form button {
+  margin: 20px 0 0;
+  background: darkcyan;
+  color: white;
+  border: 0px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  min-width: 80px;
+  text-align: center;
+  width: 200px;
+  transition: background 300ms;
+}
+#comment-form button:hover {
+  background: #b18597;
+}
+#comment-form button:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 601px) and (max-width: 1100px) {
   #store-list section {
     width: calc((100% / 2) - 20px);
@@ -420,5 +465,8 @@ ul#opening-hours {
   }
   #manage-list section {
     width: 100%;
+  }
+  #comment-form label img {
+    display: none;
   }
 }
