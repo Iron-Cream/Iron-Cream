@@ -42,10 +42,17 @@ router.get('/favourites/add/:id', async (req, res, next) => {
 
 router.get('/favourites/delete/:id', async (req, res, next) => {
   try {
-    await User.findOneAndUpdate(
-      { _id: req.user._id },
-      { $pop: { favourites: req.params._id } },
-    );
+    const newFavourites = req.user.favourites.filter((fav) => {
+      console.log(fav);
+      return fav === req.params.id;
+    });
+
+    console.log(req.user.favourites);
+    console.log(newFavourites);
+
+    await User.findByIdAndUpdate(req.user._id, {
+      favourites: newFavourites,
+    });
 
     res.redirect('/profile');
   } catch (err) {

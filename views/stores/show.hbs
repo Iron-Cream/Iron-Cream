@@ -8,12 +8,12 @@
     <h1>{{ name }}</h1>
     <h3>Address:</h3>
     <p>{{ address }}</p>
-    
+
     {{#if price_level}}
     <h3>Price level:</h3>
     <p class="icecream-level">{{ icecream_level }}</p>
     {{/if}}
-    
+
     {{#if opening_hours}}
     <h3>Opening hours:</h3>
     <ul id="opening-hours">
@@ -22,7 +22,7 @@
       {{/each}}
     </ul>
     {{/if}}
-    
+
     {{#if description}}
     <h3>Description:</h3>
     <p>{{ description }}</p>
@@ -30,20 +30,25 @@
 
     <div id="fav_buttons">
       {{#if favourite}}
-        <a id="del_fav" value="{{ store._id }}"><img src="/images/cross.png" alt="cross icon">Remove from favourites</a>
+      <a id="del_fav" value="{{ store._id }}"
+        ><img src="/images/cross.png" alt="cross icon" />Remove from
+        favourites</a
+      >
       {{else}}
-        <a id="add_fav" value="{{ store._id }}"><img src="/images/heart.png" alt="heart icon">Add to favourites</a>
+      <a id="add_fav" value="{{ store._id }}"
+        ><img src="/images/heart.png" alt="heart icon" />Add to favourites</a
+      >
       {{/if}}
     </div>
   </div>
 </div>
-<h2>What other users say about {{name}}:</h2>
+<h2>What other users say about {{ name }}:</h2>
 {{#if comments}}
 <div id="comment-list">
   {{#each comments}}
   <section>
     <div class="top-box"></div>
-    <img src="{{ user.avatar.path }}" alt="user picture"/>
+    <img src="{{ user.avatar.path }}" alt="user picture" />
     <div class="bottom-box">
       <blockquote>
         <p>{{ text }}</p>
@@ -58,12 +63,17 @@
 {{else}}
 <p id="no-comment">There are no comments yet.</p>
 {{/if}}
-<form action="/view/{{_id}}" method="POST" id="comment-form">
-  <label for="comment">Add a comment <img src="/images/comment.png" alt="speach bubble"></label>
-  <textarea id="comment" name="comment" placeholder="Leave your review here."></textarea>
+<form action="/view/{{ _id }}" method="POST" id="comment-form">
+  <label for="comment"
+    >Add a comment <img src="/images/comment.png" alt="speach bubble"
+  /></label>
+  <textarea
+    id="comment"
+    name="comment"
+    placeholder="Leave your review here."
+  ></textarea>
   <button type="submit">Add</button>
 </form>
 {{/with}}
-
 
 <script src="/js/script.js"></script>

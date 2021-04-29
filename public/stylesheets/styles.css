@@ -272,7 +272,7 @@ ul#opening-hours {
 #manage-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-center;
 }
 #manage-list section {
   background-color: #f1f5f8;
