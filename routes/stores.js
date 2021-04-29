@@ -59,11 +59,17 @@ router.post('/add', async (req, res, next) => {
       formatted_address: address,
       name,
       geometry: { location },
-      opening_hours: { weekday_text: opening_hours } = null,
-      price_level = null,
-      rating: avg_rating = null,
+      opening_hours: { weekday_text: opening_hours } = {
+        weekday_text: [],
+      },
+      price_level,
+      rating: avg_rating,
     } = place;
-    const pictureId = place.photos[0].photo_reference;
+
+    let pictureId;
+    if (place.photos) {
+      pictureId = place.photos[0].photo_reference;
+    }
 
     const store = await Store.findOne({ placeId });
 
