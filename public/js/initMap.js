@@ -61,7 +61,7 @@ const getMapData = () => {
         <form action="/view/${place._id}" method="GET">
           <button type="submit" id="map-btn">View</button>
           </form>
-        </div>`;
+        </div> `;
 
         marker.infowindow = new google.maps.InfoWindow();
         marker.infowindow.setContent(infoString);

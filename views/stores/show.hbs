@@ -1,4 +1,3 @@
-<div class="content">
   <div id="show">
     {{#with store}}
     <img
@@ -9,10 +8,12 @@
       <h1>{{ name }}</h1>
       <h3>Address:</h3>
       <p>{{ address }}</p>
+      
       {{#if price_level}}
       <h3>Price level:</h3>
       <p>{{ icecream_level }}</p>
       {{/if}}
+      
       {{#if opening_hours}}
       <h3>Opening hours:</h3>
       <ul id="opening-hours">
@@ -21,13 +22,17 @@
         {{/each}}
       </ul>
       {{/if}}
+      
       {{#if description}}
       <h3>Description:</h3>
       <p>{{ description }}</p>
       {{/if}}
+      
       </div>
     </div>
+    
     <h2>What other users say about {{name}}:</h2>
+    
     {{#if comments}}
     <div id="comment-list">
       {{#each comments}}
@@ -43,10 +48,21 @@
           </div>
         </div>
       </section>
+      {{/each}}
     </div>
-    {{/each}}
+
     {{else}}
     There are no comments yet.
     {{/if}}
     {{/with}}
+    
+    
+  {{#if favourite}}
+  <a class="button" id="add_fav" value="{{ store._id }}">Add to favourites</a>
+  {{else}}
+  <a class="button" id="del_fav" value="{{ store._id }}"
+    >Remove from favourites</a
+  >
 </div>
+
+<script src="/js/script.js"></script>
