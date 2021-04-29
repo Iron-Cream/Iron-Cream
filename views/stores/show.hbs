@@ -43,10 +43,17 @@
           </div>
         </div>
       </section>
+      {{/each}}
     </div>
-    {{/each}}
     {{else}}
     There are no comments yet.
     {{/if}}
+    <h2>Add a comment: </h2>
+    <form action="/view/{{_id}}" method="POST">
+      <label for="comment">Comment: </label>
+      {{!-- cols="35" rows="4" --}}
+      <textarea id="comment" name="comment" placeholder="Add your comment here."></textarea>
+      <button type="submit">Add</button>
+    </form>
     {{/with}}
 </div>

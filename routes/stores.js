@@ -4,17 +4,17 @@ const User = require('../models/User');
 const { loginCheck } = require('./middlewares');
 const { getDetails, getPhotoUrl } = require('../config/placesApi');
 
-router.get('/mapdata', (req, res) => {
+router.get('/mapdata', (req, res, next) => {
   Store.find()
     .then((stores) => {
       res.send({ stores });
     })
     .catch((error) => {
-      console.log(error);
+      next(error);
     });
 });
 
-router.get('/view/:id', (req, res) => {
+router.get('/view/:id', (req, res, next) => {
   Store.findById(req.params.id)
     .populate({
       path: 'comments',
@@ -33,11 +33,27 @@ router.get('/view/:id', (req, res) => {
       res.render('stores/show', { store, user: req.user });
     })
     .catch((error) => {
-      console.log(error);
+      next(error);
     });
 });
 
-router.get('/delete/:id', loginCheck(), (req, res) => {
+router.post('/view/:id', (req, res, next) => {
+  const { comment } = req.body;
+  const storeId = req.params.id;
+  const userId = req.user._id;
+  Store.findOneAndUpdate(
+    { _id: storeId },
+    { $push: { comments: { user: userId, text: comment } } },
+  )
+    .then(() => {
+      res.redirect(`/view/${storeId}`);
+    })
+    .catch((error) => {
+      next(error);
+    });
+});
+
+router.get('/delete/:id', loginCheck(), (req, res, next) => {
   const id = req.params.id;
   const user = req.user._id;
   Store.findById(id).then((store) => {
@@ -47,7 +63,7 @@ router.get('/delete/:id', loginCheck(), (req, res) => {
           res.redirect('/profile');
         })
         .catch((error) => {
-          console.log(error);
+          next(error);
         });
     } else {
       res.redirect('/profile');
