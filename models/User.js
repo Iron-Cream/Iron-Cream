@@ -32,7 +32,7 @@ const userSchema = new Schema(
       path: {
         type: String,
         default:
-          'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png',
+          'https://res.cloudinary.com/doh6rpdke/image/upload/w_200,h_200/v1619712362/iron-cream/avatar-1577909_960_720_r9xjzp.webp',
       },
       cloudinaryId: { type: String },
     },

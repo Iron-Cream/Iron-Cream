@@ -30,7 +30,11 @@ router.get('/view/:id', (req, res, next) => {
         store.icecream_level += '🍨';
       }
       store.picUrl = getPhotoUrl(store.pictureId, 400);
-      res.render('stores/show', { store, user: req.user });
+      res.render('stores/show', {
+        store,
+        user: req.user,
+        favourite: req.user.favourites.includes(store._id) ? true : false,
+      });
     })
     .catch((error) => {
       next(error);
@@ -103,7 +107,7 @@ router.post('/add', async (req, res, next) => {
       const newStore = await Store.create({
         // from map
         placeId,
-        comments: comments ? { user: req.user._id, text: comments } : null,
+        comments: comments ? { user: req.user._id, text: comments } : [],
         // from placesAPI
         name,
         address,
