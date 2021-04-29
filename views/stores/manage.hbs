@@ -7,6 +7,9 @@
             <img src="{{ picUrl }}" alt="picture of {{ title }}" />
             <div class="manage-info">
                 <a class="store-name" href="/view/{{ _id }}">{{name}}</a>
+                {{#if createdBy}}
+                {{createdBy}}
+                {{/if}}
                 <p class="store-address">{{ address }}</p>
                 <div class="buttons">
                     <a class="button" href="/edit/{{ _id }}">Edit</a>
