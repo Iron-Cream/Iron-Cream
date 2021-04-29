@@ -283,7 +283,6 @@ ul#opening-hours {
   border-radius: 15px;
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
   display: flex;
-  height: 170px;
 }
 #manage-list a.store-name {
   display: block;
@@ -299,11 +298,12 @@ ul#opening-hours {
   border-top-left-radius: 12px;
 }
 #manage-list section .manage-info {
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
 }
 #manage-list section .manage-info .store-name {
   font-weight: 600;
   font-size: 1.2rem;
+  padding-bottom: 10px;
 }
 #manage-list section .manage-info .store-address {
   font-size: 0.8rem;

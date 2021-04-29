@@ -162,26 +162,33 @@ router.post('/edit/:id', (req, res, next) => {
 });
 
 router.get('/manage', loginCheck(), (req, res, next) => {
-  const user = req.user._id;
-  if (user.role === 'admin') {
-    Store.find()
-      // .populate('created_by')
-      .then((stores) => {
-        stores.forEach((store) => {
-          store.picUrl = getPhotoUrl(store.pictureId, 400);
-        });
-        res.render('stores/manage', { stores, user: req.user });
-      })
-      .catch((err) => next(err));
-  } else {
-    Store.find({ created_by: req.user._id })
-      .then((stores) => {
-        stores.forEach((store) => {
-          store.picUrl = getPhotoUrl(store.pictureId, 400);
-        });
-        res.render('stores/manage', { stores, user: req.user });
-      })
-      .catch((err) => next(err));
-  }
+  const userId = req.user._id;
+  User.findOne(userId)
+    .then((user) => {
+      if (user.role === 'admin') {
+        Store.find()
+          .populate('created_by')
+          .then((stores) => {
+            stores.forEach((store) => {
+              store.picUrl = getPhotoUrl(store.pictureId, 400);
+              if (store.created_by !== undefined) {
+                store.createdBy = `Created by: ${store.created_by.username}`;
+              }
+            });
+            res.render('stores/manage', { stores, user: req.user });
+          })
+          .catch((err) => next(err));
+      } else {
+        Store.find({ created_by: req.user._id })
+          .then((stores) => {
+            stores.forEach((store) => {
+              store.picUrl = getPhotoUrl(store.pictureId, 400);
+            });
+            res.render('stores/manage', { stores, user: req.user });
+          })
+          .catch((err) => next(err));
+      }
+    })
+    .catch((err) => next(err));
 });
 module.exports = router;
