@@ -1,40 +1,53 @@
-<div class="content">
-  <h1>Hello, {{ user.username }}, you're logged in!</h1>
-
+<div class="banner">
+  <div class="banner-text">
   {{#if user.avatar }}
-  <img class="profile-pic" src="{{ user.avatar.path }}" alt="" />
+    <img class="profile-pic" src="{{ user.avatar.path }}" alt="" />
   {{/if}}
+    <h1>Hello, {{ user.username }},<br>welcome back!</h1>
+  </div>
+</div>
+<div id="profile" class="content">
+  <div class="user-info">
+    <p><span>Username:</span><span>{{user.username}}</span></p>
+    <p><span>Email:</span><span>{{user.email}}</span></p>
+      <form id="pic-upload"
+      action="/new-pic/{{ user._id }}"
+      method="post"
+      enctype="multipart/form-data">
+      <label for="pic">Upload new profile pic:</label>
+      <div class="pic-submit-btn">
+        <input type="file" name="pic" id="pic" />
+        <button type="submit">Upload Profile Pic</button>
+      </div>
+    </form>
+  </div>
+
 
   {{#if err_msg}}
   <p class="warning">{{ err_msg }}</p>
   {{/if}}
 
-  <form
-    action="/new-pic/{{ user._id }}"
-    method="post"
-    enctype="multipart/form-data"
-  >
-    <label for="pic">Upload new profile pic: </label>
-    <input type="file" name="pic" id="pic" />
-
-    <button type="submit">Upload Profile Pic</button>
-  </form>
-
   <h2>Your upload history:</h2>
   {{#if stores}}
+  <div id="store-list">
     {{#each stores}}
-    <div class="store-card">
-      <p>{{name}}</p>
-      {{!-- <img src="" alt=""> --}}
-      <a href="/view/{{_id}}">View</a>
-      <a href="#">Edit</a>
-      <a href="/delete/{{_id}}">Delete</a>
-    </div>
+    <section>
+      <div class="top-box">
+        <img src="{{#if picUrl}}{{picUrl}}{{else}}{{pictureId}}{{/if}}" alt="picture of {{title}}" />
+      </div>
+      <div class="bottom-box">
+        <p class="store-name">{{name}}</p>
+        <p class="store-address">{{address}}</p>
+        <div class="buttons">
+          <a class="button" href="/view/{{_id}}">View</a>
+          {{!-- <a href="#">Edit</a> --}}
+          <a class="button" href="/delete/{{_id}}">Delete</a>
+        </div>
+      </div>
+    </section>
     {{/each}}
+  </div>
   {{else}}
-  You haven't submitted any stores yet.
+  You haven't uploaded anything yet.
   {{/if}}
-  <a href="/">
-    Back to Map
-  </a>
 </div>

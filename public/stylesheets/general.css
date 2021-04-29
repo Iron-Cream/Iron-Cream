@@ -1,8 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   padding: 50px 0 0;
   font: 16px 'Roboto', Helvetica, Arial, sans-serif;
-  background: #008c8c;
+  background: #179292;
 }
 
 h1 {

@@ -21,7 +21,6 @@ const getMapData = () => {
     .get('/mapdata')
     .then(function (response) {
       let mapData = response.data.stores;
-      // console.log(mapData);
       const icon = {
         url: './images/ice-cream-iconx50.png',
         size: new google.maps.Size(50, 75),
@@ -31,7 +30,6 @@ const getMapData = () => {
       };
 
       for (let place of mapData) {
-        console.log(place);
         // Loop through the results array and place a marker for each set of coordinates.
         const coords = place.location.coordinates;
         const latLng = new google.maps.LatLng(coords.lat, coords.lng);
@@ -78,7 +76,6 @@ const centerToCurrentLocation = () => {
   locationButton.classList.add('custom-map-control-button');
   map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(locationButton);
   locationButton.addEventListener('click', () => {
-    console.log('clicked');
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -137,7 +134,6 @@ const addStore = () => {
   autocomplete.addListener('place_changed', () => {
     infowindow.close();
     const place = autocomplete.getPlace();
-    // console.log(place);
 
     if (!place.geometry || !place.geometry.location) {
       return;
@@ -156,8 +152,6 @@ const addStore = () => {
     });
 
     marker.setVisible(true);
-    // let storeInfo = getStoreInfo(place.place_id);
-    // console.log(storeInfo);
 
     const addString = `<div id="marker-content">${place.name}<br>
     <form action="/add" method="POST">
@@ -171,30 +165,3 @@ const addStore = () => {
     infowindow.open(map, marker);
   });
 };
-
-// const getStoreInfo = (id) => {
-//   let request = {
-//     placeId: `${id}`,
-//     fields: [
-//       'name',
-//       'rating',
-//       'formatted_phone_number',
-//       'geometry',
-//       'formatted_address',
-//       'types',
-//       'photos',
-//     ],
-//   };
-
-//   let service = new google.maps.places.PlacesService(map);
-//   service.getDetails(request, callback).then((res) => {
-//     console.log(res);
-//   });
-
-//   function callback(place, status) {
-//     if (status == google.maps.places.PlacesServiceStatus.OK) {
-//       console.log(place);
-//       return place;
-//     }
-//   }
-// };

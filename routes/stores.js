@@ -14,8 +14,7 @@ router.get('/mapdata', (req, res) => {
 });
 
 router.get('/view/:id', (req, res) => {
-  const id = req.params.id;
-  Store.findById(id)
+  Store.findById(req.params.id)
     .populate({
       path: 'comments',
       populate: {
@@ -59,17 +58,23 @@ router.post('/add', async (req, res, next) => {
       formatted_address: address,
       name,
       geometry: { location },
-      opening_hours: { weekday_text: opening_hours },
-      price_level,
     } = place;
 
-    const pictureId = place.photos[0].photo_reference;
+    let opening_hours, price_level;
+    if (place.opening_hours) {
+      opening_hours = place.opening_hours.weekday_text;
+    }
+    if (place.price_level) {
+      price_level = place.price_level;
+    }
+
+    // const pictureId = place.photos[0].photo_reference;
 
     await Store.create({
       placeId,
       name,
       address,
-      pictureId,
+      // pictureId,
       location: { coordinates: location },
       opening_hours,
       price_level,
