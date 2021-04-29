@@ -15,7 +15,9 @@ router.get('/', (req, res) => {
 });
 
 router.get('/profile', loginCheck(), (req, res, next) => {
-  Store.find({ created_by: req.user._id })
+  Store.find({
+    _id: { $in: req.user.favourites },
+  })
     .then((stores) => {
       stores.forEach((store) => {
         store.picUrl = getPhotoUrl(store.pictureId, 400);
@@ -23,6 +25,19 @@ router.get('/profile', loginCheck(), (req, res, next) => {
       res.render('profile', { user: req.user, stores });
     })
     .catch((err) => next(err));
+});
+
+router.get('/favourites/delete/:id', async (req, res, next) => {
+  try {
+    await User.findOneAndUpdate(
+      { _id: req.user._id },
+      { $pop: { favourites: req.params._id } },
+    );
+
+    res.redirect('/profile');
+  } catch (err) {
+    next(err);
+  }
 });
 
 router.post(
