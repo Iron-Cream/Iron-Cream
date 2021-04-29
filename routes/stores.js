@@ -145,7 +145,7 @@ router.get('/manage', loginCheck(), (req, res, next) => {
   const user = req.user._id;
   if (user.role === 'admin') {
     Store.find()
-      .populate('created_by')
+      // .populate('created_by')
       .then((stores) => {
         stores.forEach((store) => {
           store.picUrl = getPhotoUrl(store.pictureId, 400);

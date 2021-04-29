@@ -13,6 +13,9 @@ footer {
   background-color: #007373;
   color: #fff;
 }
+footer a {
+  text-decoration: underline;
+}
 
 #logo {
   max-width: 150px;
@@ -204,11 +207,12 @@ ul#opening-hours {
   align-items: center;
 }
 .banner .banner-text {
-  padding: 40px 70px;
+  padding: 30px 70px;
   background-color: #0073739e;
   text-align: center;
   border-radius: 15px;
-  width: 60vw;
+  width: 600px;
+  margin: 20px;
 }
 .banner h1 {
   color: #fff;
