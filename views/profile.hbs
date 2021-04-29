@@ -1,4 +1,4 @@
-<div class="banner">
+<div id="banner">
   <div class="banner-text">
     {{#if user.avatar }}
     <img class="profile-pic" src="{{ user.avatar.path }}" alt="" />
@@ -32,9 +32,9 @@
   <p class="warning">{{ err_msg }}</p>
   {{/if}}
 
-  <h2>Your favourite stores:</h2>
+  <h2 id="favorites-header">Your favourite stores:</h2>
   {{#if stores}}
-  <div id="store-list">
+  <div id="favorites-list">
     {{#each stores}}
     <section>
       <div class="top-box">

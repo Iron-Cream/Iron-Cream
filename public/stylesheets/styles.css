@@ -93,8 +93,11 @@ ul#opening-hours {
   text-align: center;
   font-weight: 500;
 }
-
-#store-list {
+#favorites-header {
+  margin-top: 50px;
+  text-align: center;
+}
+#favorites-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -104,7 +107,7 @@ ul#opening-hours {
   color: black;
 }
 
-#store-list section {
+#favorites-list section {
   background-color: #f1f5f8;
   margin: 10px 10px 30px;
   width: calc((100% / 4) - 20px);
@@ -113,11 +116,11 @@ ul#opening-hours {
   border-radius: 15px;
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
 }
-#store-list section .top-box {
+#favorites-list section .top-box {
   width: 100%;
   height: 140px;
 }
-#store-list section img {
+#favorites-list section img {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   box-sizing: border-box;
@@ -125,38 +128,67 @@ ul#opening-hours {
   height: 100%;
   object-fit: cover;
 }
-#store-list section .bottom-box {
+#favorites-list section .bottom-box {
   width: 100%;
   padding: 10px 10px 20px;
   height: auto;
 }
-#store-list section .bottom-box p {
+#favorites-list section .bottom-box p {
   padding: 5px 0;
   margin: 0;
 }
 
-#store-list section .bottom-box p.store-name {
+#favorites-list section .bottom-box p.store-name {
   font-weight: 600;
   font-size: 1.2rem;
 }
-#store-list section .bottom-box p.store-address {
+#favorites-list section .bottom-box p.store-address {
   font-size: 0.8rem;
   font-style: italic;
   color: dimgray;
 }
-#store-list a {
+#favorites-list a {
   display: block;
 }
 
+#banner {
+  width: 100%;
+  height: 400px;
+  background-image: url('/images/icecream-bg.jpg');
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#banner .banner-text {
+  padding: 30px 70px;
+  background-color: #0073739e;
+  text-align: center;
+  border-radius: 15px;
+  width: 600px;
+  margin: 20px;
+}
+#banner h1 {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+#banner .profile-pic {
+  border-radius: 50%;
+  max-width: 150px;
+  height: auto;
+  border: 3px solid #f1f5f8;
+  margin-bottom: 20px;
+}
 #profile .bottom-box .buttons {
   display: flex;
 }
-
 #profile .bottom-box .button {
   width: 50%;
   margin: 10px;
 }
-
 #profile .buttons .button,
 #profile button {
   margin: 5px;
@@ -180,11 +212,10 @@ ul#opening-hours {
   width: 50%;
   margin: 10px;
 }
-
 #profile .button-secondary {
   font-size: 1.3rem;
   display: block;
-  margin: 5px auto;
+  margin: 10px auto;
   background: #b18597;
   color: white;
   padding: 10px 20px;
@@ -196,40 +227,7 @@ ul#opening-hours {
 #profile .button-secondary:hover {
   background: darkcyan;
 }
-
-.banner {
-  width: 100%;
-  height: 400px;
-  background-image: url('/images/icecream-bg.jpg');
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.banner .banner-text {
-  padding: 30px 70px;
-  background-color: #0073739e;
-  text-align: center;
-  border-radius: 15px;
-  width: 600px;
-  margin: 20px;
-}
-.banner h1 {
-  color: #fff;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  margin: 0;
-  padding: 0;
-}
-.profile-pic {
-  border-radius: 50%;
-  max-width: 150px;
-  height: auto;
-  border: 3px solid #f1f5f8;
-  margin-bottom: 20px;
-}
-
-.user-info {
+#profile .user-info {
   margin: 20px auto;
   background-color: #f1f5f8;
   padding: 20px;
@@ -239,34 +237,31 @@ ul#opening-hours {
   max-width: 600px;
   color: black;
 }
-.user-info p span:first-of-type {
+#profile .user-info p span:first-of-type {
   display: inline-block;
   width: 40%;
   min-width: 100px;
   font-weight: 600;
 }
-.riguser-info p span:last-of-type {
+#profile .user-info p span:last-of-type {
   display: inline-block;
   width: 60%;
 }
-
-.user-info #pic-upload {
+#profile .user-info #pic-upload {
   display: flex;
   font-weight: 600;
 }
-
-.user-info #pic-upload label {
+#profile .user-info #pic-upload label {
   width: 40%;
   min-width: 100px;
 }
-
-.user-info #pic-upload .pic-submit-btn {
+#profile .user-info #pic-upload .pic-submit-btn {
   width: 60%;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
 }
-.user-info #pic-upload .pic-submit-btn button {
+#profile .user-info #pic-upload .pic-submit-btn button {
   margin: 10px 0;
   max-width: 250px;
 }
@@ -311,7 +306,6 @@ ul#opening-hours {
   font-style: italic;
   color: dimgray;
 }
-
 #manage-list .buttons {
   display: flex;
   justify-content: space-between;
@@ -330,7 +324,6 @@ ul#opening-hours {
 #manage-list .buttons .button:hover {
   background: #b18597;
 }
-
 #edit form {
   margin: 50px auto;
   background-color: #f1f5f8;
@@ -404,9 +397,44 @@ ul#opening-hours {
   text-align: center;
   margin: 40px auto;
 }
-
+#fav_buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+#fav_buttons a {
+  padding: 10px 40px 10px 60px;
+  border-radius: 30px;
+  display: inline-block;
+  color: white;
+  transition: background 300ms;
+  font-size: 1.1rem;
+  position: relative;
+}
+#fav_buttons a:hover {
+  cursor: pointer;
+}
+#fav_buttons a img {
+  height: 1.6rem;
+  width: auto;
+  object-fit: contain;
+  position: absolute;
+  left: 24px;
+  top: 7px;
+}
+a#add_fav {
+  background: #b18597;
+}
+a#add_fav:hover {
+  background: darkcyan;
+}
+a#del_fav {
+  background: darkcyan;
+}
+a#del_fav:hover {
+  background: #b18597;
+}
 #comment-form {
-  margin: 20px auto;
+  margin: 20px auto 50px;
   background-color: #f1f5f8;
   max-width: 700px;
   border-radius: 10px;
@@ -446,13 +474,11 @@ ul#opening-hours {
 }
 #comment-form button:hover {
   background: #b18597;
-}
-#comment-form button:hover {
   cursor: pointer;
 }
 
 @media (min-width: 601px) and (max-width: 1100px) {
-  #store-list section {
+  #favorites-list section {
     width: calc((100% / 2) - 20px);
   }
   #manage-list section {
@@ -461,7 +487,7 @@ ul#opening-hours {
 }
 
 @media (max-width: 600px) {
-  #store-list section {
+  #favorites-list section {
     width: 100%;
   }
   #manage-list {
