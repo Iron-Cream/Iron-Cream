@@ -108,6 +108,35 @@ router.post('/add', async (req, res, next) => {
   }
 });
 
+router.get('/edit/:id', loginCheck(), (req, res, next) => {
+  const id = req.params.id;
+  const user = req.user._id;
+  Store.findById(id)
+    .then((store) => {
+      store.picUrl = getPhotoUrl(store.pictureId, 400);
+      res.render('stores/edit', { store });
+    })
+    .catch((error) => {
+      next(error);
+    });
+});
+
+router.post('/edit/:id', (req, res, next) => {
+  const id = req.params.id;
+  const { name, description, opening_hours } = req.body;
+  Store.findByIdAndUpdate(id, {
+    name,
+    description,
+    opening_hours,
+  })
+    .then(() => {
+      res.redirect(`/view/${id}`);
+    })
+    .catch((err) => {
+      next(err);
+    });
+});
+
 router.get('/manage', loginCheck(), (req, res, next) => {
   const user = req.user._id;
   if (user.role === 'admin') {

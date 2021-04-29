@@ -163,11 +163,32 @@ ul#opening-hours {
   text-align: center;
   transition: background 300ms;
 }
+#profile .buttons .button:hover,
 #profile button:hover {
   background: #b18597;
 }
 #profile button:hover {
   cursor: pointer;
+}
+#profile .bottom-box .button {
+  width: 50%;
+  margin: 10px;
+}
+
+#profile .button-secondary {
+  font-size: 1.3rem;
+  display: block;
+  margin: 5px auto;
+  background: #b18597;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  transition: background 300ms;
+}
+#profile .button-secondary:hover {
+  background: darkcyan;
 }
 
 .banner {
@@ -301,6 +322,9 @@ ul#opening-hours {
 }
 #manage-list .buttons .button:hover {
   background: #b18597;
+}
+
+#edit {
 }
 
 @media (min-width: 601px) and (max-width: 1100px) {

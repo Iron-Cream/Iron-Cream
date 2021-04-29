@@ -161,7 +161,8 @@ const addStore = () => {
 
     marker.setVisible(true);
 
-    const addString = `<div id="marker-content">${place.name}<br>
+    const addString = `<div id="marker-content">
+    <h3 id="store_title">${place.name}</h3><br>
     <form action="/add" method="POST">
       <input type='hidden' name='placeId' id='placeId' value="${place.place_id}">
       <input name='comments' id='comments' placeholder='Add comment here'>
