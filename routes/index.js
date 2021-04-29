@@ -31,14 +31,6 @@ router.post(
   uploader.single('pic'),
   async (req, res, next) => {
     try {
-      if (typeof req.file === 'undefined') {
-        res.render('profile', {
-          user: req.user,
-          err_msg: "You haven't selected any image",
-        });
-        return;
-      }
-
       let { filename: cloudinaryId, path, originalname } = req.file;
 
       path = cloudinary.url(cloudinaryId, {

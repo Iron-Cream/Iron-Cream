@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const Store = require('../models/Store');
+const User = require('../models/User');
 const { loginCheck } = require('./middlewares');
 const { getDetails, getPhotoUrl } = require('../config/placesApi');
 
@@ -64,33 +65,38 @@ router.post('/add', async (req, res, next) => {
     } = place;
     const pictureId = place.photos[0].photo_reference;
 
-    const store = await Store.find({ placeId });
-    if (store !== null) {
+    const store = await Store.findOne({ placeId });
+
+    if (store) {
       req.flash(
         'err_msg',
         'The stored you tried to add is already in the Database.',
       );
       res.redirect('/');
-      return;
+    } else {
+      const newStore = await Store.create({
+        // from map
+        placeId,
+        comments: comments ? { user: req.user._id, text: comments } : null,
+        // from placesAPI
+        name,
+        address,
+        pictureId,
+        location: { coordinates: location },
+        opening_hours,
+        price_level,
+        // from user
+        created_by: req.user._id,
+        avg_rating,
+      });
+
+      await User.findOneAndUpdate(
+        { _id: req.body.id },
+        { $push: { favourites: newStore._id } },
+      );
+
+      res.redirect('/');
     }
-
-    await Store.create({
-      // from map
-      placeId,
-      comments: comments ? { user: req.user._id, text: comments } : null,
-      // from placesAPI
-      name,
-      address,
-      pictureId,
-      location: { coordinates: location },
-      opening_hours,
-      price_level,
-      // from user
-      created_by: req.user._id,
-      avg_rating,
-    });
-
-    res.redirect('/');
   } catch (err) {
     next(err);
   }

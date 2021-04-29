@@ -1,6 +1,7 @@
 #map {
   height: 80vh;
   width: 100%;
+  color: black;
 }
 
 #map button.custom-map-control-button {
