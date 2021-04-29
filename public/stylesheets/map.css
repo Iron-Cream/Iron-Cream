@@ -88,8 +88,20 @@
   padding: 0 10px;
 }
 
+#marker-content form {
+  display: flex;
+  flex-flow: column;
+}
+
+#marker-content #comments {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 80px;
+  resize: none;
+}
+
 #map-btn {
-  margin: 5px;
+  margin: 10px 5px 5px;
   background: darkcyan;
   color: white;
   border: 0px;
@@ -112,17 +124,17 @@
 
 #store_details {
   margin-bottom: 0px;
-  color: darkcyan;
+  color: #000;
   font-weight: 600;
+  text-align: center;
 }
 
-#marker-content form {
-  display: flex;
-  flex-flow: column;
+#store_details.icecream_level {
+  margin-top: 5px;
 }
 
-#marker-content #comments {
-  margin-bottom: 10px;
+#store_details.icecream_level span {
+  font-size: 1.2rem;
 }
 
 .db-warning {

@@ -394,6 +394,9 @@ ul#opening-hours {
 #show .bottom-text {
   padding: 20px 30px 30px;
 }
+#show .bottom-text .icecream-level {
+  font-size: 1.6rem;
+}
 #show h1 {
   margin: 0;
 }
@@ -427,6 +430,7 @@ ul#opening-hours {
   height: 150px;
   width: 100%;
   padding: 10px;
+  resize: none;
 }
 #comment-form button {
   margin: 20px 0 0;
