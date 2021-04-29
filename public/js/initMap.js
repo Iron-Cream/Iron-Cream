@@ -53,7 +53,7 @@ const getMapData = () => {
             : ''
         }
         <form action="/view/${place._id}" method="GET">
-          <button type="submit" id="view">View</button>
+          <button type="submit" id="map-btn">View</button>
           </form>
         </div>`;
 
@@ -165,7 +165,7 @@ const addStore = () => {
     <form action="/add" method="POST">
       <input type='hidden' name='placeId' id='placeId' value="${place.place_id}">
       <input name='comments' id='comments' placeholder='Add comment here'>
-      <button type="submit" id="submit">Add this store</button>
+      <button type="submit" id="map-btn">Add this store</button>
     </form>
     </div>`;
 
