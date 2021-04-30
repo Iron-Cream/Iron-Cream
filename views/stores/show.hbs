@@ -33,20 +33,15 @@
     <p>{{ description }}</p>
     {{/if}}
 
-    {{#if user}}
+    {{#if ../user}}
     <div id="fav_buttons">
       {{#if favourite}}
-      <a id="del_fav" href="/favourites/delete/{{ _id }}"
-        ><img src="/images/cross.png" alt="cross icon" />Remove from
-        favourites</a
-      >
+      <a id="del_fav" href="/favourites/delete/{{ _id }}"><img src="/images/cross.png" alt="cross icon" />Remove from favourites</a>
       {{else}}
-      <a id="add_fav" href="/favourites/add/{{ _id }}"
-        ><img src="/images/heart.png" alt="heart icon" />Add to favourites</a
-      >
-      {{/if}}
+      <a id="add_fav" href="/favourites/add/{{ _id }}"><img src="/images/heart.png" alt="heart icon" />Add to favourites</a>
       {{/if}}
     </div>
+    {{/if}}
   </div>
 </div>
 <h2>What other users say about {{ name }}:</h2>
