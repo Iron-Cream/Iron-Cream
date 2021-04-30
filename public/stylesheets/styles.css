@@ -510,3 +510,32 @@ a#del_fav:hover {
     display: none;
   }
 }
+
+.btn-del-small {
+  background-color: red;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.8em;
+  padding: 1px 3px;
+  border: 0px;
+  border-radius: 1px;
+}
+
+.btn-edit-small {
+  background-color: darkcyan;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.8em;
+  padding: 1px 3px;
+  border: 0px;
+  border-radius: 1px;
+}
+
+.btn-del-small:hover,
+.btn-edit-small:hover {
+  cursor: pointer;
+}
