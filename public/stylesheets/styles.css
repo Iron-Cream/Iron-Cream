@@ -48,7 +48,7 @@ ul#opening-hours {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin: 20px 0;
+  margin: 0;
   max-width: 100%;
 }
 #comment-list section {
@@ -61,6 +61,7 @@ ul#opening-hours {
   height: 103px;
   position: absolute;
   z-index: 1;
+  border-radius: 10px 10px 0px 0px;
 }
 #comment-list section img {
   background-color: gray;
@@ -82,6 +83,10 @@ ul#opening-hours {
   padding-bottom: 20px;
   min-height: 200px;
   transform: translateY(-50px);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  border-radius: 10px;
 }
 #comment-list section .bottom-box blockquote {
   margin: 0 auto;
@@ -106,6 +111,7 @@ ul#opening-hours {
 #favorites-header {
   margin-top: 50px;
   text-align: center;
+  color: white;
 }
 #favorites-list {
   display: flex;
@@ -407,7 +413,7 @@ ul#opening-hours {
 }
 #show + h2 {
   text-align: center;
-  margin: 40px auto;
+  margin: 40px auto 0px;
 }
 #fav_buttons {
   text-align: center;
