@@ -150,6 +150,7 @@ ul#opening-hours {
   min-height: 200px;
   display: flex;
   flex-flow: column;
+  justify-content: space-around;
 }
 #favorites-list section .bottom-box p {
   padding: 5px 0;
