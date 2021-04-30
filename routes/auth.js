@@ -2,7 +2,11 @@ const router = require('express').Router();
 const bcrypt = require('bcrypt');
 const passport = require('passport');
 const User = require('../models/User');
-const { validateSignUp, notLoggedInCheck } = require('./middlewares');
+const {
+  validateSignUp,
+  notLoggedInCheck,
+  loginCheck,
+} = require('./middlewares');
 
 router.get('/signup', notLoggedInCheck(), (req, res) => {
   res.render('auth/signup');
@@ -50,6 +54,37 @@ router.post('/login', (req, res, next) => {
 router.get('/logout', (req, res) => {
   req.logout();
   res.redirect('/');
+});
+
+router.get('/password', loginCheck(), (req, res) => {
+  res.render('auth/password', { user: req.user });
+});
+
+router.post('/password', async (req, res, next) => {
+  try {
+    const { password, password2 } = req.body;
+    console.log({ password, password2 });
+    if (password !== password2) {
+      res.render('auth/password', {
+        user: req.user,
+        err_msg: "The two provided passwords didn't match",
+      });
+    } else {
+      const salt = bcrypt.genSaltSync();
+      const hash = bcrypt.hashSync(password, salt);
+      await User.findOneAndUpdate(
+        { username: req.user.username },
+        { password: hash },
+      );
+
+      res.render('profile', {
+        user: req.user,
+        msg: 'Password succesfully changed',
+      });
+    }
+  } catch (err) {
+    next(err);
+  }
 });
 
 module.exports = router;

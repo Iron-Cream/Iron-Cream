@@ -191,4 +191,29 @@ router.get('/manage', loginCheck(), (req, res, next) => {
     })
     .catch((err) => next(err));
 });
+
+// router.get('/comment/edit', (req, res) => {
+//   const { userId, storeId, comment } = req.query;
+//   Store.findById(storeId).then((store) => {
+//     store.comments.forEach(comment => {
+
+//     })
+//   });
+
+//   res.json({ userId, storeId });
+// });
+
+// router.get('/comment/delete', (req, res) => {
+//   const { userId, storeId } = req.query;
+//   console.log({ userId, storeId });
+//   Store.findOneAndUpdate(
+//     { _id: storeId },
+//     { $pull: { comments: { user: userId } } },
+//   )
+//     .then((store) => {
+//       res.json(store.comments);
+//     })
+//     .catch((err) => console.log(err));
+// });
+
 module.exports = router;

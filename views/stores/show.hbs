@@ -56,6 +56,15 @@
       <div class="test-details">
         <p>{{ user.username }}</p>
       </div>
+
+      <!-- {{#ifEquals @root.user.username user.username }}
+      <button class="btn-del-small" userId="{{ user._id }}" storeId="{{ _id }}">
+        X
+      </button> -->
+      <!-- <button class="btn-edit-small" userId="{{ user._id }}" storeId="{_id}">
+        Edit
+      </button> -->
+      <!-- {{/ifEquals}} -->
     </div>
   </section>
   {{/each}}
@@ -76,4 +85,5 @@
 </form>
 {{/with}}
 
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="/js/script.js"></script>

@@ -1,27 +1,29 @@
-<div class="content">
-  <h1>Login</h1>
+<div class="content auth">
+  <div class="form-container ice-bg">
+    <h1 class="auth-title">Login</h1>
 
-  {{#if err_msg}}
-  <p class="warning">{{ err_msg }}</p>
-  {{/if}}
+    {{#if err_msg}}
+    <p class="warning">{{ err_msg }}</p>
+    {{/if}}
 
-  {{#if msg}}
-  <p class="success">{{ msg }}</p>
-  {{/if}}
+    {{#if msg}}
+    <p class="success">{{ msg }}</p>
+    {{/if}}
 
-  {{#if justSignedUp}}
-  <p>
-    {{ justSignedUp }}
-  </p>
-  {{/if}}
+    {{#if justSignedUp}}
+    <p>
+      {{ justSignedUp }}
+    </p>
+    {{/if}}
 
-  <form action="/login" method="post">
-    <label for="username">Username/Email: </label>
-    <input type="text" name="username" id="username" />
+    <form class="form-container" action="/login" method="post">
+      <label for="username">Username/Email: </label>
+      <input class="form-input" type="text" name="username" id="username" />
 
-    <label for="password">Password: </label>
-    <input type="password" name="password" id="password" />
+      <label for="password">Password: </label>
+      <input class="form-input" type="password" name="password" id="password" />
 
-    <button type="submit">Log In</button>
-  </form>
+      <button class="form-button" type="submit">Log In</button>
+    </form>
+  </div>
 </div>

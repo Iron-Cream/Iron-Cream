@@ -34,7 +34,7 @@ router.get('/favourites/add/:id', async (req, res, next) => {
       { $addToSet: { favourites: req.params.id } },
     );
 
-    res.redirect('/profile');
+    res.redirect(`/view/${req.params.id}`);
   } catch (err) {
     next(err);
   }

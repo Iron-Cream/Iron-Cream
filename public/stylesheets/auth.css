@@ -1,0 +1,58 @@
+.auth {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.form-container {
+  margin: 20px auto 100px;
+  background-color: #f7f1f8;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 6px rgb(0 0 0 / 16%);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px 30px 30px;
+}
+
+.ice-bg {
+  background-image: url('/images/icecream-bg.jpg');
+  background-position: center;
+  width: 50vw;
+  height: 80vh;
+  margin-top: 10vh;
+}
+
+.form-input {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 2px;
+  border: 0px;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.form-button {
+  margin: 20px 0 0;
+  background: darkcyan;
+  color: white;
+  border: 0px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  min-width: 80px;
+  text-align: center;
+  width: 200px;
+  transition: background 300ms;
+}
+
+.auth-title {
+  color: darkcyan;
+  background-color: rgba(255, 255, 255, 0.671);
+  padding: 10px 40px;
+  box-shadow: 0px 0px 3px 3px;
+  border-radius: 2px;
+}
