@@ -48,8 +48,8 @@ ul#opening-hours {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin: 0;
-  max-width: 100%;
+  margin: auto;
+  max-width: 80%;
 }
 #comment-list section {
   margin: 50px;
@@ -118,8 +118,8 @@ ul#opening-hours {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin: 20px 0;
-  width: 100%;
+  margin: auto;
+  width: 80%;
   color: black;
 }
 

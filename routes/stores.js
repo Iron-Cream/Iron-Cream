@@ -33,7 +33,11 @@ router.get('/view/:id', (req, res, next) => {
       res.render('stores/show', {
         store,
         user: req.user,
-        favourite: req.user.favourites.includes(store._id) ? true : false,
+        favourite: req.user
+          ? req.user.favourites.includes(store._id)
+            ? true
+            : false
+          : false,
       });
     })
     .catch((error) => {
