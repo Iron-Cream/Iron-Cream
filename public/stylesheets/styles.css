@@ -80,7 +80,7 @@ ul#opening-hours {
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
   width: 263px;
   padding-bottom: 20px;
-  height: auto;
+  min-height: 200px;
   transform: translateY(-50px);
 }
 #comment-list section .bottom-box blockquote {
@@ -141,7 +141,9 @@ ul#opening-hours {
 #favorites-list section .bottom-box {
   width: 100%;
   padding: 10px 10px 20px;
-  height: auto;
+  min-height: 200px;
+  display: flex;
+  flex-flow: column;
 }
 #favorites-list section .bottom-box p {
   padding: 5px 0;
