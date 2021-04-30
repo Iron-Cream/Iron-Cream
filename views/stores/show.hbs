@@ -28,6 +28,7 @@
     <p>{{ description }}</p>
     {{/if}}
 
+    {{#if user}}
     <div id="fav_buttons">
       {{#if favourite}}
       <a id="del_fav" href="/favourites/delete/{{ _id }}"
@@ -38,6 +39,7 @@
       <a id="add_fav" href="/favourites/add/{{ _id }}"
         ><img src="/images/heart.png" alt="heart icon" />Add to favourites</a
       >
+      {{/if}}
       {{/if}}
     </div>
   </div>
